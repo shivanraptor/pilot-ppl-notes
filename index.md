@@ -1,3 +1,7 @@
+---
+layout: default
+title: Overview
+---
 # CASA Private Pilot Licence (PPL) Theoretical Exam – Overview of the 7 Mandatory Subjects
 The CASA PPL theory exam consists of seven core subjects. Below is a concise overview of each subject, highlighting the key topics you need to master, enriched with relevant content from the FAA Pilot's Handbook of Aeronautical Knowledge (PHAK) where applicable.
 
@@ -17,4 +21,4 @@ The CASA PPL theory exam consists of seven core subjects. Below is a concise ove
 - Regularly review weather charts and performance graphs to build proficiency in interpretation.
 - Join a study group or discuss concepts with an instructor to clarify difficult topics.
 
-Good luck with your PPL theoretical preparation!  
+Good luck with your PPL theoretical preparation!

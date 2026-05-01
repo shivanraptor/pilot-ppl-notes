@@ -1,4 +1,8 @@
-## 2. Aircraft General Knowledge (AGK)
+---
+layout: default
+title: Chapter 2 - Aircraft General Knowledge (AGK)
+---
+# Chapter 2 - Aircraft General Knowledge (AGK)
 
 **Navigation:** [<- Previous Chapter 1](ch1_air_law.md) | [Overview](index.md) | Chapter 2 | [Next -> Chapter 3](ch3_flight_performance_and_planning.md)
 

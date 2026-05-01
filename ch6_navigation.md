@@ -1,4 +1,8 @@
-## 6. Navigation
+---
+layout: default
+title: Chapter 6 - Navigation
+---
+# Chapter 6 - Navigation
 
 **Navigation:** [<- Previous Chapter 5](ch5_meteorology.md) | [Overview](index.md) | Chapter 6 | [Next -> Chapter 7](ch7_operational_procedures.md)
 

@@ -1,4 +1,8 @@
-## 4. Human Performance and Limitations
+---
+layout: default
+title: Chapter 4 - Human Performance and Limitations
+---
+# Chapter 4 - Human Performance and Limitations
 
 **Navigation:** [<- Previous Chapter 3](ch3_flight_performance_and_planning.md) | [Overview](index.md) | Chapter 4 | [Next -> Chapter 5](ch5_meteorology.md)
 

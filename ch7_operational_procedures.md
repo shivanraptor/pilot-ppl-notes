@@ -1,4 +1,8 @@
-## 7. Operational Procedures
+---
+layout: default
+title: Chapter 7 - Operational Procedures
+---
+# Chapter 7 - Operational Procedures
 
 **Navigation:** [<- Previous Chapter 6](ch6_navigation.md) | [Overview](index.md) | Chapter 7
 

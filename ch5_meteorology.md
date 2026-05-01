@@ -1,4 +1,8 @@
-## 5. Meteorology
+---
+layout: default
+title: Chapter 5 - Meteorology
+---
+# Chapter 5 - Meteorology
 
 **Navigation:** [<- Previous Chapter 4](ch4_human_performance_and_limitations.md) | [Overview](index.md) | Chapter 5 | [Next -> Chapter 6](ch6_navigation.md)
 
