@@ -1,6 +1,6 @@
 ## 2. Aircraft General Knowledge (AGK)
 
-**Navigation:** [<- Previous Chapter 1](ch1_air_law.md) | [Overview](overview.md) | Chapter 2 | [Next -> Chapter 3](ch3_flight_performance_and_planning.md)
+**Navigation:** [<- Previous Chapter 1](ch1_air_law.md) | [Overview](index.md) | Chapter 2 | [Next -> Chapter 3](ch3_flight_performance_and_planning.md)
 
 These notes are exam-focused for CASA PPL AGK and aligned with FAA PHAK system knowledge where technically applicable. Use your aircraft POH/AFM as final authority for numbers, limitations, and procedures.
 

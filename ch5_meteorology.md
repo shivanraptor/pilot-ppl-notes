@@ -1,6 +1,6 @@
 ## 5. Meteorology
 
-**Navigation:** [<- Previous Chapter 4](ch4_human_performance_and_limitations.md) | [Overview](overview.md) | Chapter 5 | [Next -> Chapter 6](ch6_navigation.md)
+**Navigation:** [<- Previous Chapter 4](ch4_human_performance_and_limitations.md) | [Overview](index.md) | Chapter 5 | [Next -> Chapter 6](ch6_navigation.md)
 
 These notes are exam-focused for CASA PPL meteorology, with operational interpretation emphasis for VFR decision making.
 

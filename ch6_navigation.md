@@ -1,6 +1,6 @@
 ## 6. Navigation
 
-**Navigation:** [<- Previous Chapter 5](ch5_meteorology.md) | [Overview](overview.md) | Chapter 6 | [Next -> Chapter 7](ch7_operational_procedures.md)
+**Navigation:** [<- Previous Chapter 5](ch5_meteorology.md) | [Overview](index.md) | Chapter 6 | [Next -> Chapter 7](ch7_operational_procedures.md)
 
 These notes are exam-focused for CASA PPL navigation, combining map reading, dead reckoning, radio/GNSS navigation, and in-flight management.
 

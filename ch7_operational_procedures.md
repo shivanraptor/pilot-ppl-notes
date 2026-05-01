@@ -1,6 +1,6 @@
 ## 7. Operational Procedures
 
-**Navigation:** [<- Previous Chapter 6](ch6_navigation.md) | [Overview](overview.md) | Chapter 7
+**Navigation:** [<- Previous Chapter 6](ch6_navigation.md) | [Overview](index.md) | Chapter 7
 
 These notes are exam-focused for CASA PPL operational procedures with practical, scenario-based emphasis.
 
