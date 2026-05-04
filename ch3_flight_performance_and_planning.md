@@ -180,8 +180,8 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
 
 ## References (Primary)
 
-- FAA PHAK (especially performance and W&B chapters): https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak
-- CASA RPL/PPL/CPL Aeroplane Workbook: https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook
+- FAA PHAK (especially performance and W&B chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- CASA RPL/PPL/CPL Aeroplane Workbook: <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
 
 ---
 

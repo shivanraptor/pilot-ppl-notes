@@ -251,7 +251,7 @@ These notes are exam-focused for CASA PPL meteorology, with operational interpre
 
 ## References (Primary)
 
-- FAA PHAK (weather chapters and weather services context): https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak
+- FAA PHAK (weather chapters and weather services context): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 
 ---
 

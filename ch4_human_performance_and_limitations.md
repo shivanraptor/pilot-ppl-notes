@@ -164,7 +164,7 @@ These notes are exam-focused for CASA PPL human factors. They connect physiology
 
 ## References (Primary)
 
-- FAA PHAK (ADM and aeromedical sections): https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak
+- FAA PHAK (ADM and aeromedical sections): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 
 ---
 

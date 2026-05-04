@@ -317,15 +317,15 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 
 ## References (Primary)
 
-- FAA Pilot's Handbook of Aeronautical Knowledge (full handbook and chapter PDFs): https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak
-- FAA PHAK Chapter 7 Aircraft Systems: https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-7-aircraft-systems
-- FAA PHAK Chapter 9 Flight Manuals and Other Documents (AFM/POH concepts): https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-9-flight-manuals-and-other-documents
-- CASA RPL/PPL/CPL Aeroplane Workbook (exam assumptions and worked-method conventions): https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook
+- FAA Pilot's Handbook of Aeronautical Knowledge (full handbook and chapter PDFs): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- FAA PHAK Chapter 7 Aircraft Systems: <https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-7-aircraft-systems>
+- FAA PHAK Chapter 9 Flight Manuals and Other Documents (AFM/POH concepts): <https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-9-flight-manuals-and-other-documents>
+- CASA RPL/PPL/CPL Aeroplane Workbook (exam assumptions and worked-method conventions): <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
 
 ## References (Supplementary)
 
-- CASA Day VFR syllabus pages (structure and competency framing): https://www.casa.gov.au/day-vfr-helicopters-syllabus
-- CASA VFR guidance example copy (training/support reference, not legislation): https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf
+- CASA Day VFR syllabus pages (structure and competency framing): <https://www.casa.gov.au/day-vfr-helicopters-syllabus>
+- CASA VFR guidance example copy (training/support reference, not legislation): <https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf>
 
 ---
 

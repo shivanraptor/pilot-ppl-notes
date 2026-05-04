@@ -170,7 +170,7 @@ These notes are exam-focused for CASA PPL navigation, combining map reading, dea
 
 ## References (Primary)
 
-- FAA PHAK (navigation and navigation systems chapters): https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak
+- FAA PHAK (navigation and navigation systems chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 
 ---
 

@@ -190,8 +190,8 @@ These notes are exam-focused for CASA PPL operational procedures with practical,
 
 ## References (Primary)
 
-- FAA PHAK (airport operations, emergencies, procedures): https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak
-- CASA VFR guide copy (supportive operational context): https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf
+- FAA PHAK (airport operations, emergencies, procedures): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- CASA VFR guide copy (supportive operational context): <https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf>
 
 ---
 

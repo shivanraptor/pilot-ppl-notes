@@ -306,14 +306,14 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
 
 ## References (Primary)
 
-- CASA RPL/PPL/CPL Aeroplane Workbook (exam method assumptions): https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook
-- FAA PHAK (airport operations and communications supporting concepts): https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak
+- CASA RPL/PPL/CPL Aeroplane Workbook (exam method assumptions): <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
+- FAA PHAK (airport operations and communications supporting concepts): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 
 ## References (Supplementary)
 
-- CASA Day VFR syllabus page: https://www.casa.gov.au/day-vfr-helicopters-syllabus
-- CASA Visual Flight Rules Guide (VFRG): https://www.casa.gov.au/sites/default/files/2022-02/visual-flight-rules-guide.pdf
-- CASA Advisory Circular AC 61-05 (Night VFR rating guidance): https://www.casa.gov.au/night-vfr-rating
+- CASA Day VFR syllabus page: <https://www.casa.gov.au/day-vfr-helicopters-syllabus>
+- CASA Visual Flight Rules Guide (VFRG): <https://www.casa.gov.au/sites/default/files/2022-02/visual-flight-rules-guide.pdf>
+- CASA Advisory Circular AC 61-05 (Night VFR rating guidance): <https://www.casa.gov.au/night-vfr-rating>
 
 ---
 
