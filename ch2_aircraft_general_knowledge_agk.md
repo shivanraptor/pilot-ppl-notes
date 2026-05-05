@@ -20,6 +20,10 @@ These notes are exam-focused for CASA PPL AGK and aligned with FAA PHAK system k
 
 ## 2.1 Airframe, Structure, and Flight Controls
 
+<img src="images/ch2/plane_structure.jpg" alt="Aircraft Structure" style="width: 50%" />
+
+[Source](https://www.instagram.com/p/DXnrjAllrrW/?img_index=2)
+
 - **Major airframe groups**
   - **Fuselage**: central structure that carries occupants, payload, and connects wings/tail; houses cockpit/cabin.
   - **Wings**: generate lift; attach engines on many types; carry fuel tanks on many GA aircraft.
@@ -34,7 +38,7 @@ These notes are exam-focused for CASA PPL AGK and aligned with FAA PHAK system k
   - **Rudder**: vertical tail surface → **yaw** about vertical axis.
 
 - **Secondary / high-lift / drag devices**
-  - **Flaps** (**plain / split / slotted / Fowler**): extend camber and/or wing area → more lift and drag at low speed (takeoff/landing).
+  - **Flaps** (**plain / split / slotted / Fowler**): extend camber and/or wing area → more lift and drag at low speed (takeoff/landing). [Visual Reference (note the flap position is incorrect)](https://www.instagram.com/p/DXaS6phDgEk/?img_index=2)
   - **Trim tabs** (and related trim systems): small surfaces that reduce steady control forces so the pilot is not holding pressure continuously.
 
 - **Typical construction**
@@ -67,7 +71,7 @@ Source page: [Wikimedia Commons - ControlSurfaces.gif](https://commons.wikimedia
 
 **Secondary/high-lift and drag devices on wing (flaps, slats, spoilers, etc.):**
 
-![Wing control surfaces and high-lift devices](https://commons.wikimedia.org/wiki/Special:FilePath/Control_surfaces_at_the_wing_of_a_plane.svg)
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Control_surfaces_at_the_wing_of_a_plane.svg" alt="Wing control surfaces and high-lift devices" style="width: 50%" />
 
 Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](https://commons.wikimedia.org/wiki/File:Control_surfaces_at_the_wing_of_a_plane.svg)
 
@@ -250,7 +254,11 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 - **Glass cockpit (modern displays)**
   - **ADC (air data computer)**: computes pressure altitude, airspeed, vertical speed from pitot-static sensors.
   - **AHRS**: attitude/heading reference system replacing mechanical gyro cluster on many installations.
-  - **PFD / MFD**: integrated displays—know **reversionary mode** and backup instruments per POH.
+  - **PFD / MFD**: integrated displays—know **reversionary mode** and backup instruments per POH.<br />&nbsp;<br />
+  <b>Airbus A320 PFD as Example</b><br />
+  <img src="images/ch2/a320_fma1.webp" alt="PFD 1" style="width: 40%" /> <img src="images/ch2/a320_fma2.webp" alt="PFD 2" style="width: 40%" /><br />
+  <img src="images/ch2/a320_fma3.webp" alt="PFD 3" style="width: 40%" /> <img src="images/ch2/a320_fma4.webp" alt="PFD 4" style="width: 40%" /><br />
+  [Source](https://www.instagram.com/p/DX6loT-jGQZ/)
 
 **References:** [FAA PHAK — Chapter 8: Flight Instruments](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
 
@@ -292,7 +300,7 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 
 **Figure (pitot / static pressure concepts):** [Wikimedia Commons — Pitot tube types](https://commons.wikimedia.org/wiki/File:Pitot_tube_types.svg)
 
-![Pitot, static, and pitot-static tubes (schematic)](https://commons.wikimedia.org/wiki/Special:FilePath/Pitot_tube_types.svg)
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pitot_tube_types.svg" alt="Pitot, static, and pitot-static tubes (schematic)" style="width: 50%" />
 
 ---
 
@@ -398,7 +406,7 @@ Typical AFM/POH section layout (terminology varies slightly by manufacturer):
 
 **Multi-engine (awareness for theory):** **VMC / Vmca** is minimum control speed with one engine inoperative—primarily multi-engine training; your POH if applicable.
 
-### ASI color bands (typical light aircraft—confirm against your POH figure)
+### Air Speed Indicator (ASI) color bands
 
 | Arc / mark | Typical meaning |
 | --- | --- |

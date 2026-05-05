@@ -15,8 +15,8 @@ These notes are exam-focused for CASA PPL navigation, combining map reading, dea
 - Latitude/longitude and chart grid use are foundational.
 - Great circle vs rhumb line concepts (PPL practical navigation usually uses chart plotting approximations).
 - Distance units and conversions:
-  - Nautical mile and knot
-  - Metric/imperial conversions as needed by question.
+  - Nautical mile and knot (1 knot = 1 Nautical Mile per hour (NM/h))
+  - Metric/imperial conversions as needed by question. (1 knot = 1.15 mph; 1 NM = 1.85 km)
 
 ---
 
