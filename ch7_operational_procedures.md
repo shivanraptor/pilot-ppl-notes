@@ -188,10 +188,60 @@ These notes are exam-focused for CASA PPL operational procedures with practical,
 
 ---
 
-## References (Primary)
+## 7.15 Procedure Graphics, Tables, and Formula Aids
+
+### Graphic: normal flight phase workflow
+
+```mermaid
+flowchart LR
+    A[Preflight brief] --> B[Taxi and runway safety]
+    B --> C[Takeoff and climb]
+    C --> D[Cruise monitoring]
+    D --> E[Descent and approach]
+    E --> F{Stabilized?}
+    F -- Yes --> G[Land]
+    F -- No --> H[Go-around and re-sequence]
+```
+
+### Emergency priority ladder
+
+| Priority | Action focus | Typical examples |
+|---|---|---|
+| 1 | Aviate | Pitch, power/configuration, safe flight path |
+| 2 | Navigate | Select landing option, terrain/airspace avoidance |
+| 3 | Communicate | PAN PAN/MAYDAY, intentions, position |
+| 4 | Manage | Checklist completion, passenger brief, follow-up |
+
+### Stabilized approach gate table (training template)
+
+| Gate concept | Expected state | If not met |
+|---|---|---|
+| Early final | Correct flap/config trend, speed trending to target | Correct promptly or discontinue |
+| Stabilization gate | On path, on speed, stable power, checklist complete | Go-around |
+| Short final | Minimal corrections, touchdown zone assured | Go-around |
+
+### Simple descent planning formula
+
+$$
+\text{Top of Descent Distance (NM)} \approx \frac{\text{Height to lose (ft)}}{300}
+$$
+
+(For a 3-degree path approximation; then add wind and configuration margins.)
+
+$$
+\text{Rate of Descent (fpm)} \approx \text{GS (kt)} \times 5
+$$
+
+(Useful quick estimate for a 3-degree descent.)
+
+---
+
+## References
 
 - FAA PHAK (airport operations, emergencies, procedures): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - CASA VFR guide copy (supportive operational context): <https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf>
+- ICAO Annex 2 (Rules of the Air): <https://www.icao.int/>
+- EASA Air Operations portal: <https://www.easa.europa.eu/en/domains/air-operations>
 
 ---
 

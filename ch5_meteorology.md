@@ -249,9 +249,64 @@ These notes are exam-focused for CASA PPL meteorology, with operational interpre
 
 ---
 
+## 5.14 Meteorology Formula Pack and Graphics
+
+### Core formulas (exam-useful)
+
+$$
+\text{Dew Point Spread} = T - T_d
+$$
+
+Small spread suggests high humidity and increased fog/low cloud risk.
+
+$$
+\text{Pressure Altitude} \approx \text{Elevation} + (1013 - QNH) \times 30
+$$
+
+(\(QNH\) in hPa, altitude in ft; approximation for quick mental checks.)
+
+$$
+\text{Density Altitude} \approx \text{Pressure Altitude} + 120 \times (\text{OAT} - \text{ISA Temp})
+$$
+
+(Approximation useful for planning sense-checks; POH charts remain primary.)
+
+### Graphic: weather decision trend logic
+
+```mermaid
+flowchart TD
+    A[METAR/SPECI now] --> B[TAF trend]
+    B --> C[Area hazards: radar, SIGMET, wind]
+    C --> D{Trend improving?}
+    D -- Yes --> E[Continue with margins]
+    D -- No --> F[Delay, reroute, or divert early]
+```
+
+### Front and hazard quick table
+
+| Front type | Typical cloud/precip pattern | Common pilot hazard |
+|---|---|---|
+| Cold front | Convective bands, showery rain | Turbulence, gust fronts, wind shift |
+| Warm front | Layered cloud, widespread precip | Low cloud and visibility deterioration |
+| Occluded front | Mixed widespread weather | Complex wind/ceiling evolution |
+| Stationary front | Persistent cloud/precip zones | Long-duration poor VFR conditions |
+
+### Cloud family and turbulence expectation
+
+| Cloud family | Vertical development | Turbulence risk |
+|---|---|---|
+| Stratiform | Low to moderate | Usually lower, but can be moderate in strong flow |
+| Cumuliform | Moderate to strong | Often moderate to severe in convective phases |
+| Cumulonimbus | Very strong | Severe turbulence, hail, lightning, microburst risk |
+
+---
+
 ## References (Primary)
 
 - FAA PHAK (weather chapters and weather services context): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- ICAO meteorological service framework (Annex 3): <https://www.icao.int/>
+- CASA weather and flight planning guidance: <https://www.casa.gov.au/>
+- EASA weather information and operations resources: <https://www.easa.europa.eu/>
 
 ---
 

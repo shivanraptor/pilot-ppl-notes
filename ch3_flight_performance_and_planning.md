@@ -178,10 +178,72 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
 
 ---
 
+## 3.13 Formula Pack and Graphics
+
+### Core formulas
+
+$$
+\text{Time (hr)} = \frac{\text{Distance (NM)}}{\text{GS (kt)}}
+$$
+
+$$
+\text{Fuel Used} = \text{Fuel Flow} \times \text{Time}
+$$
+
+$$
+\text{Groundspeed} = \frac{\text{Distance}}{\text{Time}}
+$$
+
+$$
+\text{Moment} = \text{Weight} \times \text{Arm}
+$$
+
+$$
+\text{CG} = \frac{\sum \text{Moments}}{\sum \text{Weights}}
+$$
+
+### Useful conversion and planning formulas
+
+$$
+\text{Fuel Mass (kg)} \approx \text{Fuel Volume (L)} \times \text{SG}
+$$
+
+For CASA workbook style AVGAS assumptions:
+
+$$
+\text{Fuel Mass (kg)} \approx \text{Fuel Volume (L)} \times 0.72
+$$
+
+### Graphic: performance planning flow
+
+```mermaid
+flowchart LR
+    A[Weather and runway data] --> B[Takeoff and climb check]
+    B --> C[En route TAS, GS, fuel flow]
+    C --> D[Landing performance check]
+    D --> E{Margins acceptable?}
+    E -- Yes --> F[Dispatch]
+    E -- No --> G[Reduce weight, delay, or reroute]
+```
+
+### Performance sensitivity table
+
+| Parameter change | Takeoff roll | Climb rate | Landing distance |
+|---|---|---|---|
+| Higher temperature | Increases | Decreases | Usually increases |
+| Higher pressure altitude | Increases | Decreases | Usually increases |
+| Higher weight | Increases | Decreases | Increases |
+| Tailwind | Increases significantly | N/A climb after takeoff | Increases significantly |
+| Wet/soft runway | Increases | N/A | Increases |
+
+---
+
 ## References (Primary)
 
 - FAA PHAK (especially performance and W&B chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - CASA RPL/PPL/CPL Aeroplane Workbook: <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
+- ICAO Doc 8168 (PANS-OPS, procedural context): <https://www.icao.int/>
+- EASA Easy Access Rules (Air Operations): <https://www.easa.europa.eu/en/document-library/easy-access-rules>
 
 ---
 

@@ -304,16 +304,57 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
 
 ---
 
+## 1.14 Operational Decision Graphics and Tables
+
+### Graphic: legal vs operational go/no-go logic
+
+```mermaid
+flowchart TD
+    A[Flight Planned] --> B{Legal minima met?}
+    B -- No --> X[No-Go]
+    B -- Yes --> C{Operationally safe for pilot/aircraft?}
+    C -- No --> Y[Delay, replan, or divert strategy]
+    C -- Yes --> D[Go with briefed margins]
+```
+
+### Preflight legal compliance matrix (exam memory aid)
+
+| Domain | Core legal check | Typical evidence source |
+|---|---|---|
+| Pilot | Licence, medical, recency | Licence/medical + logbook records |
+| Aircraft | Registration, maintenance release, defects | Aircraft docs and release entries |
+| Operation | Weather minima, airspace rules, NOTAM | AIP/ERSA/NOTAM + weather brief |
+| Planning | Fuel compliance and alternates | Flight planning sheet + policy assumptions |
+
+### Radio urgency/distress comparison
+
+| Item | PAN PAN (Urgency) | MAYDAY (Distress) |
+|---|---|---|
+| Threat level | Serious, not immediate grave danger | Grave and imminent danger |
+| Priority | Above normal traffic | Highest priority |
+| Escalation | Can escalate to MAYDAY if worsens | Immediate emergency handling |
+
+### Practical legal sequence (PIC workflow)
+
+1. Confirm legal authority to fly (pilot, aircraft, operation).
+2. Confirm operational suitability (weather, fuel, alternates, risk).
+3. Brief threats and hard decision points before departure.
+4. Reassess legality and safety after any major condition change.
+
+---
+
 ## References (Primary)
 
 - CASA RPL/PPL/CPL Aeroplane Workbook (exam method assumptions): <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
 - FAA PHAK (airport operations and communications supporting concepts): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- ICAO Annex 2 (Rules of the Air): <https://www.icao.int/>
 
 ## References (Supplementary)
 
 - CASA Day VFR syllabus page: <https://www.casa.gov.au/day-vfr-helicopters-syllabus>
 - CASA Visual Flight Rules Guide (VFRG): <https://www.casa.gov.au/sites/default/files/2022-02/visual-flight-rules-guide.pdf>
 - CASA Advisory Circular AC 61-05 (Night VFR rating guidance): <https://www.casa.gov.au/night-vfr-rating>
+- EASA Air Operations reference portal: <https://www.easa.europa.eu/en/domains/air-operations>
 
 ---
 

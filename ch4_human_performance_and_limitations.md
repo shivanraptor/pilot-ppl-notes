@@ -162,9 +162,52 @@ These notes are exam-focused for CASA PPL human factors. They connect physiology
 
 ---
 
+## 4.13 Graphics and Quick Reference Tables
+
+### Graphic: TEM and ADM loop
+
+```mermaid
+flowchart LR
+    A[Identify Threats] --> B[Assess Risk]
+    B --> C[Decide Controls]
+    C --> D[Execute]
+    D --> E[Monitor Outcome]
+    E --> A
+```
+
+### Human performance degradation cues
+
+| Domain | Early cue | Likely effect if unmanaged | Practical countermeasure |
+|---|---|---|---|
+| Fatigue | Slower thinking, fixation | Procedural errors | Slow down, checklist discipline, reduce workload |
+| Stress | Tunnel vision | Poor prioritization | Aviate-navigate-communicate reset |
+| Hypoxia risk | Poor judgment, euphoria | Decision quality collapse | Descend, oxygen as fitted, reassess |
+| Hyperventilation | Tingling, dizziness | Loss of control precision | Controlled breathing and task simplification |
+
+### Night illusion countermeasure table
+
+| Illusion | Typical trigger | Primary correction |
+|---|---|---|
+| Autokinesis | Isolated light at night | Move scan, confirm with instruments |
+| False horizon | Sloping cloud/terrain lights | Trust attitude instrument |
+| Black-hole approach | Dark approach environment | Stabilized profile and instrument cross-check |
+| The leans | Slow unnoticed bank changes | Instrument scan discipline |
+
+### Personal minimums framework (example)
+
+1. Legal minimums (non-negotiable baseline).
+2. Personal margins (wind, visibility, workload).
+3. Dynamic factors (fatigue, recent experience, stress).
+4. Trigger point for no-go or diversion.
+
+---
+
 ## References (Primary)
 
 - FAA PHAK (ADM and aeromedical sections): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- ICAO Human Factors digest resources: <https://www.icao.int/safety/humanfactors>
+- EASA pilot human factors resources: <https://www.easa.europa.eu/>
+- CASA safety publications and human factors guidance: <https://www.casa.gov.au/safety-management>
 
 ---
 
