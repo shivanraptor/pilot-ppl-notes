@@ -277,6 +277,7 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 - **Vertical speed indicator (VSI)**: measures **rate of change** of static pressure → climb/descent rate (may lag slightly).
 
 ### Blockage scenarios
+
 <table>
   <tr>
     <th>&nbsp;</th>
