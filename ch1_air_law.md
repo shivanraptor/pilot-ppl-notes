@@ -82,6 +82,7 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
   - Use of special procedures where published.
 
 ### Flight Conditions
+
 | Classification | Ceilings and Visibility |
 | --- | --- |
 | Visual Flight Rules (**VFR**) | > 3,000ft AGL and > 5 SM |
