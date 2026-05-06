@@ -278,37 +278,12 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 
 ### Blockage scenarios
 
-<table>
-  <tr>
-    <th>&nbsp;</th>
-    <th>Indicated Airspeed (IAS)<br />on Airspeed Indicator (ASI)</th>
-    <th>Indicated Altitude</th>
-    <th>Indicated Vertical Speed (VS)<br />on Vertical Speed Indicator (VSI)</th>
-  </tr>
-  <tr>
-    <td>Pitot Ram Air Source and Drain Hole Blocked</td>
-    <td>Increases with altitude gain; Decreases with altitude loss</td>
-    <td>Unaffected</td>
-    <td>Unaffected</td>
-  </tr>
-  <tr>
-  <tr>
-    <td>Pitot Ram Air Source Blocked and Drain Hole Open</td>
-    <td>Displays zero knots</td>
-    <td>Unaffected</td>
-    <td>Unaffected</td>
-  </tr>
-  <tr>
-    <td>Static Source Blocked</td>
-    <td>Under-reads in climb, over-reads in descent (typical behavior)</td>
-    <td>Does not change with altitude gain or loss</td>
-    <td>Does not change with altitude gain or loss<br />VSI zero</td>
-  </tr>
-  <tr>
-    <td>Both Static and Pitot Sources Blocked</td>
-    <td colspan="3">All indications remain constant, regardless of changes in airspeed, altitude and vertical speed</td>
-  </tr>
-</table>
+| Blockage case | Indicated Airspeed (IAS) on ASI | Indicated Altitude | Indicated Vertical Speed (VS) on VSI |
+| --- | --- | --- | --- |
+| Pitot ram air source and drain hole blocked | Increases with altitude gain; decreases with altitude loss | Unaffected | Unaffected |
+| Pitot ram air source blocked and drain hole open | Displays zero knots | Unaffected | Unaffected |
+| Static source blocked | Under-reads in climb, over-reads in descent (typical behavior) | Does not change with altitude gain or loss | Does not change with altitude gain or loss (VSI zero) |
+| Both static and pitot sources blocked | All indications remain constant, regardless of changes in airspeed, altitude and vertical speed | All indications remain constant | All indications remain constant |
 
 ### Airspeed terminology
 
