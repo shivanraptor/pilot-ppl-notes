@@ -252,9 +252,9 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
   - **Electrical failure**: may blank electric instruments unless on backup bus.
 
 - **Glass cockpit (modern displays)**
-  - **ADC (air data computer)**: computes pressure altitude, airspeed, vertical speed from pitot-static sensors.
-  - **AHRS**: attitude/heading reference system replacing mechanical gyro cluster on many installations.
-  - **PFD / MFD**: integrated displays—know **reversionary mode** and backup instruments per POH.<br />&nbsp;<br />
+  - **Air Data Computer (ADC)**: computes pressure altitude, airspeed, vertical speed from pitot-static sensors.
+  - **Attitude and Heading Reference System (AHRS)**: attitude/heading reference system replacing mechanical gyro cluster on many installations.
+  - **Primary Flight Displays (PFD) / Multi-Function Displays (MFD)**: integrated displays—know **reversionary mode** and backup instruments per POH.<br />&nbsp;<br />
   <b>Airbus A320 PFD as Example</b><br />
   <img src="images/ch2/a320_fma1.webp" alt="PFD 1" style="width: 40%" /> <img src="images/ch2/a320_fma2.webp" alt="PFD 2" style="width: 40%" /><br />
   <img src="images/ch2/a320_fma3.webp" alt="PFD 3" style="width: 40%" /> <img src="images/ch2/a320_fma4.webp" alt="PFD 4" style="width: 40%" /><br />
@@ -276,20 +276,48 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 
 - **Vertical speed indicator (VSI)**: measures **rate of change** of static pressure → climb/descent rate (may lag slightly).
 
-### Blockage scenarios (high-yield)
-- **Pitot blocked, drain open** -> ASI drops toward zero.
-- **Pitot and drain blocked** -> ASI acts like altimeter (reads unreliable with altitude change).
-- **Static blocked**:
-  - Altimeter freezes
-  - VSI zero
-  - ASI under-reads in climb, over-reads in descent (typical behavior).
+### Blockage scenarios
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Indicated Airspeed (IAS)<br />on Airspeed Indicator (ASI)</th>
+    <th>Indicated Altitude</th>
+    <th>Indicated Vertical Speed (VS)<br />on Vertical Speed Indicator (VSI)</th>
+  </tr>
+  <tr>
+    <td>Pitot Ram Air Source and Drain Hole Blocked</td>
+    <td>Increases with altitude gain; Decreases with altitude loss</td>
+    <td>Unaffected</td>
+    <td>Unaffected</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>Pitot Ram Air Source Blocked and Drain Hole Open</td>
+    <td>Displays zero knots</td>
+    <td>Unaffected</td>
+    <td>Unaffected</td>
+  </tr>
+  <tr>
+    <td>Static Source Blocked</td>
+    <td>Under-reads in climb, over-reads in descent (typical behavior)</td>
+    <td>Does not change with altitude gain or loss</td>
+    <td>Does not change with altitude gain or loss<br />VSI zero</td>
+  </tr>
+  <tr>
+    <td>Both Static and Pitot Sources Blocked</td>
+    <td colspan="3">All indications remain constant, regardless of changes in airspeed, altitude and vertical speed</td>
+  </tr>
+</table>
 
 ### Airspeed terminology
-- **IAS (indicated airspeed)**: direct instrument reading before corrections.
-- **CAS (calibrated airspeed)**: IAS corrected for **position/instrument error** (POH tables).
-- **EAS (equivalent airspeed)**: CAS corrected for **compressibility** (becomes important at higher speeds/altitudes).
-- **TAS (true airspeed)**: actual speed through air mass—**increases** vs IAS for same performance as altitude increases (lower density).
-- **GS (ground speed)**: TAS adjusted for **wind** (navigation performance).
+
+| Name | Meaning | Typical usage |
+---|---|---|
+| Indicated Airspeed (**IAS**) | Direct instrument reading before corrections | Primary reference for V-speeds and flying by the ASI |
+| Calibrated Airspeed (**CAS**) | IAS corrected for **position/instrument error** (POH tables) | Performance chart inputs/outputs when POH specifies CAS |
+| Equivalent Airspeed (**EAS**) | CAS corrected for **compressibility** | Higher-speed/altitude corrections (more relevant beyond basic GA regime) |
+| True Airspeed (**TAS**) | Actual speed through the air mass; increases vs IAS with altitude (lower density) | Enroute performance and navigation computations |
+| Ground Speed (**GS** ) | TAS adjusted for **wind** | ETA/ETE, nav log timing, and range over the ground |
 
 ### Instrument/position errors
 - **Position error**: static port location and flow field cause static pressure to differ from free stream.

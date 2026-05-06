@@ -71,6 +71,7 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
 
 - VFR minima and associated conditions are fundamental exam items.
 - Understand:
+  - Flight conditions
   - Day VFR vs Night VFR concept differences
   - Cloud clearance and visibility minima by airspace/altitude context
   - Terrain/obstacle and minimum height rules
@@ -79,6 +80,15 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
   - Operations in controlled vs non-controlled airspace
   - Operations near restricted/prohibited/danger areas
   - Use of special procedures where published.
+
+### Flight Conditions
+| Classification | Ceilings and Visibility |
+| --- | --- |
+| Visual Flight Rules (**VFR**) | > 3,000ft AGL and > 5 SM |
+| Marginal VFR (**MVFR**) | 1,000 - 3,000ft AGL and/or 3 - 5 SM | 
+| Instrument Flight Rules (**IFR**) | 500 - 1,000ft AGL and/or 1 - 3 SM |
+| Low IFR | < 5,000ft AGL and/or < 1 SM |
+
 
 ### VMC/VFR minima criteria
 
@@ -272,8 +282,12 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
   - Example: cleared into controlled airspace at a specific level does not authorize entry at a different level.
 - **Instruction:** ATC direction requiring compliance unless safety is compromised.
   - Example: "Hold short runway" must be complied with and read back as required.
-- **NOTAM:** time-critical operational information not practical to publish by permanent amendment.
+- **NOTAM (Notice to Airmen):** time-critical operational information not practical to publish by permanent amendment.
   - Example: runway lighting unserviceable at destination changes night/VFR feasibility.
+- **AIRMET (Airman's Meteorological Information):** aviation weather advisory issued by the Aviation Weather Center to alert pilots of, or forecast, moderate icing, moderate turbulence, sustained surface winds of 30+ knots, or widespread IFR conditions, mostly affecting smaller, single-engine aircraft. AIRMETs cover large areas (3,000+ sq miles) and are updated every 6 hours.
+  - AIRMET Sierra (IFR/Mountain Obscuration): issued for ceiling less than 1,000 ft, visibility less than 3 miles, or extensive mountain obscuration.
+  - AIRMET Tango (Turbulence): issued for moderate turbulence, sustained surface winds of 30 knots or more, or non-convective low-level wind shear.
+  - AIRMET Zulu (Icing): issued for moderate icing and freezing levels.
 - **Recency:** recent experience required to exercise specific privileges (e.g., passenger carrying).
   - Example: legally current for solo local flight may still be not current to carry passengers.
 
