@@ -203,11 +203,15 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
 
 **PAN PAN example (urgency):**
 
-`PAN PAN, PAN PAN, PAN PAN, Brisbane Centre, Cessna VH-ABC, engine rough running, maintaining 4,500 feet, 15 miles north of Toowoomba, tracking south, request priority direct Toowoomba for landing, 3 persons on board.`
+```
+PAN PAN, PAN PAN, PAN PAN, Brisbane Centre, Cessna VH-ABC, engine rough running, maintaining 4,500 feet, 15 miles north of Toowoomba, tracking south, request priority direct Toowoomba for landing, 3 persons on board.
+```
 
 **MAYDAY example (distress):**
 
-`MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducting forced landing, 8 miles east of Bacchus Marsh, 2,500 feet descending, 2 persons on board.`
+```
+MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducting forced landing, 8 miles east of Bacchus Marsh, 2,500 feet descending, 2 persons on board.
+```
 
 ---
 

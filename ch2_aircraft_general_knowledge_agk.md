@@ -312,7 +312,7 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 ### Airspeed terminology
 
 | Name | Meaning | Typical usage |
----|---|---|
+| --- | --- | --- |
 | Indicated Airspeed (**IAS**) | Direct instrument reading before corrections | Primary reference for V-speeds and flying by the ASI |
 | Calibrated Airspeed (**CAS**) | IAS corrected for **position/instrument error** (POH tables) | Performance chart inputs/outputs when POH specifies CAS |
 | Equivalent Airspeed (**EAS**) | CAS corrected for **compressibility** | Higher-speed/altitude corrections (more relevant beyond basic GA regime) |
