@@ -4,7 +4,7 @@ title: Chapter 6 - Navigation
 ---
 # Chapter 6 - Navigation
 
-**Navigation:** [<- Previous Chapter 5](ch5_meteorology.md) | [Overview](index.md) | Chapter 6 | [Next -> Chapter 7](ch7_operational_procedures.md)
+**Navigation:** [<- Previous Chapter 5](ch5_meteorology.md) | [Table of Contents](ppl_toc.md) | Chapter 6 | [Next -> Chapter 7](ch7_operational_procedures.md)
 
 This chapter is an expanded exam-and-flight-practice reference for PPL navigation. It combines core theory, formula memory aids, worked examples, and cockpit decision flow.
 
@@ -434,5 +434,5 @@ Countermeasures:
 
 ---
 
-**Navigation:** [<- Previous Chapter 5](ch5_meteorology.md) | [Overview](index.md) | Chapter 6 | [Next -> Chapter 7](ch7_operational_procedures.md)
+**Navigation:** [<- Previous Chapter 5](ch5_meteorology.md) | [Table of Contents](ppl_toc.md) | Chapter 6 | [Next -> Chapter 7](ch7_operational_procedures.md)
 

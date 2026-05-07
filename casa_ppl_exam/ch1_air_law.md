@@ -4,7 +4,7 @@ title: Chapter 1 - Air Law
 ---
 # Chapter 1 - Air Law
 
-**Navigation:** [Overview](index.md) | Chapter 1 | [Next -> Chapter 2](ch2_aircraft_general_knowledge_agk.md)
+**Navigation:** [Table of Contents](ppl_toc.md) | Chapter 1 | [Next -> Chapter 2](ch2_aircraft_general_knowledge_agk.md)
 
 These notes are exam-focused for CASA PPL Air Law. Always treat current CASA legislation, AIP, and published instruments as controlling references.
 
@@ -377,5 +377,5 @@ flowchart TD
 
 ---
 
-**Navigation:** [Overview](overview.md) | Chapter 1 | [Next -> Chapter 2](ch2_aircraft_general_knowledge_agk.md)
+**Navigation:** [Table of Contents](ppl_toc.md) | Chapter 1 | [Next -> Chapter 2](ch2_aircraft_general_knowledge_agk.md)
 

@@ -1,10 +1,14 @@
+---
+layout: default
+title: CASA Private Pilot Licence (PPL) Theoretical Exam – Overview
+---
 # CASA Private Pilot Licence (PPL) Theoretical Exam – Overview of the 7 Mandatory Subjects
 
 The CASA PPL theory exam consists of seven core subjects. Below is a concise overview of each subject, highlighting the key topics you need to master, enriched with relevant content from the FAA Pilot's Handbook of Aeronautical Knowledge (PHAK) where applicable.
 
 ---  
 
-## 1. Air Law
+## Chapter 1: [Air Law](ch1_air_law.md)
 - **Regulatory framework**: Civil Aviation Safety Regulations (CASR) Part 61, Part 91, and relevant Parts.
 - **Licensing & privileges**: PPL requirements, ratings, endorsements, recency, medical standards.
 - **Operating rules**: Visual Flight Rules (VFR), airspace classifications, special use areas, restricted/military zones.
@@ -18,8 +22,7 @@ The PHAK (Chapter 14: Aviation Weather Services and Chapter 15: Airport Operatio
 
 ---  
 
-## 2. Aircraft General Knowledge (AGK)
-- **Use the full chapter file**: [Chapter 2 AGK](ch2_aircraft_general_knowledge_agk.md)
+## Chapter 2: [Aircraft General Knowledge (AGK)](ch2_aircraft_general_knowledge_agk.md)
 - Includes detailed system operation, failures, CASA exam cues, and revision checklist.
 
 **FAA PHAK Integration**:  
@@ -27,8 +30,7 @@ Chapter 5 (Aircraft Construction) and Chapter 6 (Principles of Flight) of the PH
 
 ---  
 
-## 3. Flight Performance and Planning
-- **Use the full chapter file**: [Chapter 3 Flight Performance and Planning](ch3_flight_performance_and_planning.md)
+## Chapter 3: [Flight Performance and Planning](ch3_flight_performance_and_planning.md)
 - Includes chart method, W&B, fuel policy context, exam traps, and revision checklist.
 
 **FAA PHAK Integration**:  
@@ -36,8 +38,7 @@ Chapter 10 (Weight and Balance) and Chapter 11 (Aircraft Performance) of the PHA
 
 ---  
 
-## 4. Human Performance and Limitations
-- **Use the full chapter file**: [Chapter 4 Human Performance and Limitations](ch4_human_performance_and_limitations.md)
+## Chapter 4: [Human Performance and Limitations](ch4_human_performance_and_limitations.md)
 - Includes physiology, illusions, ADM/TEM, hazardous attitudes, and revision checklist.
 
 **FAA PHAK Integration**:  
@@ -45,8 +46,7 @@ Chapter 2 (Aeronautical Decision‑Making) and Chapter 17 (Aeromedical Factors) 
 
 ---  
 
-## 5. Meteorology
-- **Use the full chapter file**: [Chapter 5 Meteorology](ch5_meteorology.md)
+## Chapter 5: [Meteorology](ch5_meteorology.md)
 - Includes forecasting interpretation, severe weather hazards, VFR decision framework, and checklist.
 
 **FAA PHAK Integration**:  
@@ -54,8 +54,7 @@ Chapter 12 (Aviation Weather) of the PHAK is the primary source for this subject
 
 ---  
 
-## 6. Navigation
-- **Use the full chapter file**: [Chapter 6 Navigation](ch6_navigation.md)
+## Chapter 6: [Navigation](ch6_navigation.md)
 - Includes DR workflow, wind triangle, compass corrections, GNSS concepts, lost procedures.
 
 **FAA PHAK Integration**:  
@@ -63,14 +62,13 @@ Chapter 13 (Navigation) and Chapter 14 (Navigation Systems) of the PHAK detail d
 
 ---  
 
-## 7. Operational Procedures
-- **Use the full chapter file**: [Chapter 7 Operational Procedures](ch7_operational_procedures.md)
+## Chapter 7: [Operational Procedures](ch7_operational_procedures.md)
 - Includes preflight-to-postflight SOP flow, emergencies, TEM integration, and checklist.
 
 **FAA PHAK Integration**:  
 Chapter 4 (Principles of Flight) and Chapter 9 (Weight Shift) discuss take‑off and landing performance, but operational procedures are covered throughout. Chapter 16 (Emergency Procedures) outlines engine failure, fire, and other in‑flight emergencies, while Chapter 15 (Airport Operations) covers traffic patterns, runway markings, lighting, and ground operations. The PHAK emphasizes checklist usage, situational awareness, and risk management—core to SOPs and emergency handling. It also addresses runway incursion prevention and wake turbulence avoidance, aligning with CASA operational safety.
 
----  
+---
 
 ### Study Tips
 - Use the CASA **PPL Theory Exam Guide** and the relevant **Part 61 Manual of Standards (MOS)** as primary references.
@@ -79,4 +77,8 @@ Chapter 4 (Principles of Flight) and Chapter 9 (Weight Shift) discuss take‑off
 - Regularly review weather charts and performance graphs to build proficiency in interpretation.
 - Join a study group or discuss concepts with an instructor to clarify difficult topics.
 
-Good luck with your PPL theoretical preparation!  
+Good luck with your PPL theoretical preparation!
+
+---
+
+[&lt;&lt; Back to Pilot Preparation Notes Index](../index.md)

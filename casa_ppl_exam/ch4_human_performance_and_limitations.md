@@ -4,7 +4,7 @@ title: Chapter 4 - Human Performance and Limitations
 ---
 # Chapter 4 - Human Performance and Limitations
 
-**Navigation:** [<- Previous Chapter 3](ch3_flight_performance_and_planning.md) | [Overview](index.md) | Chapter 4 | [Next -> Chapter 5](ch5_meteorology.md)
+**Navigation:** [<- Previous Chapter 3](ch3_flight_performance_and_planning.md) | [Table of Contents](ppl_toc.md) | Chapter 4 | [Next -> Chapter 5](ch5_meteorology.md)
 
 These notes are exam-focused for CASA PPL human factors. They connect physiology, psychology, and practical in-flight decision making.
 
@@ -211,5 +211,5 @@ flowchart LR
 
 ---
 
-**Navigation:** [<- Previous Chapter 3](ch3_flight_performance_and_planning.md) | [Overview](overview.md) | Chapter 4 | [Next -> Chapter 5](ch5_meteorology.md)
+**Navigation:** [<- Previous Chapter 3](ch3_flight_performance_and_planning.md) | [Table of Contents](ppl_toc.md) | Chapter 4 | [Next -> Chapter 5](ch5_meteorology.md)
 

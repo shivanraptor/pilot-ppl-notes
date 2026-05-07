@@ -4,7 +4,7 @@ title: Chapter 3 - Flight Performance and Planning
 ---
 # Chapter 3 - Flight Performance and Planning
 
-**Navigation:** [<- Previous Chapter 2](ch2_aircraft_general_knowledge_agk.md) | [Overview](index.md) | Chapter 3 | [Next -> Chapter 4](ch4_human_performance_and_limitations.md)
+**Navigation:** [<- Previous Chapter 2](ch2_aircraft_general_knowledge_agk.md) | [Table of Contents](ppl_toc.md) | Chapter 3 | [Next -> Chapter 4](ch4_human_performance_and_limitations.md)
 
 These notes are exam-focused for CASA PPL performance/planning. Use aircraft-specific POH/AFM charts and CASA regulatory assumptions exactly as stated in each scenario.
 
@@ -247,5 +247,5 @@ flowchart LR
 
 ---
 
-**Navigation:** [<- Previous Chapter 2](ch2_aircraft_general_knowledge_agk.md) | [Overview](overview.md) | Chapter 3 | [Next -> Chapter 4](ch4_human_performance_and_limitations.md)
+**Navigation:** [<- Previous Chapter 2](ch2_aircraft_general_knowledge_agk.md) | [Table of Contents](ppl_toc.md) | Chapter 3 | [Next -> Chapter 4](ch4_human_performance_and_limitations.md)
 
