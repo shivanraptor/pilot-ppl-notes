@@ -368,6 +368,9 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
   - **Instrument icing**: **pitot/static** blocked—airspeed/altitude misleading.
 
 - **Anti-ice vs de-ice**
+
+  <img src="images/ch2/icing.jpg" alt="Icing" style="width: 50%" />
+
   - **Anti-ice**: systems activated **before** ice accretion in known icing exposure (typically turbine/airliner philosophy; light GA often emphasized **avoidance**).
   - **De-ice**: removes ice after accumulation (**boots**, weeping wing fluid—mostly larger aircraft; light GA often limited capability).
 
@@ -393,20 +396,24 @@ Typical AFM/POH section layout (terminology varies slightly by manufacturer):
 
 **Naming:** **V** = velocity (knots IAS in US/POH convention unless the POH states otherwise). Subscripts describe **configuration or flight phase**.
 
-| Symbol | Common name | Meaning |
-| --- | --- | --- |
-| **VS** | Stall speed (general) | Minimum steady flight speed at which the aircraft is controllable in the stated condition (stall **warning** may occur slightly before). |
-| **VS0** | Stall speed, landing config | Stalling speed in **landing configuration** (e.g., gear down if retractable, flaps at landing setting—per POH). |
-| **VS1** | Stall speed, specified config | Stalling speed in a **defined configuration**—often “clean” or a stated flap setting; POH defines exactly which. |
-| **VFE** | Max flap extended speed | **Do not exceed** this IAS with flaps extended to the associated position(s); risk of overload or loss of control authority. |
-| **VX** | Best angle of climb speed | Speed giving **greatest altitude gain per unit of horizontal distance**—used for obstacle clearance after takeoff when POH recommends it. |
-| **VY** | Best rate of climb speed | Speed giving **greatest altitude gain per unit of time**—used for routine climb when obstacle clearance is not limiting. |
-| **VLE** | Max landing gear extended speed | Safe speed with gear **extended** (retractables). |
-| **VLO** | Max landing gear operating speed | Safe speed to **extend or retract** gear (sometimes split into separate extend vs retract limits in POH). |
-| **VA** | Maneuvering speed | Below this speed (at or below **max gross weight** per POH), full abrupt control deflection should not exceed limit load factor—**still avoid abusive inputs**. Often decreases at lighter weight (see POH). |
-| **VNO** | Maximum structural cruising speed | Upper limit of the **green arc**; do not deliberately fly in rough air above **VNO** unless authorized by POH for smooth air only (**yellow arc** rules). |
-| **VNE** | Never-exceed speed | **Red radial line**—do not exceed under any circumstances; structural/red-line limit. |
-| **Best glide** | Best glide / minimum sink (terms vary) | Speed for **maximum distance** or **minimum descent rate** in power-off glide—POH may list separate “best glide” and “minimum sink”; names vary by manufacturer. |
+| Symbol | Common name | Meaning | Cessna 172S Skyhawk example (KIAS) |
+| --- | --- | --- | --- |
+| **VS** | Stall speed (general) | Minimum steady flight speed at which the aircraft is controllable in the stated condition (stall **warning** may occur slightly before). | See **VS0** and **VS1** (POH defines by configuration). |
+| **VS0** | Stall speed, landing config | Stalling speed in **landing configuration** (e.g., gear down if retractable, flaps at landing setting—per POH). | **40 KIAS** (full flaps, max gross, power off). |
+| **VS1** | Stall speed, specified config | Stalling speed in a **defined configuration**—often “clean” or a stated flap setting; POH defines exactly which. | **48 KIAS** (flaps up, max gross, power off). |
+| **VFE** | Max flap extended speed | **Do not exceed** this IAS with flaps extended to the associated position(s); risk of overload or loss of control authority. | **110 KIAS** (10 deg), **85 KIAS** (more than 10 deg). |
+| **VX** | Best angle of climb speed | Speed giving **greatest altitude gain per unit of horizontal distance**—used for obstacle clearance after takeoff when POH recommends it. | **62 KIAS** (sea level, max gross). |
+| **VY** | Best rate of climb speed | Speed giving **greatest altitude gain per unit of time**—used for routine climb when obstacle clearance is not limiting. | **74 KIAS** (sea level, max gross). |
+| **VLE** | Max landing gear extended speed | Safe speed with gear **extended** (retractables). | **N/A** (fixed gear). |
+| **VLO** | Max landing gear operating speed | Safe speed to **extend or retract** gear (sometimes split into separate extend vs retract limits in POH). | **N/A** (fixed gear). |
+| **VA** | Maneuvering speed | Below this speed (at or below **max gross weight** per POH), full abrupt control deflection should not exceed limit load factor—**still avoid abusive inputs**. Often decreases at lighter weight (see POH). | **105 KIAS** at 2550 lb (decreases at lower weight). |
+| **VNO** | Maximum structural cruising speed | Upper limit of the **green arc**; do not deliberately fly in rough air above **VNO** unless authorized by POH for smooth air only (**yellow arc** rules). | **129 KIAS**. |
+| **VNE** | Never-exceed speed | **Red radial line**—do not exceed under any circumstances; structural/red-line limit. | **163 KIAS**. |
+| **Best glide** | Best glide / minimum sink (terms vary) | Speed for **maximum distance** or **minimum descent rate** in power-off glide—POH may list separate “best glide” and “minimum sink”; names vary by manufacturer. | **68 KIAS** (commonly used best-glide speed). |
+
+> Example values shown are for quick study context and can vary by model/year/configuration and weight. Always use the exact aircraft POH/AFM and cockpit placards for operation.
+
+> KIAS = Knots Indicated Airspeed
 
 **Multi-engine (awareness for theory):** **VMC / Vmca** is minimum control speed with one engine inoperative—primarily multi-engine training; your POH if applicable.
 

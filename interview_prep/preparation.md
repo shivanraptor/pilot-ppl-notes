@@ -137,6 +137,8 @@ The HR portion rarely focuses on technical flight physics. Instead, it targets y
 **Company Knowledge**
 
 - **Fleet & Destinations:** You must know the current aircraft they operate (e.g., A350, A321neo, B777-300ER) and their main hubs.
+    - Primary Hub: Hong Kong (HKG)
+    - Key Focus Cities: Bangkok (BKK), Taipei (TPE), London (LHR) and New York (JFK)
 - **News:** Recent news about the company’s recovery, sustainability goals, or new routes.
 
 ### Competencies They Look For
@@ -220,6 +222,16 @@ In recent sessions, Cathay has placed higher emphasis on **Safety Leadership**. 
 2. **Opening Statements:** Briefly share your views (keep it under 30 seconds).
 3. **Group Debate:** Negotiate the final list.
 4. **Consensus & Summary:** Finalize the group's stance and select a spokesperson (or split the presentation).
+
+
+**Key Focus for Group Exercise Training**
+
+| **Area** | **What to Practice** | 
+| --- | --- |
+| Communication | Clear, concise, and professional "cockpit-style" English |
+| Active Listening | Acknowledging others' points before presenting your own |
+| Time Management | Being the person who keeps the group on track to finish within the 15–20 minute limit |
+| Conflict Resolution | Moving the group forward when two people disagree. |
 
 ---
 
