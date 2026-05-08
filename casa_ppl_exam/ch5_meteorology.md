@@ -269,21 +269,21 @@ Note: See Chapter 2 for more icing secenarios.
 
 ### Core formulas (exam-useful)
 
-$$
-\text{Dew Point Spread} = T - T_d
-$$
+```text
+Dew Point Spread = T - Td
+```
 
 Small spread suggests high humidity and increased fog/low cloud risk.
 
-$$
-\text{Pressure Altitude} \approx \text{Elevation} + (1013 - QNH) \times 30
-$$
+```text
+Pressure Altitude ≈ Elevation + (1013 - QNH) × 30
+```
 
-(\(QNH\) in hPa, altitude in ft; approximation for quick mental checks.)
+(QNH in hPa, altitude in ft; approximation for quick mental checks.)
 
-$$
-\text{Density Altitude} \approx \text{Pressure Altitude} + 120 \times (\text{OAT} - \text{ISA Temp})
-$$
+```text
+Density Altitude ≈ Pressure Altitude + 120 × (OAT - ISA Temp)
+```
 
 (Approximation useful for planning sense-checks; POH charts remain primary.)
 
