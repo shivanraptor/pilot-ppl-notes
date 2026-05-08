@@ -130,9 +130,25 @@ These notes are exam-focused for CASA PPL meteorology, with operational interpre
 - Operational message:
   - Plan to avoid icing environments in light GA without robust anti-ice capability.
 
+Note: See Chapter 2 for more icing secenarios.
+
 ---
 
 ## 5.10 Weather Products and Interpretation
+
+### 5.10.0 METAR vs TAF comparison table
+
+| Feature | METAR (and SPECI) | TAF |
+|---|---|---|
+| Product type | Observation (actual reported conditions) | Forecast (expected future conditions) |
+| Primary purpose | Describe current aerodrome weather | Predict aerodrome weather over validity period |
+| Time basis | Single observation time (`DDHHMMZ`) | Issue time + validity window (`DDHH/DDHH`) |
+| Update pattern | Routine intervals; SPECI on significant change | Issued at scheduled forecast cycles; amended when needed |
+| Geographic scope | Specific aerodrome/station | Specific aerodrome/station |
+| Core elements | Wind, visibility, weather, cloud, temperature/dew point, QNH | Forecast wind, visibility, weather, cloud with change groups |
+| Change indication | May include trend groups (`NOSIG`, `BECMG`, `TEMPO`) in some formats | Uses forecast change groups (`FM`, `BECMG`, `TEMPO`, `PROB`) |
+| Decision value for pilots | "What is happening now?" | "What is likely to happen during my flight window?" |
+| Typical exam trap | Treating observed conditions as a forecast | Treating temporary/probability groups as prevailing all period |
 
 ### 5.10.1 METAR/SPECI - what each field means
 

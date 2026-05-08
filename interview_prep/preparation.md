@@ -233,6 +233,10 @@ In recent sessions, Cathay has placed higher emphasis on **Safety Leadership**. 
 | Time Management | Being the person who keeps the group on track to finish within the 15–20 minute limit |
 | Conflict Resolution | Moving the group forward when two people disagree. |
 
+**Study Resources**
+
+- [Flight Package Example](docs/flight_package.pdf)
+
 ---
 
 ## Technical Interview
