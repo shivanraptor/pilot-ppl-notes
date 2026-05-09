@@ -289,15 +289,102 @@ flowchart LR
 
 ## 3.8 Navigation Log and Time/Fuel Management
 
-- Standard nav log workflow:
-  - Leg distances/tracks
-  - Wind correction and groundspeed
-  - ETE/ETA
-  - Fuel burn per leg
-  - Cumulative fuel and reserves
-- In-flight updates:
-  - Revise ETA/fuel on actual groundspeed
-  - Decide early on diversions using updated endurance.
+- A navigation log (nav log) is the pilot's planning-and-monitoring worksheet that links:
+  - Route geometry (track, distance)
+  - Wind and speed assumptions (heading, groundspeed)
+  - Time control (ETE/ETA)
+  - Fuel control (leg fuel, cumulative burn, reserve status)
+- At PPL exam level, nav log questions usually test:
+  - Unit discipline (minutes vs hours, kt vs NM)
+  - Time calculations from groundspeed
+  - Fuel trend updates when actual GS differs from planned
+  - Decision timing (continue, divert, or turn back)
+
+### Key definitions (exam-useful)
+
+- **Leg:** one segment between two waypoints.
+- **Track (TRK):** planned path over the ground for a leg.
+- **Heading (HDG):** direction flown after wind correction to maintain planned track.
+- **Groundspeed (GS):** actual speed over the ground (kt).
+- **ETE (Estimated Time En Route):** planned time for a leg.
+- **ETA (Estimated Time of Arrival):** expected arrival time at a waypoint/destination.
+- **ATO/ATA (Actual Time Over/Actual Time of Arrival):** observed real crossing/arrival time used for updates.
+- **Fuel flow:** planned fuel consumption rate (e.g., L/hr).
+- **Leg fuel:** fuel expected/used on one leg.
+- **Cumulative fuel used:** total burned from departure to current point.
+- **Fuel remaining:** usable fuel onboard after cumulative burn.
+- **Endurance:** time remaining at current/assumed fuel flow.
+
+### Standard nav log construction workflow
+
+1. Enter leg distance and planned track for each waypoint pair.
+2. Apply forecast wind to obtain heading and planned GS.
+3. Compute leg ETE from distance and GS.
+4. Build ETAs from departure time plus cumulative ETE.
+5. Compute planned leg fuel and cumulative planned fuel.
+6. Carry forward planned fuel remaining and reserve check at each waypoint.
+
+### Worked example 1: preflight nav log timing and fuel
+
+- Scenario assumptions:
+  - Departure time: 0930 UTC
+  - Cruise fuel flow: 30 L/hr
+  - Leg 1 distance: 48 NM, planned GS: 96 kt
+  - Leg 2 distance: 72 NM, planned GS: 90 kt
+- Calculations:
+  - Leg 1 ETE = 48 / 96 = 0.50 hr = 30 min
+  - Leg 2 ETE = 72 / 90 = 0.80 hr = 48 min
+  - Destination ETA = 0930 + 30 + 48 = **1048 UTC**
+  - Leg 1 fuel = 0.50 x 30 = 15 L
+  - Leg 2 fuel = 0.80 x 30 = 24 L
+  - Trip fuel total = **39 L**
+- Exam point: keep minutes and decimal hours consistent; many errors come from mixing them.
+
+### Worked example 2: in-flight groundspeed update
+
+- Actual at first waypoint:
+  - Planned ATO: 1000 UTC
+  - Actual ATO: 1008 UTC (8 minutes late)
+- Interpretation:
+  - Actual GS on Leg 1 was lower than planned.
+  - Remaining legs should be recalculated, not left as original plan.
+- Quick update method (ratio approach):
+  - Planned Leg 1 time = 30 min, actual = 38 min
+  - Time ratio = 38/30 = 1.27 (about 27 percent slower than planned)
+  - Apply caution: full ratio is a rough estimate only; best practice is recalc with current wind/GS estimate.
+- If remaining planned time was 48 min:
+  - Rough revised remaining = 48 x 1.27 = 61 min
+  - Revised ETA about 1008 + 61 = **1109 UTC**
+- Fuel effect at 30 L/hr:
+  - Extra 13 min = 0.22 hr
+  - Extra fuel about 0.22 x 30 = **6.6 L**
+- Decision point:
+  - Compare revised fuel-on-arrival against required reserve.
+  - If reserve trend is eroding, divert early while options remain.
+
+### Worked example 3: reserve protection decision trigger
+
+- Scenario:
+  - Usable fuel at departure: 110 L
+  - Taxi/start: 5 L
+  - Planned trip: 2.4 hr at 30 L/hr -> 72 L
+  - Required reserve for scenario: 45 min -> 22.5 L
+- Planned fuel on arrival:
+  - 110 - 5 - 72 = **33 L** (reserve protected with 10.5 L margin)
+- In-flight deterioration:
+  - New expected trip time: 2.9 hr -> 87 L trip fuel
+  - New expected arrival fuel: 110 - 5 - 87 = **18 L**
+- Outcome:
+  - Expected arrival fuel is now below required reserve (22.5 L).
+  - Correct PPL-theory answer: **do not continue as planned; divert or adjust immediately**.
+
+### Common nav log exam traps
+
+- Using TAS where GS is required for time calculation.
+- Forgetting to convert minutes to decimal hours for fuel math.
+- Updating ETA but forgetting to update fuel and reserve status.
+- Continuing to destination after reserve erosion is already evident.
+- Rounding too early and compounding error across multiple legs.
 
 ---
 
