@@ -4,8 +4,10 @@ title: Useful Resources
 ---
 ## Useful Resources
 
-**Official Handbook**
+**Official Handbooks**
 - [Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
+- [Radiotelephony manual for flight operations](https://www.casa.gov.au/sites/default/files/2025-12/multipart-ac-64b-02-ac-91-35-and-ac-172-05-radiotelephony-manual-for-flight-operations.pdf)
+- [Flight Instructor Manu - Aeroplane](https://www.casa.gov.au/sites/default/files/2021-11/flight-instructor-manual-aeroplane.pdf) - for knowledge reference (esp. CRM) only
 
 **Meterology**
 - [METAR of VHHH](https://metar-taf.com/metar/VHHH)
@@ -23,7 +25,6 @@ title: Useful Resources
 - [Air Crash Investigation/Mayday Episodes](https://docs.google.com/spreadsheets/d/1rj0DAohg7SWT2k7W6POH4A8cZkqo4898wiGxGQKf5To/edit?usp=drive_link)
 
 **Flight Planning**
-
 - [SimBrief](https://www.simbrief.com) - can be used to generate Flight Plan for Interview Group Exercise
 
 **Flying Simulator Software (order by popularity)**
