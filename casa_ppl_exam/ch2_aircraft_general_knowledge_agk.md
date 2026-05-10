@@ -67,6 +67,12 @@ These notes are exam-focused for CASA PPL AGK and aligned with FAA PHAK system k
 
 ![Primary flight controls diagram](https://commons.wikimedia.org/wiki/Special:FilePath/ControlSurfaces.gif)
 
+[Source page: Wikimedia Commons](https://commons.wikimedia.org/wiki/File:ControlSurfaces.gif)
+
+**Secondary/high-lift and drag devices on wing (flaps, slats, spoilers, etc.):**
+
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Control_surfaces_at_the_wing_of_a_plane.svg" alt="Wing control surfaces and high-lift devices" style="width: 50%" />
+
 Legend:
 <ol>
   <li>Winglet</li>
@@ -81,13 +87,7 @@ Legend:
   <li>Spoilers-Air brakes</li>
 </ol>
 
-Source page: [Wikimedia Commons - ControlSurfaces.gif](https://commons.wikimedia.org/wiki/File:ControlSurfaces.gif)
-
-**Secondary/high-lift and drag devices on wing (flaps, slats, spoilers, etc.):**
-
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Control_surfaces_at_the_wing_of_a_plane.svg" alt="Wing control surfaces and high-lift devices" style="width: 50%" />
-
-Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](https://commons.wikimedia.org/wiki/File:Control_surfaces_at_the_wing_of_a_plane.svg)
+[Source page: Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Control_surfaces_at_the_wing_of_a_plane.svg)
 
 ### Exam cues
 - Know what each control does and opposite control combinations for coordinated turns.
