@@ -67,6 +67,20 @@ These notes are exam-focused for CASA PPL AGK and aligned with FAA PHAK system k
 
 ![Primary flight controls diagram](https://commons.wikimedia.org/wiki/Special:FilePath/ControlSurfaces.gif)
 
+Legend:
+<ol>
+  <li>Winglet</li>
+  <li>Low Speed Aileron</li>
+  <li>High Speed Aileron</li>
+  <li>Flap track fairing</li>
+  <li>Krüger flaps</li>
+  <li>Slats</li>
+  <li>Three slotted inner flaps</li>
+  <li>Three slotted outer flaps</li>
+  <li>Spoilers</li>
+  <li>Spoilers-Air brakes</li>
+</ol>
+
 Source page: [Wikimedia Commons - ControlSurfaces.gif](https://commons.wikimedia.org/wiki/File:ControlSurfaces.gif)
 
 **Secondary/high-lift and drag devices on wing (flaps, slats, spoilers, etc.):**
