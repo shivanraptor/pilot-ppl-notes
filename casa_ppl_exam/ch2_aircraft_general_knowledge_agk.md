@@ -302,9 +302,9 @@ Source page: [Wikimedia Commons - Control surfaces at the wing of a plane.svg](h
 
 **References:** [FAA PHAK — Chapter 8: Flight Instruments](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
 
-**Figure (pitot / static pressure concepts):** [Wikimedia Commons — Pitot tube types](https://commons.wikimedia.org/wiki/File:Pitot_tube_types.svg)
+**Pitot, Static, and Pitot-Static Tubes:**
 
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pitot_tube_types.svg" alt="Pitot, static, and pitot-static tubes (schematic)" style="width: 50%" />
+<img src="images/ch2/pitot_tubes.webp" alt="Pitot, static, and pitot-static tubes (schematic)" style="width: 50%" /><br />[Source](https://www.airheadatpl.com/blog/pitot-tube-101-how-your-airspeed-indicator-works)
 
 ---
 
