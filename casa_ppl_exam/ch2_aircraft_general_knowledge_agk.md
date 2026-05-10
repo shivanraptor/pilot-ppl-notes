@@ -409,6 +409,7 @@ Typical AFM/POH section layout (terminology varies slightly by manufacturer):
 | **VA** | Maneuvering speed | Below this speed (at or below **max gross weight** per POH), full abrupt control deflection should not exceed limit load factor—**still avoid abusive inputs**. Often decreases at lighter weight (see POH). | **105 KIAS** at 2550 lb (decreases at lower weight). |
 | **VNO** | Maximum structural cruising speed | Upper limit of the **green arc**; do not deliberately fly in rough air above **VNO** unless authorized by POH for smooth air only (**yellow arc** rules). | **129 KIAS**. |
 | **VNE** | Never-exceed speed | **Red radial line**—do not exceed under any circumstances; structural/red-line limit. | **163 KIAS**. |
+| **Vref** | Landing reference speed | used for final approach, ensuring a safe, stable landing. Equals to VS0 x 1.3 | **52 KIAS** |
 | **Best glide** | Best glide / minimum sink (terms vary) | Speed for **maximum distance** or **minimum descent rate** in power-off glide—POH may list separate “best glide” and “minimum sink”; names vary by manufacturer. | **68 KIAS** (commonly used best-glide speed). |
 
 > Example values shown are for quick study context and can vary by model/year/configuration and weight. Always use the exact aircraft POH/AFM and cockpit placards for operation.

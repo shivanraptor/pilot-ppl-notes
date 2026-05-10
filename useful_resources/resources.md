@@ -22,6 +22,10 @@ title: Useful Resources
 - [Commercial Aircrafts in last 30 years](https://docs.google.com/spreadsheets/d/1CVVVf_VSnbHaUar3yT1w5iUxNY6EEipsUYs0kcJ99nw/edit?usp=drive_link)
 - [Air Crash Investigation/Mayday Episodes](https://docs.google.com/spreadsheets/d/1rj0DAohg7SWT2k7W6POH4A8cZkqo4898wiGxGQKf5To/edit?usp=drive_link)
 
+**Flight Planning**
+
+- [SimBrief](https://www.simbrief.com) - can be used to generate Flight Plan for Interview Group Exercise
+
 **Flying Simulator Software (order by popularity)**
 - Microsoft Flight Simulator 2020/2024 (77.3%)
 - Laminar Research X-Plane 11/12 (13.6%)

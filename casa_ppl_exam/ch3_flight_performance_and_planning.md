@@ -472,37 +472,39 @@ flowchart LR
 
 ### Core formulas
 
-$$
-\text{Time (hr)} = \frac{\text{Distance (NM)}}{\text{GS (kt)}}
-$$
+```text
+Time (hr) = Distance (NM) / GS (kt)
+```
 
-$$
-\text{Fuel Used} = \text{Fuel Flow} \times \text{Time}
-$$
+```text
+Fuel used = Fuel flow × Time
+```
 
-$$
-\text{Groundspeed} = \frac{\text{Distance}}{\text{Time}}
-$$
+```text
+Groundspeed = Distance / Time
+```
 
-$$
-\text{Moment} = \text{Weight} \times \text{Arm}
-$$
+```text
+Moment = Weight × Arm
+```
 
-$$
-\text{CG} = \frac{\sum \text{Moments}}{\sum \text{Weights}}
-$$
+```text
+CG = Sum(moments) / Sum(weights)
+```
 
 ### Useful conversion and planning formulas
 
-$$
-\text{Fuel Mass (kg)} \approx \text{Fuel Volume (L)} \times \text{SG}
-$$
+```text
+Fuel mass (kg) ≈ Fuel volume (L) × SG
+```
 
 For CASA workbook style AVGAS assumptions:
 
-$$
-\text{Fuel Mass (kg)} \approx \text{Fuel Volume (L)} \times 0.72
-$$
+```text
+Fuel mass (kg) ≈ Fuel volume (L) × 0.72
+```
+
+_(Plain-text formulas render reliably on GitHub Pages; math plugins are not required.)_
 
 ### Graphic: performance planning flow
 
