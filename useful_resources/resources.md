@@ -7,7 +7,7 @@ title: Useful Resources
 **Official Handbooks**
 - [Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
 - [Radiotelephony manual for flight operations](https://www.casa.gov.au/sites/default/files/2025-12/multipart-ac-64b-02-ac-91-35-and-ac-172-05-radiotelephony-manual-for-flight-operations.pdf)
-- [Flight Instructor Manu - Aeroplane](https://www.casa.gov.au/sites/default/files/2021-11/flight-instructor-manual-aeroplane.pdf) - for knowledge reference (esp. CRM) only
+- [Flight Instructor Manual - Aeroplane](https://www.casa.gov.au/sites/default/files/2021-11/flight-instructor-manual-aeroplane.pdf) - for knowledge reference (esp. CRM) only
 
 **Meterology**
 - [METAR of VHHH](https://metar-taf.com/metar/VHHH)
