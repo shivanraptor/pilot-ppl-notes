@@ -360,6 +360,32 @@ flowchart TD
 3. Brief threats and hard decision points before departure.
 4. Reassess legality and safety after any major condition change.
 
+### VMC typical minima (symbolic revision)
+
+> Same values as the VMC/VFR minima table earlier; symbolic form for revision. Confirm current published minima for operations.
+
+$$
+Vis \geq 8\ \text{km} \quad (\text{AMSL} \geq 10\,000\ \text{ft})
+$$
+
+$$
+Vis \geq 5\ \text{km} \quad (\text{AMSL} < 10\,000\ \text{ft})
+$$
+
+$$
+\text{Cloud: } \geq 1000\ \text{ft vertical};\quad \geq 1500\ \text{m horizontal}
+$$
+
+(Class G low-level and other cases follow published rules; this is the common general-case exam memory set.)
+
+### Conceptual fuel sufficiency (exam structure)
+
+Policy and numbers come from the question or current rules; structure is often:
+
+$$
+\text{Usable onboard} \geq \text{Taxi} + \text{Trip} + \text{Reserve} + \text{Contingency (if required)}
+$$
+
 ---
 
 ## References (Primary)

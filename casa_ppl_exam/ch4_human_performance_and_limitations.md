@@ -200,6 +200,14 @@ flowchart LR
 3. Dynamic factors (fatigue, recent experience, stress).
 4. Trigger point for no-go or diversion.
 
+### Formula pack (conceptual)
+
+Endsley-style situational awareness (exam overview):
+
+$$
+\text{SA} = \text{perception} + \text{comprehension} + \text{projection}
+$$
+
 ---
 
 ## References (Primary)

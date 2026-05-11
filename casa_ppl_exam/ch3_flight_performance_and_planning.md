@@ -180,8 +180,8 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
 ## 3.6 Weight and Balance (W&B)
 
 - Core formulas:
-  - Moment = Weight x Arm
-  - CG = Total Moment / Total Weight
+  - $\text{Moment} = \text{Weight} \times \text{Arm}$
+  - $\text{CG} = \dfrac{\text{Total Moment}}{\text{Total Weight}}$
 - Verify:
   - MTOW and landing weight limits
   - Baggage/compartment limits
@@ -280,8 +280,8 @@ flowchart LR
 | Component | Formula/Method | Example value |
 |---|---|---:|
 | Taxi/start | Fixed allowance | 6 L |
-| Trip | Time x fuel flow | 64 L |
-| Reserve | Reserve time x fuel flow | 24 L |
+| Trip | Time $\times$ fuel flow | 64 L |
+| Reserve | Reserve time $\times$ fuel flow | 24 L |
 | Contingency | Policy or operational buffer | 10 L |
 | **Total required** | Sum of all components | **104 L** |
 
@@ -418,12 +418,16 @@ flowchart LR
 - Distance A to B: 180 NM.
 - Groundspeed toward B: 90 kt.
 - Groundspeed back to A (with headwind): 75 kt.
-- Let distance from A to ETP be `x`.
-- Time to continue from ETP to B = (180 - x) / 90.
-- Time to return from ETP to A = x / 75.
+- Let distance from A to ETP be $x$ (NM).
+- Time to continue from ETP to B: $(180 - x) / 90$.
+- Time to return from ETP to A: $x / 75$.
 - At ETP, times are equal:
-  - (180 - x) / 90 = x / 75
-  - x = about 82 NM from A.
+
+$$
+\frac{180 - x}{90} = \frac{x}{75}
+$$
+
+- $x \approx 82$ NM from A.
 - Use: before 82 NM, return may be faster; after 82 NM, continue may be faster (subject to weather/runway/fuel constraints).
 
 ---
@@ -472,39 +476,37 @@ flowchart LR
 
 ### Core formulas
 
-```text
-Time (hr) = Distance (NM) / GS (kt)
-```
+$$
+\text{Time (hr)} = \frac{\text{Distance (NM)}}{\text{GS (kt)}}
+$$
 
-```text
-Fuel used = Fuel flow × Time
-```
+$$
+\text{Fuel used} = \text{Fuel flow} \times \text{Time}
+$$
 
-```text
-Groundspeed = Distance / Time
-```
+$$
+\text{Groundspeed} = \frac{\text{Distance}}{\text{Time}}
+$$
 
-```text
-Moment = Weight × Arm
-```
+$$
+\text{Moment} = \text{Weight} \times \text{Arm}
+$$
 
-```text
-CG = Sum(moments) / Sum(weights)
-```
+$$
+\text{CG} = \frac{\sum \text{moments}}{\sum \text{weights}}
+$$
 
 ### Useful conversion and planning formulas
 
-```text
-Fuel mass (kg) ≈ Fuel volume (L) × SG
-```
+$$
+\text{Fuel mass (kg)} \approx \text{Fuel volume (L)} \times \text{SG}
+$$
 
 For CASA workbook style AVGAS assumptions:
 
-```text
-Fuel mass (kg) ≈ Fuel volume (L) × 0.72
-```
-
-_(Plain-text formulas render reliably on GitHub Pages; math plugins are not required.)_
+$$
+\text{Fuel mass (kg)} \approx \text{Fuel volume (L)} \times 0.72
+$$
 
 ### Graphic: performance planning flow
 

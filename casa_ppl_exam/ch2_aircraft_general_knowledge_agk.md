@@ -474,11 +474,19 @@ Typical AFM/POH section layout (terminology varies slightly by manufacturer):
 
 ## 2.12 Weight and Balance Link to AGK
 
-- **Moment**: rotational tendency of a weight about the **datum**; computed as **Weight × Arm**.
+- **Moment**: rotational tendency of a weight about the **datum**; computed as **weight $\times$ arm**:
+
+$$
+\text{Moment} = \text{Weight} \times \text{Arm}
+$$
 
 - **Arm**: horizontal distance from **datum** to an item’s center of gravity (often inches or mm per POH).
 
 - **CG (center of gravity)**: average location of aircraft mass; **CG position** must remain inside approved envelope.
+
+$$
+\text{CG} = \frac{\sum \text{moments}}{\sum \text{weights}}
+$$
 
 - **Basic Empty Weight (BEW)**: aircraft empty weight including fixed equipment and fluids per weighing specification—often includes **unusable fuel** and **full oil** per weighing notes—**always read POH weight schedule wording**.
 
