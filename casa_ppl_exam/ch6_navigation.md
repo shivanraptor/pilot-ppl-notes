@@ -35,8 +35,8 @@ flowchart LR
 
 | Quantity | Value | Notes |
 |---|---:|---|
-| Earth circumference | 21,600 NM | 360 deg x 60 NM |
 | 1 deg latitude | 60 NM | Always true (for navigation use) |
+| Earth circumference | 21,600 NM | 360 deg x 60 NM |
 | 1 NM | 1.852 km | ICAO standard |
 | 1 kt | 1 NM/h | Speed unit in navigation |
 
