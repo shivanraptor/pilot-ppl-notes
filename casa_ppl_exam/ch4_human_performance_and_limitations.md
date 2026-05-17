@@ -27,7 +27,7 @@ These notes are exam-focused for CASA PPL human factors. They connect physiology
 - **Checklists and SOPs** — reduce memory errors.
 - **Briefings** — threat and error anticipation (TEM).
 - **Margins** — personal minima above legal limits.
-- **CRM** — even single-pilot: use resources, communicate, delegate lookout.
+- **CRM / TEM** — even single-pilot: brief threats, trap errors, use all resources (see §4.6 and §4.9).
 
 - [CASA — safety management / human factors](https://www.casa.gov.au/safety-management)
 - [FAA PHAK — aeronautical decision-making](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-2-aeronautical-decision-making)
@@ -167,6 +167,70 @@ flowchart TD
 | **Fatigue** | Slow reactions, missed checklist items | Sleep, limit duty, cancel or divert |
 | **High workload** | Task shedding, fixation | Delay tasks, use passenger, go-around |
 
+### Fatigue — types and signs (exam-useful)
+
+| Type | Cause | Signs |
+|---|---|---|
+| **Acute** | Short sleep, long day | Yawning, micro-sleeps, irritability |
+| **Cumulative** | Several poor nights | Slower decisions, normalised risk |
+| **Circadian** | Early start / late finish | Low alertness at body-clock lows |
+
+- Fatigue degrades: scan quality, radio discipline, weather interpretation, willingness to divert.
+
+### Stress and decision pressure
+
+| Pressure source | Effect on decisions |
+|---|---|
+| Schedule / passengers | **Plan continuation bias** — press on when unsafe |
+| Cost / pride | Reluctance to divert or cancel |
+| Recent experience | “It was fine last time” underestimation |
+| Getting close to goal | **Get-there-itis** — destination pull overrides margins |
+
+### Real scenario: get-there-itis on a marginal VFR day
+
+**Setup**
+
+- Saturday flight to a coastal aerodrome for a family event; return same day.
+- Morning TAF: **BECMG** lower cloud afternoon; alternate aerodrome 30 NM inland has better forecast.
+- Preflight: legal VMC at departure and ETA, but **personal minima** only just met.
+
+**En route (threats building)**
+
+| Time | Observation | TEM view |
+|---|---|---|
+| +45 min | Scattered cloud lowering; vis 8 km | **Threat:** deteriorating trend |
+| +60 min | Passenger: “We’ll make it, right?” | **Threat:** social pressure |
+| +75 min | METAR at destination: BKN025, vis 5 km | **Threat:** approaching personal limits |
+| Pilot thought | “If I turn back now I disappoint everyone” | **Error precursor:** plan continuation |
+
+**Hazardous attitudes likely involved**
+
+- **Plan continuation / invulnerability:** “It’ll clear before we get there.”
+- **Macho:** “I can handle a bit of cloud.”
+- **Anti-authority (soft):** ignoring own written minima because “legal is OK.”
+
+**Better ADM / TEM outcome**
+
+1. **Perceive** trend (METAR sequence, not single snapshot).
+2. **Process** options: divert inland now vs hold vs turn back vs enter deteriorating coastal strip.
+3. **Perform:** **Divert early** to inland alternate with stable weather; notify event hosts; preserve fuel and options.
+4. **Trap error:** briefed **decision point** before departure (“if destination BKN below X or vis below Y → alternate Z”).
+
+**Exam answer pattern:** identify get-there-itis + name threats + state **divert/land/cancel** as correct action, not “continue because still legal.”
+
+### Real scenario: fatigue after a long training day
+
+- Dual student and instructor on third flight of day; last circuit approach.
+- Symptoms: slow radio calls, floated landing, missed checklist item.
+- Correct action: **terminate flying**, debrief on ground; instructor models **no further circuits** when fatigued.
+- Link: fatigue → **error** → **undesired state** (unstable approach) → **recovery** (go-around if airborne, stop flying if not).
+
+### Real scenario: acute stress after weather surprise
+
+- En route VFR, unexpected build-up ahead; pilot feels chest tight and rushes frequency changes.
+- Risk: **hyperventilation** (Ch 4.2) + fixation.
+- Correct: aviate, fly clear of weather, **controlled breathing**, simplify — one problem at a time; consider **PAN PAN** if needed (Ch 1).
+
 ### Prioritization (exam standard)
 
 1. **Aviate** — aircraft control first.
@@ -198,14 +262,50 @@ flowchart TD
 - **Process** impact and options.
 - **Perform** best action and monitor.
 
-### TEM (Threat and Error Management)
+### TEM (Threat and Error Management) — core framework
 
-| Element | Definition |
+**Definition — TEM:** proactive method to identify **threats**, prevent or trap **errors**, and avoid **undesired aircraft states** before they become accidents.
+
+```mermaid
+flowchart LR
+    T[Threats] --> E[Errors]
+    E --> U[Undesired aircraft state]
+    U --> R[Recovery]
+    R --> T
+```
+
+| TEM element | Definition | Examples |
+|---|---|---|
+| **Threat** | Condition that increases risk if unmanaged | Weather, terrain, fatigue, short runway, passenger pressure |
+| **Error** | Pilot action/inaction that reduces margin | Skipped checklist, late divert, wrong fuel tank |
+| **Undesired aircraft state** | Aircraft in a risky but recoverable condition | Low fuel, unstable approach, inadvertent IMC |
+| **Recovery** | Deliberate action restoring margin | Go-around, divert, level-off, PAN PAN |
+
+### Threat categories (single-pilot)
+
+| Category | Examples | Management |
+|---|---|---|
+| **Environmental** | Wind, cloud, icing, density altitude | Briefing, personal minima, alternates |
+| **Organizational / external** | Schedule pressure, school test deadline | Say no; reschedule |
+| **Personal** | Fatigue, stress, illness | IM SAFE; cancel |
+| **Latent (hidden)** | Out-of-date chart, unfamiliar aerodrome | Preflight discipline |
+
+### Error types (conceptual — exam awareness)
+
+| Type | Description | Example |
+|---|---|---|
+| **Slip** | Skill-based mistake — right idea, wrong execution | Flipped switch |
+| **Lapse** | Memory failure | Missed fuel selector check |
+| **Violation** | Deliberate deviation from procedure | Skipping run-up “this time” |
+
+### TEM countermeasures
+
+| Strategy | What it means |
 |---|---|
-| **Threat** | Event outside pilot control (weather, traffic, runway length) |
-| **Error** | Pilot action/inaction that increases risk |
-| **Undesired state** | Reduced safety margin (unstable approach, low fuel) |
-| **Recovery** | Deliberate correction (go-around, divert) |
+| **Avoid** | Do not launch into threat (cancel flight) |
+| **Trap** | Checklist, SOP, passenger challenge phrase |
+| **Mitigate** | Extra margin (fuel, wider weather) |
+| **Recover** | Go-around, divert, 180° out of IMC |
 
 ### Situational awareness (SA)
 
@@ -217,7 +317,13 @@ SA = perception + comprehension + projection
 - **Comprehension:** understand what it means for your flight.
 - **Projection:** anticipate what happens next if you do nothing.
 
+### TEM + CRM together (single-pilot)
+
+- **CRM** uses people and tools; **TEM** structures how you think about risk.
+- Single-pilot: **you** are both crew members — use **self-brief**, **spoken callouts**, and **written decision triggers** (see §4.9).
+
 - [FAA PHAK — ADM](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-2-aeronautical-decision-making)
+- [CASA — safety management](https://www.casa.gov.au/safety-management)
 
 ---
 
@@ -274,27 +380,77 @@ SA = perception + comprehension + projection
 
 ---
 
-## 4.9 CRM in Single-Pilot Operations
+## 4.9 CRM and TEM in Single-Pilot Operations
 
-**Definition — CRM (Crew Resource Management):** use of all available resources (people, equipment, information, procedures) to achieve safe flight.
+**Definition — CRM (Crew Resource Management):** disciplined use of **all available resources** — people, information, equipment, and procedures — to make safe decisions and manage workload.
 
-### Single-pilot CRM (still applies)
+**Definition — SRM (Single-Pilot Resource Management):** CRM applied when you are the only pilot; you must actively manage **yourself** as well as external resources.
 
-| Resource | How to use |
+> **Exam point:** CRM and TEM are **not** only for airliners. CASA PPL scenarios expect you to use both on a solo VFR flight.
+
+### Why single-pilot CRM matters
+
+| Without CRM | With CRM |
 |---|---|
-| **Passengers** | Traffic lookout, read checklist items, monitor time/fuel |
-| **ATC / FIS** | Weather updates, traffic information, assistance |
-| **Automation / avionics** | Reduce workload but cross-check — “manage, not trust blindly” |
-| **Preflight briefing** | Threats, alternates, decision triggers |
-| **Time management** | Phase checks; avoid rushed descents and approaches |
+| Silent fixation on problem | Verbalise: “Aviate, then navigate” |
+| Passenger distraction ignored | Brief passenger roles before flight |
+| Reluctance to use ATC | Request traffic/weather when unsure |
+| Pride blocks divert | Pre-briefed triggers make divert “normal” |
 
-### Communication discipline
+### CRM resources for the solo PPL pilot
 
-- Clear, concise radio calls; read back when required.
-- **Assertiveness:** speak up (to self or passenger) when margins shrink — “we divert now.”
+| Resource | Single-pilot use | TEM link |
+|---|---|---|
+| **Yourself (two roles)** | Self-challenge: “What am I missing?” | Trap errors |
+| **Passengers** | Lookout, time check, don’t distract on final | Reduce workload; manage social **threat** |
+| **ATC / FIS / NAIPS** | Weather updates, SAR awareness | Environmental threat data |
+| **Checklists / SOPs** | Standardise high-risk phases | Trap slips and lapses |
+| **Avionics / GPS** | Navigation backup — cross-check chart | Mitigate nav error |
+| **Personal minima** | Written limits stricter than legal | Avoid threats before launch |
+| **Ground support** | Instructor, mentor by phone on long trips | Decision support |
 
-- [CASA — human factors / CRM context](https://www.casa.gov.au/safety-management)
-- [FAA — single-pilot resource management materials](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-2-aeronautical-decision-making)
+### Single-pilot CRM techniques
+
+1. **Brief out loud** — threats, alternates, max crosswind, fuel triggers (even alone).
+2. **Passenger briefing** — sterile cockpit on final; “tell me if you see traffic or cloud.”
+3. **Decision altitudes/times** — “If not visual by X, divert to Y.”
+4. **Challenge phrase** — passenger or self: “Is this still within minima?”
+5. **Use ATC** — not a failure to ask for help; professional resource.
+6. **After-action review** — what threatened, what errors were close, what to change.
+
+### TEM workflow for a typical solo cross-country
+
+| Phase | Threats to brief | Error traps | Recovery plan |
+|---|---|---|---|
+| Preflight | Weather trend, fatigue, short runway | Rushed preflight | Cancel/delay |
+| Taxi / takeoff | Crosswind, distraction | Skipped checks | Abort |
+| En route | Enclosed cloud, fuel headwind | Late divert decision | 180°, land, PAN |
+| Approach | Unstable, get-there-itis | Press-on below minima | Go-around, alternate |
+| Landing | Traffic, runway length | Long float | Go-around |
+
+```mermaid
+flowchart TD
+    B[Preflight TEM brief] --> F[Fly]
+    F --> M{Margin shrinking?}
+    M -- No --> F
+    M -- Yes --> D[Divert / hold / land / cancel]
+    D --> R[Debrief threats and errors]
+```
+
+### CRM + hazardous attitudes
+
+- Passenger pressure + schedule → combine **CRM assertiveness** with antidotes (§4.7).
+- Example script: “We’re diverting to Camden for weather — safety decision, not negotiable in flight.”
+
+### Real scenario: using CRM to beat get-there-itis
+
+- Before flight: write on nav log — **“If dest BKN < 3000 ft or vis < 8 km → divert to XYZ.”**
+- En route: passenger monitors time; pilot gets METAR via phone/ATC.
+- Trigger hit: pilot announces diversion — uses **ATC** for traffic clearance to alternate.
+- **TEM recovery** before **undesired state** (scud running or fuel-low trap at coast).
+
+- [CASA — safety management / human factors](https://www.casa.gov.au/safety-management)
+- [FAA PHAK — aeronautical decision-making / SRM](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-2-aeronautical-decision-making)
 
 ---
 
@@ -309,8 +465,10 @@ SA = perception + comprehension + projection
 | **Spatial disorientation** | Incorrect sense of attitude/motion |
 | **Situational awareness** | Perceive, understand, and anticipate |
 | **TEM** | Manage threats and errors before undesired state |
+| **CRM / SRM** | Use all resources; single-pilot includes self-management |
+| **Get-there-itis** | Pressure to reach destination despite shrinking margins |
+| **Plan continuation bias** | Tendency to continue original plan despite new risks |
 | **Hazardous attitude** | Risk-increasing mindset pattern |
-| **CRM** | Effective use of all available resources |
 
 ### Practical examples
 
@@ -329,6 +487,14 @@ SA = perception + comprehension + projection
 **TEM**
 
 - Threat: fatigue + crosswind. Error trap: brief earlier go-around gate and stricter personal crosswind limit.
+
+**Get-there-itis (marginal VFR)**
+
+- Coastal event deadline; weather trending down; correct action: **divert early** using pre-briefed trigger — not “press on because still legal.”
+
+**CRM (single-pilot)**
+
+- Use passenger for METAR readout and time checks; call FIS for trend; verbalise divert decision — resources reduce solo bias.
 
 **Hazardous attitude**
 
@@ -349,6 +515,10 @@ SA = perception + comprehension + projection
 - Assuming confidence equals competence under stress.
 - Ignoring cumulative fatigue over multiple days.
 - Treating ADM as theory only rather than operational behavior.
+- Answering “continue” when scenario shows **get-there-itis** or **plan continuation** — correct answer is usually **divert/cancel/land**.
+- Treating **CRM** as multi-crew only — single-pilot must use resources and self-brief.
+- Confusing **threat** (external) with **error** (pilot mistake).
+- Forgetting **recovery** action (go-around, divert) after undesired state.
 
 ---
 
@@ -356,7 +526,9 @@ SA = perception + comprehension + projection
 
 - Can identify hypoxia/hyperventilation signs and immediate actions.
 - Can explain at least four spatial/visual illusions and mitigations.
-- Can apply TEM/ADM logic to a scenario question.
+- Can apply TEM/ADM logic to a scenario question (threat → error → state → recovery).
+- Can explain CRM/SRM for single-pilot operations with practical resources.
+- Can recognise get-there-itis and plan continuation bias in scenarios.
 - Can identify hazardous attitudes and antidotes.
 - Can justify a conservative no-go/diversion decision on human factors grounds.
 

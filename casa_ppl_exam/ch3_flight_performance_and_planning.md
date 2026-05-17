@@ -51,6 +51,59 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
   - Distance to 50 ft obstacle
 - Apply corrections in required sequence per POH.
 
+### Worked example: takeoff distance chart (C172-style POH logic)
+
+> **Illustration only** — use your aircraft POH/AFM charts and correction order. Numbers below are for exam method practice.
+
+**Given (departure):**
+
+| Input | Value |
+|---|---|
+| Field elevation | 2,000 ft |
+| QNH | 29.80 inHg (low pressure) |
+| OAT | 32°C |
+| Weight | 2,400 lb |
+| Flaps | 10° (short-field chart if used) |
+| Runway | Sealed level dry |
+| Wind | 8 kt headwind |
+| Requirement | Distance to clear **50 ft** obstacle |
+
+**Step 1 — Pressure altitude (PA)**
+
+```text
+PA ≈ elevation + (1013 - QNH_hPa) × 30   (if QNH in hPa)
+```
+
+With QNH 29.80 inHg (~1009 hPa): PA ≈ 2000 + (1013 - 1009) × 30 ≈ **2,120 ft** (round per chart axis).
+
+**Step 2 — Density altitude (DA) sense-check**
+
+```text
+DA ≈ PA + 120 × (OAT - ISA temp at PA)
+```
+
+ISA temp at 2,000 ft ≈ 15 - 2×2 = **11°C**. OAT 32°C → ISA + 21 → DA ≈ 2120 + 120×21 ≈ **4,640 ft** (performance will feel “much higher” than field elevation).
+
+**Step 3 — Read base chart at weight**
+
+- Enter takeoff chart at **PA ≈ 2,100 ft**, **OAT 32°C**, **weight 2,400 lb**.
+- Example chart read (illustrative): ground roll **~1,050 ft**; distance over 50 ft **~1,850 ft**.
+
+**Step 4 — Apply corrections in POH order** (typical sequence — verify POH)
+
+| Correction | Example rule (illustrative) | On 1,850 ft |
+|---|---|---:|
+| Headwind 8 kt | Often ~−10% per 10 kt headwind (POH table) | −~15% → **~1,570 ft** |
+| Dry sealed level | Baseline | — |
+| If grass/wet | +20% to +50% etc. per POH | Add if applicable |
+
+**Step 5 — Compare to runway + obstacle**
+
+- Available runway length must exceed **obstacle distance**, not ground roll alone.
+- Add **operational margin** (technique, wind gust, DA uncertainty).
+
+**Exam traps in this workflow:** using **field elevation** instead of **PA**; skipping **temperature** line; applying **tailwind** as headwind; interpolating between grid lines incorrectly (see §3.11).
+
 ### High-yield planning checks
 - Accelerate-stop and reject decision awareness (conceptual for PPL).
 - Crosswind component compared against demonstrated or operational limits.
@@ -133,6 +186,52 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
   - Distance over threshold obstacle.
 - Add practical margins for runway condition, approach stability, and pilot technique variation.
 
+### Worked example: landing distance chart (C172-style POH logic)
+
+> **Illustration only** — confirm correction order and factors in your POH.
+
+**Given (arrival):**
+
+| Input | Value |
+|---|---|
+| Field elevation | 1,500 ft |
+| QNH | 1018 hPa |
+| OAT | 28°C |
+| Landing weight | 2,200 lb |
+| Flaps | Full |
+| Runway | Sealed dry |
+| Wind | 5 kt **tailwind** (exam favourite) |
+| Requirement | Landing distance over 50 ft obstacle |
+
+**Step 1 — Pressure altitude**
+
+- QNH 1018 hPa → slightly below standard → PA ≈ **1,440 ft** (≈ elevation).
+
+**Step 2 — Chart read (illustrative)**
+
+- At PA ~1,500 ft, 28°C, 2,200 lb, full flap: ground roll **~550 ft**; over 50 ft **~1,250 ft**.
+
+**Step 3 — Wind correction**
+
+| Wind | Typical effect (illustrative) | On 1,250 ft |
+|---|---|---:|
+| **5 kt tailwind** | Often **+10% per 2 kt** or per POH table — large increase | **+25% to +50%** possible → **1,560–1,875 ft** |
+| 5 kt headwind | Decrease | Opposite sign — exam trap |
+
+**Step 4 — Decision**
+
+- Chart assumed **zero wind**; **real tailwind** materially erodes margin.
+- Wet runway, late flare, or unstabilised approach adds distance beyond chart.
+
+```mermaid
+flowchart LR
+    A[Chart base distance] --> B[PA and OAT entry]
+    B --> C[Weight and flap]
+    C --> D[Wind correction]
+    D --> E[Surface/slope]
+    E --> F[Compare to runway + margin]
+```
+
 ### Real-life example 1: destination runway with wet surface
 
 - Scenario:
@@ -180,8 +279,12 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
 ## 3.6 Weight and Balance (W&B)
 
 - Core formulas:
-  - $\text{Moment} = \text{Weight} \times \text{Arm}$
-  - $\text{CG} = \dfrac{\text{Total Moment}}{\text{Total Weight}}$
+
+```text
+Moment = Weight × Arm
+CG = Total moment / Total weight
+```
+
 - Verify:
   - MTOW and landing weight limits
   - Baggage/compartment limits
@@ -189,7 +292,52 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
 - Fuel burn shifts CG; check both departure and arrival conditions.
 
 ### CASA workbook exam convention
+
 - AVGAS specific gravity commonly assumed as **0.72 kg/L** in exam workbook contexts.
+
+### Common loading scenarios (exam patterns)
+
+| Scenario | Loading pattern | Typical CG tendency | Risk |
+|---|---|---|---|
+| **Solo from front** | Pilot only, forward seats | More **forward** CG | Higher stall speed trend; nosewheel load |
+| **Dual training** | Instructor + student front | Mid-forward | Usually benign if within envelope |
+| **Two rear passengers** | Mass at aft arms | **Aft CG** shift | Reduced stability; easier pitch-up near stall |
+| **Heavy baggage aft** | Baggage compartment full | **Aft CG** | Check aft limit at takeoff **and** landing |
+| **Full fuel** | Fuel tanks per POH arms | Depends on tank location (172: often forward of aft seats) | May move CG forward at start |
+| **Low fuel landing** | Fuel burned off | CG often moves **aft** if fuel was forward of CG | Aft limit check at landing critical |
+
+### CG envelope shifts with fuel burn
+
+**Rule:** removing weight at an arm **aft** of the aircraft CG moves the CG **forward**; removing weight **forward** of CG moves CG **aft**.
+
+| Fuel tank location (conceptual) | As fuel burns | CG movement |
+|---|---|---|
+| Wing tanks (near mid-CG on 172) | Small shift | Monitor but often modest |
+| Forward fuselage tank | Weight lost forward | CG drifts **aft** |
+| Aft fuselage tank (rare on trainers) | Weight lost aft | CG drifts **forward** |
+
+### Worked scenario A: aft limit risk (two rear passengers + baggage)
+
+| Item | Weight (kg) | Arm (m) | Moment |
+|---|---:|---:|---:|
+| BEW | 680 | 2.30 | 1564 |
+| Front seats (2) | 170 | 2.40 | 408 |
+| Rear seats (2) | 140 | 3.20 | 448 |
+| Baggage | 25 | 3.60 | 90 |
+| Fuel (full) | 90 | 2.20 | 198 |
+| **Takeoff** | **1105** | | **2708** |
+
+- Takeoff CG = 2708 / 1105 = **2.45 m** → plot on envelope; may be **near aft limit**.
+- Burn 45 kg fuel (arm 2.20): weight 1060, moment 2708 - 99 = 2609 → CG = **2.46 m** (often **further aft** if fuel was forward of CG).
+
+### Worked scenario B: forward limit risk (solo + full fuel + forward baggage)
+
+- Solo heavy pilot + full fuel + only forward loading → CG near **forward** limit.
+- Rotation/runway performance may suffer; elevator authority at flare may be high.
+
+### Worked scenario C: within envelope both ends
+
+- Two occupants front, half fuel, no baggage → mid-envelope at takeoff; landing after burn → re-check still inside envelope.
 
 ### Graphical example: W&B loading and fuel-burn shift
 
@@ -227,63 +375,110 @@ flowchart LR
 
 ## 3.7 Fuel Planning and Reserves
 
-- Fuel planning combines:
-  - Taxi/start allowance
-  - Trip fuel
-  - Reserve/legal minima
-  - Contingency/diversion as required by scenario
-- Differentiate:
-  - Fuel required by regulation
-  - Operationally prudent uplift.
-- For exam questions, apply stated policy basis (e.g., Part 91 assumptions if specified).
+> **Regulatory basis:** CASR **Part 91** and **Part 91 MOS** (Table 2) plus [CASA AC 91-15 — Guidelines for aircraft fuel requirements](https://www.casa.gov.au/guidelines-aircraft-fuel-requirements). Exam questions may use **workbook labels** or **Part 91 terms** — read the scenario.
+
+### CASA fuel policy — terms you must distinguish
+
+| Term (exam / workbook) | Part 91 MOS term | Meaning |
+|---|---|---|
+| **Fixed reserve** | **Final reserve fuel** | Prescribed **time** at holding/range speed after trip (and alternate/holding if applicable) — must remain on landing |
+| **Variable reserve** | **Contingency fuel** | Extra fuel for unforeseen factors — often **% of trip fuel** where required |
+| **Alternate fuel** | **Destination alternate fuel** | Fuel from destination (or decision point) to **alternate** incl. approach/missed approach as required |
+
+**Typical piston aeroplane ≤ 5,700 kg MTOW (PPL training aircraft — C172, DA40 class):**
+
+| Flight type | Final reserve (fixed) | Contingency (variable) |
+|---|---|---|
+| **Day VFR** | **30 minutes** | **Not required** (N/A in MOS Table 2 item) |
+| **Night VFR** | **45 minutes** | **Not required** (N/A for this category item) |
+| Larger / IFR categories | 45 minutes (typical) | **5% of trip fuel** (where applicable) |
+
+Always use the **flight rules and aircraft category** stated in the question.
+
+### Fuel planning building blocks
+
+```text
+Fuel required =
+  Taxi / run-up
+  + Trip fuel (planned route)
+  + Holding fuel (if required)
+  + Destination alternate fuel (if required)
+  + Contingency fuel (variable reserve — if applicable)
+  + Final reserve fuel (fixed reserve)
+```
+
+- **Trip fuel:** planned route consumption at planned power/RPM and fuel flow.
+- **Alternate fuel:** only when an alternate is **required** (weather, aerodrome, rules in scenario).
+- **Final reserve** is **protected** — not for planning “extra sightseeing.”
+- **Operational uplift** above legal minimum is good airmanship but is not the same as legal compliance.
+
+### When is alternate fuel required? (exam logic)
+
+- Apply scenario rules: destination weather below minima, no instrument approach at destination when needed, isolated aerodrome policy, etc.
+- Alternate fuel generally includes: **go-around/missed approach at destination + climb + cruise to alternate + approach at alternate** (use data given in exam).
 
 ### How to construct a fuel plan (step-by-step)
 
-1. Define route and timing assumptions:
-   - Planned distance, forecast wind, cruising level, and expected groundspeed.
-2. Calculate trip fuel:
-   - Use planned time en route and cruise fuel flow from POH or school planning data.
-3. Add fixed allowances:
-   - Start/taxi/run-up fuel.
-4. Add legally required reserve fuel:
-   - Apply the exact regulatory or exam policy basis given in the question.
-5. Add operational buffers:
-   - Contingency for forecast uncertainty and practical rerouting.
-6. Add alternate/diversion fuel if required by scenario:
-   - Include approach, missed approach, and transit to alternate if applicable.
-7. Compute total required fuel, then compare with usable onboard:
-   - Confirm both volume and mass (if W&B is in kg).
-8. Validate in-flight decision points:
-   - Set minimum fuel checks by waypoint/time and define diversion triggers.
+1. Calculate **trip fuel** (distance/GS or time × fuel flow).
+2. Add **taxi/run-up**.
+3. Determine if **alternate** is required → add **alternate fuel**.
+4. Add **contingency (variable reserve)** if applicable to aircraft/flight type.
+5. Add **final reserve (fixed reserve)** for flight type (30 min day / 45 min night for typical PPL piston).
+6. Compare total to **usable fuel**; convert L → kg if W&B needs mass (× 0.72 workbook SG).
+7. Brief in-flight checks and diversion triggers.
 
-### Fuel plan example (PPL VFR training scenario)
+### Worked example: Day VFR (CASA workbook-style piston)
 
-- Assumptions:
-  - Planned flight time: 2.0 hr
-  - Cruise fuel flow: 32 L/hr
-  - Taxi/start/run-up: 6 L
-  - Regulatory reserve (example for study): 45 min at cruise flow
-  - Contingency buffer: 10 L
-- Calculation:
-  - Trip fuel = 2.0 x 32 = 64 L
-  - Reserve fuel = 0.75 x 32 = 24 L
-  - Total required = taxi 6 + trip 64 + reserve 24 + contingency 10 = **104 L**
-- Dispatch check:
-  - If usable onboard is 120 L, margin above required = 16 L.
-  - If forecast headwind increases and trip time rises by 20 min:
-    - Extra trip fuel = 0.33 x 32 = 10.6 L
-    - New total expected use = about 115 L
-  - Decision: still legal in this example, but buffer is now thin, so set earlier diversion trigger.
+| Component | Calculation | Litres |
+|---|---|---:|
+| Taxi/run-up | Given | 6 |
+| Trip | 2.0 hr × 32 L/hr | 64 |
+| Contingency (variable) | Day VFR small piston — **N/A** | 0 |
+| Final reserve (fixed) | **30 min** × 32 L/hr | 16 |
+| Alternate | Not required in scenario | 0 |
+| **Minimum fuel required** | | **86** |
+
+- Usable onboard 100 L → margin 14 L (legal but thin for headwind — add operational buffer).
+
+### Worked example: Night VFR with alternate
+
+| Component | Calculation | Litres |
+|---|---|---:|
+| Taxi | | 6 |
+| Trip | 1.5 hr × 32 L/hr | 48 |
+| Alternate fuel | Given in question (e.g. cruise to alternate + approach) | 18 |
+| Contingency | N/A for typical item | 0 |
+| Final reserve (fixed) | **45 min** × 32 L/hr | 24 |
+| **Total** | | **96** |
+
+### Worked example: IFR / larger aircraft style (variable reserve applies)
+
+| Component | Calculation | Litres |
+|---|---|---:|
+| Trip | 100 L | 100 |
+| Contingency (variable) | **5%** × trip | 5 |
+| Final reserve (fixed) | 45 min at flow | 24 |
+| **Subtotal policy fuel** | | **129** (+ taxi/alternate as required) |
+
+> **CASA Exam Cues — fuel policy**
+>
+> - **Fixed reserve = final reserve** (time-based, must remain on landing).
+> - **Variable reserve = contingency** (% trip where applicable) — **not** the same as final reserve.
+> - **Day VFR** training piston: often **30 min** final reserve, **no** 5% contingency.
+> - **Night VFR**: often **45 min** final reserve — exam trap using 30 min.
+> - Do not double-count: alternate fuel is **separate** from trip to destination.
+> - Exam may give **zero wind** for nav but fuel must still cover **actual** headwind if you replan in flight (contingency/higher trip).
 
 ### Fuel planning quick table
 
-| Component | Formula/Method | Example value |
+| Component | Formula/Method | Day VFR example |
 |---|---|---:|
 | Taxi/start | Fixed allowance | 6 L |
-| Trip | Time $\times$ fuel flow | 64 L |
-| Reserve | Reserve time $\times$ fuel flow | 24 L |
-| Contingency | Policy or operational buffer | 10 L |
-| **Total required** | Sum of all components | **104 L** |
+| Trip | Time × fuel flow | 64 L |
+| Alternate | Per scenario | 0 L |
+| Variable reserve (contingency) | % trip if applicable | 0 L |
+| Fixed reserve (final) | Reserve time × fuel flow | 16 L (30 min) |
+| **Total required** | Sum | **86 L** |
 
 ---
 
@@ -418,16 +613,16 @@ flowchart LR
 - Distance A to B: 180 NM.
 - Groundspeed toward B: 90 kt.
 - Groundspeed back to A (with headwind): 75 kt.
-- Let distance from A to ETP be $x$ (NM).
-- Time to continue from ETP to B: $(180 - x) / 90$.
-- Time to return from ETP to A: $x / 75$.
+- Let distance from A to ETP be `x` (NM).
+- Time to continue from ETP to B: `(180 - x) / 90`.
+- Time to return from ETP to A: `x / 75`.
 - At ETP, times are equal:
 
-$$
-\frac{180 - x}{90} = \frac{x}{75}
-$$
+```text
+(180 - x) / 90 = x / 75
+```
 
-- $x \approx 82$ NM from A.
+- `x` ≈ 82 NM from A.
 - Use: before 82 NM, return may be faster; after 82 NM, continue may be faster (subject to weather/runway/fuel constraints).
 
 ---
@@ -440,8 +635,12 @@ $$
   - Example: runway that appears long enough for ground roll may still be insufficient for obstacle-clearance requirement.
 - **CG envelope:** approved center-of-gravity range for safe controllability/stability.
   - Example: aft-loaded aircraft may rotate easily but become unstable and harder to recover near stall.
-- **Reserve fuel:** legally required minimum fuel carried beyond trip fuel.
-  - Example: if forecast headwind increases en route, reserve may be eroded and diversion should be made early.
+- **Fixed reserve (final reserve fuel):** prescribed time-based fuel that must remain on landing (e.g. 30 min day VFR / 45 min night VFR for typical PPL piston).
+  - Example: cannot “plan to land on fumes” if that would consume final reserve.
+- **Variable reserve (contingency fuel):** extra fuel for unforeseen factors — often percentage of trip where applicable.
+  - Example: 5% trip fuel on categories where MOS Table 2 requires contingency.
+- **Alternate fuel:** fuel to proceed to nominated alternate when required by rules/scenario.
+  - Example: destination below minima → plan destination + alternate + reserves.
 - **Crosswind component:** wind component perpendicular to runway heading.
   - Example: runway headwind may still include high crosswind that exceeds pilot or aircraft limits.
 
@@ -453,12 +652,47 @@ $$
 ---
 ## 3.11 Common Exam Traps
 
+### Units and data entry
+
 - Mixing units (kg/lb, L/gal, kt/km/h, ft/m).
 - Using IAS when TAS/GS is required for timing.
-- Applying wind correction sign incorrectly (headwind/tailwind).
-- Forgetting slope/surface corrections.
-- Checking CG only at departure, not at landing.
-- Confusing legal reserve with target reserve.
+- Using **field elevation** instead of **pressure altitude** on performance charts.
+
+### Zero wind vs real wind (high-frequency)
+
+| Trap | What charts assume | What you must do |
+|---|---|---|
+| Chart baseline | Often **zero wind** | Apply headwind/tailwind correction from POH |
+| Headwind reported | Reduces takeoff/landing distance | Apply **decrease** on takeoff/landing per POH |
+| Tailwind reported | **Increases** distance — large effect | Apply **increase**; many exam scenarios use “light tailwind” to fail margin |
+| Crosswind | Not a distance correction on most POH charts | Separate limit vs **demonstrated crosswind** |
+| Gust | Steady wind on chart | Use conservative fraction of gust or personal minimum |
+
+- **Rule:** if question gives **actual wind**, do not use the uncorrected chart distance.
+
+### Chart interpolation errors
+
+| Error | Result | Prevention |
+|---|---|---|
+| Reading wrong axis (PA vs DA vs OAT) | Wrong base distance | Label axes; DA for performance **sense-check**, PA/OAT per POH chart instructions |
+| Linear interpolation across **non-linear** regions | Under/over estimate | Interpolate in **two steps** (temperature, then pressure) per POH method |
+| Rounding too early | Compounded error | Keep one extra decimal until final answer |
+| Wrong weight line | Significant error | Confirm takeoff weight vs landing weight chart |
+| Applying corrections in **wrong order** | POH-specific error | Memorise **your** POH sequence |
+| Confusing **ground roll** vs **50 ft obstacle** distance | Runway overrun risk | Answer the distance type the question asks |
+
+### Fuel and W&B traps
+
+- Confusing **fixed (final) reserve** with **variable (contingency) reserve**.
+- Using **30 min** reserve on **night VFR** when **45 min** applies (typical piston).
+- Forgetting **alternate fuel** when alternate is required.
+- Checking CG only at departure, not at **landing** after fuel burn.
+- Assuming full fuel always moves CG the same direction on all types — check **fuel arm**.
+
+### Policy traps
+
+- Confusing **legal minimum** with **operational target** fuel.
+- Treating workbook **0.72 kg/L** as universal without question basis.
 
 ---
 
@@ -469,6 +703,8 @@ $$
 - Can complete W&B and verify CG at all stages.
 - Can produce a full nav log with fuel/endurance checks.
 - Can apply stated legal fuel policy assumptions in scenario questions.
+- Can separate fixed (final) vs variable (contingency) reserve and alternate fuel.
+- Can apply wind corrections to chart distances (zero-wind trap).
 
 ---
 
@@ -476,37 +712,30 @@ $$
 
 ### Core formulas
 
-$$
-\text{Time (hr)} = \frac{\text{Distance (NM)}}{\text{GS (kt)}}
-$$
-
-$$
-\text{Fuel used} = \text{Fuel flow} \times \text{Time}
-$$
-
-$$
-\text{Groundspeed} = \frac{\text{Distance}}{\text{Time}}
-$$
-
-$$
-\text{Moment} = \text{Weight} \times \text{Arm}
-$$
-
-$$
-\text{CG} = \frac{\sum \text{moments}}{\sum \text{weights}}
-$$
+```text
+Time (hr) = Distance (NM) / GS (kt)
+Fuel used = Fuel flow × Time
+Groundspeed = Distance / Time
+Moment = Weight × Arm
+CG = Sum(moments) / Sum(weights)
+```
 
 ### Useful conversion and planning formulas
 
-$$
-\text{Fuel mass (kg)} \approx \text{Fuel volume (L)} \times \text{SG}
-$$
+```text
+Fuel mass (kg) ≈ Fuel volume (L) × SG
+```
 
 For CASA workbook style AVGAS assumptions:
 
-$$
-\text{Fuel mass (kg)} \approx \text{Fuel volume (L)} \times 0.72
-$$
+```text
+Fuel mass (kg) ≈ Fuel volume (L) × 0.72
+```
+
+```text
+PA ≈ elevation + (1013 - QNH_hPa) × 30
+DA ≈ PA + 120 × (OAT - ISA temp)
+```
 
 ### Graphic: performance planning flow
 
@@ -536,6 +765,8 @@ flowchart LR
 
 - FAA PHAK (especially performance and W&B chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - CASA RPL/PPL/CPL Aeroplane Workbook: <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
+- CASA AC 91-15 — Guidelines for aircraft fuel requirements: <https://www.casa.gov.au/guidelines-aircraft-fuel-requirements>
+- Part 91 MOS (fuel Table 2): <https://www.legislation.gov.au/>
 - ICAO Doc 8168 (PANS-OPS, procedural context): <https://www.icao.int/>
 - EASA Easy Access Rules (Air Operations): <https://www.easa.europa.eu/en/document-library/easy-access-rules>
 

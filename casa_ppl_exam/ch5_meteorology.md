@@ -264,15 +264,15 @@ flowchart TD
 
 ---
 
-## 5.8 Wind Shear and Turbulence
+## 5.8 Wind Shear, Microbursts, and Mountain Waves
 
 **Definition — turbulence:** irregular air movement causing bumpiness and attitude/airspeed fluctuations.
 
 **Definition — wind shear:** change in wind speed and/or direction over a short distance (horizontal or vertical).
 
-**Definition — LLWS (low-level wind shear):** wind shear in the lower levels of the atmosphere — critical on approach and departure.
+**Definition — LLWS (low-level wind shear):** wind shear in the lower levels — critical on takeoff and approach.
 
-### Turbulence sources
+### Turbulence sources (summary)
 
 | Source | Cause | Typical location / time |
 |---|---|---|
@@ -281,18 +281,89 @@ flowchart TD
 | **Frontal / convective** | Strong vertical motion at fronts/storms | Near CB, gust fronts |
 | **Mountain wave / rotor** | Airflow over mountains | Lee side of ranges, rotors below wave |
 
-### LLWS cues
+### Wind shear — types and pilot risk
 
-- Rapid airspeed fluctuations on approach.
-- Wind shift reported on ATIS/METAR (e.g. `WS` group where used).
-- Frontal passage, nocturnal inversion break, thunderstorm outflow.
+| Type | Where | Typical hazard |
+|---|---|---|
+| **Frontal shear** | Ahead of/behind fronts | Sudden wind shift, turbulence |
+| **Inversion shear** | Top of nocturnal inversion | Approach/departure handling changes |
+| **Convective / outflow shear** | Gust fronts, storm outflow | Severe performance loss near ground |
+| **Terrain channeling** | Valleys, gaps | Crosswind and turbulence on approach |
+
+**Cues:** airspeed fluctuations, unexpected sink or ballooning, wind reported on ATIS/METAR, `WS` group where published, rapidly changing surface wind at aerodrome.
+
+**Avoidance / response**
+
+- Brief wind at departure and destination; compare surface wind vs gradient aloft (winds aloft / GPWT).
+- Use extra approach margin; be ready to **go around** early.
+- Avoid takeoff/landing when convective outflow or frontal shear is active unless margins are large.
+
+### Microbursts
+
+**Definition — microburst:** small-scale, intense **downdraft** that spreads outward near the surface, producing strong **horizontal wind shear** and severe performance loss (classic hazard below thunderstorms and some rain showers).
+
+| Feature | Detail |
+|---|---|
+| Scale | Short duration, localized (runway can be affected while nearby area is fine) |
+| Signs | Virga, dust ring, rapid wind shift, heavy precip shaft, LLWS alerts where available |
+| Takeoff / landing | Sudden **airspeed loss**, sink, inability to climb |
+
+**Avoidance strategies**
+
+- Do not take off or land under active cell or virga shaft; wait for cell passage.
+- If encountered: **maximum performance** — pitch for recommended attitude, apply power per POH, do not trade altitude for airspeed indiscriminately; **go around** or reject takeoff if sufficient runway remains.
+- Link to Chapter 7 (stabilized approach, early go-around).
+
+```mermaid
+flowchart TD
+    M[Microburst suspected] --> G[Go-around or reject takeoff if able]
+    G --> A[Fly through with POH escape attitude/power]
+    A --> L[Do not turn back into cell]
+```
+
+### Mountain waves and rotors
+
+**Definition — mountain wave:** standing wave downwind of significant terrain when stable air flows over a ridge.
+
+**Definition — rotor:** violent, chaotic turbulence in the **roll cloud / rotor zone** beneath the wave crest — extremely hazardous.
+
+| Indicator | Meaning |
+|---|---|
+| Lenticular (lens) clouds | Wave present |
+| Rotor cloud / turbulent roll | Rotor likely — avoid |
+| Strong winds perpendicular to ridge | Wave amplitude increases |
+| Smooth ride on crest / severe in rotor | Do not “sample” rotor to test |
+
+**Avoidance strategies**
+
+- Preflight: check **GAF/SIGMET** for turbulence; winds aloft vs ridge orientation.
+- Route: stay **well clear** of lee side of ranges when wave/rotor forecast; add altitude only if POH, oxygen, and rules allow — often better to **reroute** upwind of range.
+- If severe turbulence encountered: reduce to **manoeuvring speed (VA)** per POH, maintain control, exit area laterally if possible.
+- VFR: remain in smooth air with terrain clearance; do not scud along lee slopes.
+
+| Hazard | VFR strategy |
+|---|---|
+| Rotor | Avoid lee side; wide offset |
+| Wave-induced downdrafts | Do not attempt low crossing of ridge in strong winds |
+| Cloud cap | Do not penetrate lenticular stack without IFR capability and clearance |
+
+### LLWS summary table
 
 | Phase | Risk | Mitigation |
 |---|---|---|
-| Takeoff / initial climb | Performance loss after rotation | Know winds; delay if outflow suspected |
-| Approach / landing | Sudden sink or airspeed drop | Stabilized approach; go-around; extra margin |
+| Takeoff / initial climb | Performance loss after rotation | Delay if outflow; use runway into wind; reject if performance inadequate |
+| Approach / landing | Sudden sink or airspeed drop | Stabilized approach; go-around; avoid tailwind |
+| En route near storms | Turbulence, hail, lightning | Strategic avoidance 20+ NM (policy-dependent) |
 
-- [FAA PHAK — wind shear and turbulence](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
+> **CASA Exam Cues — shear / microburst / mountain wave**
+>
+> - **Microburst** = downdraft + outflow shear near surface — worst on approach/landing.
+> - **Rotor** is not “normal turbulence” — avoid lee side of ranges when waves forecast.
+> - **Wind shear** on approach: go-around early, do not salvage.
+> - Exam may describe **airspeed increasing then decreasing** on final — think shear/microburst, not instrument failure first.
+
+- [FAA PHAK — wind shear and turbulence](https://www.faa.gov/regulations_policies/handbooksmanuals/aviation/phak/chapter-12-aviation-weather)
+- [BOM — aviation forecasts](http://www.bom.gov.au/aviation/)
 
 ---
 
@@ -427,6 +498,85 @@ flowchart TD
 - Ignoring cloud amount significance (`BKN`/`OVC`) for practical ceiling.
 - Not converting Zulu times correctly to local operation timeline.
 
+### 5.10.7 Australian aviation weather products (priority briefing set)
+
+> Obtain current products via **NAIPS** (Airservices) and **Bureau of Meteorology (BOM)** aviation services. Names and formats evolve — confirm current product suite on briefing platforms.
+
+**Briefing stack (VFR cross-country — exam logic)**
+
+```mermaid
+flowchart TD
+    A[METAR/SPECI + TAF aerodromes] --> B[GAF area forecast]
+    B --> C[SIGMET / AIRMET if issued]
+    C --> D[GPWT winds and temps]
+    D --> E[Radar / satellite / lightning]
+    E --> F[NOTAM and personal minima check]
+```
+
+| Product | Issuer | What it gives you | PPL use |
+|---|---|---|---|
+| **METAR / SPECI** | BOM (aerodrome obs) | Current weather at aerodrome | Now-cast; trend vs TAF |
+| **TAF** | BOM | Aerodrome forecast 24–30 hr | ETA window; `FM`/`BECMG`/`TEMPO` |
+| **GAF** (Graphical Area Forecast) | BOM | **Area** forecast SFC–10,000 ft AMSL — cloud, vis, weather, icing/turb symbols | En route **big picture**; replaces legacy text **ARFOR** |
+| **ARFOR** (legacy) | BOM | Text area forecast (older training material) | Know replaced by **GAF**; exam may mention either |
+| **SIGMET** | BOM | **Significant** meteorological phenomena — severe turbulence, severe icing, tropical cyclone, volcanic ash, etc. | **Avoid** affected area; often mandatory awareness |
+| **AIRMET** | BOM | **Abbreviated** advisory for specified weather — may amend GAF when conditions not as forecast | Check even if GAF looked acceptable |
+| **GPWT** (Grid Point Wind & Temperature) | BOM | Winds and temperatures on a grid | Cruise level selection; freezing level awareness |
+| **Graphical forecasts / charts** | BOM | Satellite, radar, lightning, upper charts | Convective build-up, frontal position, trend |
+| **Aerodrome warnings / AD WRNG** | BOM (where issued) | Short-term aerodrome-specific alerts | Supplement TAF for destination |
+
+### GAF (Graphical Area Forecast) — interpretation basics
+
+- **Coverage:** Australian airspace divided into **GAF areas** (fewer sectors than old ARFORs).
+- **Validity:** typically **6-hour** blocks (standard times — check chart header for issue/valid UTC).
+- **Content (symbols):** cloud amount/base, visibility, weather phenomena, **turbulence** and **icing** areas, **freezing level** — read legend every time.
+- **Use with:** destination **TAF** (detail) + **SIGMET/AIRMET** (hazard amendment).
+
+- [BOM — Graphical Area Forecasts (GAF)](http://www.bom.gov.au/aviation/gaf/)
+- [BOM — GAF education guide (PDF)](http://www.bom.gov.au/aviation/data/education/gaf.pdf)
+- [BOM — legacy ARFOR information](http://www.bom.gov.au/aviation/forecasts/arfor/)
+
+### SIGMET vs AIRMET (Australia — conceptual)
+
+| Product | Severity / scope | Typical content | Pilot action |
+|---|---|---|---|
+| **SIGMET** | **Significant** hazard to most aircraft | Severe turbulence/icing, tropical cyclone, volcanic ash, sandstorm, etc. | Avoid area; replan route/altitude; delay flight |
+| **AIRMET** | **Moderate** or wider advisory (product-specific) | Weather differing from GAF or developing hazard below SIGMET threshold | Reassess go/no-go; update trend |
+
+- SIGMET validity and phenomenon codes are examinable at **recognition** level — read header (location, time, phenomenon).
+- If **SIGMET** active for your route: treat as hard constraint unless you can remain clearly clear of phenomenon.
+
+- [BOM — SIGMET information](http://www.bom.gov.au/aviation/advisories/)
+
+### GPWT and graphical products
+
+- **GPWT:** select route grid points; compare wind direction/speed and temperature at planned levels — headwind/tailwind fuel impact, icing level trends.
+- **Radar / satellite:** identify convective development, frontal cloud bands, fog/stratus extent.
+- **Lightning / storm tracking:** avoid cells showing rapid growth on approach to destination.
+
+### NAIPS briefing (operational)
+
+- **NAIPS** (Airservices): integrated briefing — TAF, NOTAM, winds, often links to BOM graphical products.
+- [Airservices — flight briefing services](https://www.airservicesaustralia.com/pilots/flight-briefing-services)
+
+### Worked briefing example (exam-style narrative)
+
+- **Route:** YSCB → coastal aerodrome, afternoon arrival.
+- **METAR/TAF:** destination TAF `TEMPO` lower vis and BKN cloud in arrival window.
+- **GAF:** coastal sector shows scattered showers, moderate turbulence downwind of ranges.
+- **SIGMET:** none.
+- **AIRMET:** check issued — if present, compare to GAF.
+- **GPWT:** tailwind en route improves ETA but headwind component at destination not relevant on ground.
+- **Decision:** legal VMC possible but **personal minima** fail due to `TEMPO` and turbulence — delay or inland alternate per GAF sector.
+
+> **CASA Exam Cues — Australian products**
+>
+> - **GAF** = area forecast (en route); **TAF** = aerodrome (destination timing).
+> - **ARFOR** is legacy — modern briefing uses **GAF**.
+> - **SIGMET** = significant hazard — avoid; do not confuse with **AIRMET** (advisory/amendment role).
+> - Always brief **departure, en route, destination, alternate** — not destination only.
+> - Convert all times to **UTC** then local for flight.
+
 ---
 
 ## 5.11 Practical VFR Weather Decision Framework
@@ -448,7 +598,10 @@ flowchart TD
 - Focusing on single weather report instead of trend.
 - Ignoring temperature/dew point spread significance.
 - Misreading forecast time groups and validity periods.
-- Underestimating convective outflow and gust front effects.
+- Underestimating convective outflow, **microburst**, and gust front effects.
+- Using **TAF** only and ignoring **GAF** area hazards (turbulence, icing symbols).
+- Confusing **SIGMET** (significant, avoid) with **AIRMET** (advisory/amendment).
+- Flying **lee of ranges** when GAF shows turbulence/mountain wave — rotor risk.
 
 ---
 
@@ -457,6 +610,8 @@ flowchart TD
 - Can explain stable vs unstable air and resulting cloud/weather.
 - Can identify frontal weather implications from chart/symbol context.
 - Can decode METAR/TAF and extract operational risk.
+- Can describe role of GAF, SIGMET, AIRMET, and GPWT in Australian briefing.
+- Can explain microburst, wind shear, and mountain wave avoidance.
 - Can explain thunderstorm hazards beyond lightning.
 - Can apply a conservative diversion/no-go decision to scenario questions.
 
@@ -466,21 +621,21 @@ flowchart TD
 
 ### Core formulas (exam-useful)
 
-$$
-\text{Dew point spread} = T - T_{\mathrm{d}}
-$$
+```text
+Dew point spread = T - Td
+```
 
 Small spread suggests high humidity and increased fog/low cloud risk.
 
-$$
-\text{Pressure altitude} \approx \text{Elevation} + (1013 - QNH) \times 30
-$$
+```text
+Pressure altitude ≈ Elevation + (1013 - QNH) × 30
+```
 
 (QNH in hPa, altitude in ft; approximation for quick mental checks.)
 
-$$
-\text{Density altitude} \approx \text{Pressure altitude} + 120 \times (OAT - T_{\mathrm{ISA}})
-$$
+```text
+Density altitude ≈ Pressure altitude + 120 × (OAT - ISA temp)
+```
 
 (Approximation useful for planning sense-checks; POH charts remain primary.)
 
@@ -517,6 +672,9 @@ flowchart TD
 ## References (Primary)
 
 - FAA PHAK (weather chapters and weather services context): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- BOM — Graphical Area Forecasts (GAF): <http://www.bom.gov.au/aviation/gaf/>
+- BOM — aviation forecasts and advisories: <http://www.bom.gov.au/aviation/>
+- Airservices — NAIPS / flight briefing: <https://www.airservicesaustralia.com/pilots/flight-briefing-services>
 - ICAO meteorological service framework (Annex 3): <https://www.icao.int/>
 - CASA weather and flight planning guidance: <https://www.casa.gov.au/>
 - EASA weather information and operations resources: <https://www.easa.europa.eu/>

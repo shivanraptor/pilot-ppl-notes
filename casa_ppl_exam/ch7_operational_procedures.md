@@ -77,7 +77,7 @@ flowchart TD
 
 **Definition — passenger briefing:** required safety information given so occupants can protect themselves and not distract the pilot during critical phases.
 
-**Definition — sterile cockpit:** period when only flight-related communication and actions are permitted (see 7.12).
+**Definition — sterile cockpit:** period when only flight-related communication and actions are permitted (see 7.13).
 
 ### Minimum briefing content
 
@@ -131,6 +131,117 @@ flowchart LR
     C -- Yes --> R[Enter runway]
     H -- No --> R
 ```
+
+### Non-controlled aerodrome operations (CTAF / MBZ)
+
+**Definition — non-controlled aerodrome:** aerodrome without ATC providing aerodrome control service; pilots self-separate using **see-and-avoid** and **radio broadcasts** on the designated frequency.
+
+**Definition — CTAF (Common Traffic Advisory Frequency):** VHF frequency for traffic information broadcasts at a non-controlled aerodrome (or MBZ).
+
+**Definition — MBZ (Mandatory Broadcast Zone):** airspace where **radio broadcasts are mandatory** for VFR aircraft — verify in **AIP/ERSA** for each location.
+
+> Always confirm **frequency**, **circuit direction**, **joining procedures**, and **noise abatement** in current **ERSA** and **AIP** before flight. Local procedures may be published in ERSA FAC or on aerodrome charts.
+
+#### Listening watch and situational picture
+
+| Action | Purpose |
+|---|---|
+| Monitor CTAF **before** entering MBZ/10 NM (as applicable) | Build traffic mental model |
+| Note runway in use from wind, broadcasts, and NOTAM | Align with active circuit |
+| Identify other aircraft callsigns and positions | Sequence safely |
+
+#### Standard broadcast locations (typical training circuit — confirm local ERSA)
+
+| Phase | When | Purpose |
+|---|---|---|
+| **10 NM inbound** | Approaching aerodrome | Early traffic awareness |
+| **5 NM inbound** | Closer to field | Confirm intentions and runway |
+| **Joining** | Entering circuit or manoeuvring area | State join type and runway |
+| **Downwind** | Abeam downwind leg | Position in circuit |
+| **Base** | Turning base | Sequence and spacing |
+| **Final** | On final approach | Landing intention and runway |
+| **Vacated runway** | Clear of active runway | Release runway for others |
+| **Taxi / holding** | Entering movement area | Surface conflict prevention |
+
+#### Example CTAF calls (adapt callsign and aerodrome)
+
+**10 NM inbound:**
+
+```
+Bacchus Marsh CTAF, Cessna VH-ABC, ten miles south, inbound, received Bravo, estimating circuit entry at four five, Bacchus Marsh.
+```
+
+**Joining downwind runway 34 left circuit:**
+
+```
+Bacchus Marsh CTAF, Cessna VH-ABC, entering downwind runway three four, Bacchus Marsh.
+```
+
+**Final:**
+
+```
+Bacchus Marsh CTAF, Cessna VH-ABC, final runway three four, Bacchus Marsh.
+```
+
+**Vacated runway:**
+
+```
+Bacchus Marsh CTAF, Cessna VH-ABC, clear of runway three four, Bacchus Marsh.
+```
+
+- Phraseology aligns with [Chapter 1 — radiotelephony](ch1_air_law.md) and CASA Radiotelephony Manual guidance.
+
+#### Joining procedures (exam and operational)
+
+| Join type | Description | When appropriate |
+|---|---|---|
+| **Overhead join** | Arrive overhead, descend on dead side, join crosswind/downwind | Common training method; good visibility of circuit |
+| **Crosswind join** | Join at mid-downwind or published point | When traffic and spacing allow |
+| **Straight-in** | Proceed to final from en route | Only when safe, sequenced, and permitted — not if disrupting circuit |
+| **Departing join** | Depart and re-enter (local procedure) | Per ERSA/local rules |
+
+**Overhead join flow (typical training sequence)**
+
+```mermaid
+flowchart TD
+    A[10 NM call + listen] --> B[Overhead at circuit height or as published]
+    B --> C[Dead side: descend and position for crosswind]
+    C --> D[Downwind call — merge with circuit traffic]
+    D --> E[Continue base / final calls]
+```
+
+**Joining discipline**
+
+- **Do not** cut in front of faster traffic on final.
+- **Do not** enter runway without broadcasting and ensuring separation.
+- If unsure of traffic or runway in use: **orbit**, **hold**, or **ask** on CTAF.
+- At busy fields: consider alternate aerodrome or delay.
+
+#### Circuit and runway discipline
+
+- Fly **published circuit direction** (left or right) and **circuit height** unless otherwise required for safety.
+- Maintain **spacing** — extend downwind if aircraft ahead on final.
+- **Go-around:** broadcast intention; rejoin without cutting others off.
+- **Carburettor heat / mixture / checks** per POH at appropriate circuit positions.
+
+#### Controlled vs non-controlled (quick contrast)
+
+| Item | Controlled aerodrome | Non-controlled (CTAF) |
+|---|---|---|
+| Clearance | ATC clearance required to enter/cross/takeoff | Self-announce; see-and-avoid |
+| Separation | ATC provides separation services | Pilot responsibility |
+| Radio | ATC instructions and readbacks | CTAF broadcasts (MBZ mandatory where designated) |
+| Runway use | Assigned runway | Determine from wind + broadcasts + ERSA |
+
+> **CASA Exam Cues — CTAF**
+>
+> - Know **when** to broadcast (10 NM, join, downwind, base, final, vacated).
+> - **Listen** before transmitting; avoid talking over others.
+> - Wrong runway or circuit direction is a common scenario trap.
+> - Straight-in join may be **incorrect** if it conflicts with established circuit traffic.
+
+- [AIP Australia — ERSA](https://www.airservicesaustralia.com/aip/)
+- [CASA VFRG (circuit and aerodrome operations context)](https://www.casa.gov.au/sites/default/files/2022-02/visual-flight-rules-guide.pdf)
 
 ---
 
@@ -292,8 +403,8 @@ flowchart TD
 | Electrical failure | Shed load; alternator reset if POH; land if unable to restore | Chapter 2 electrical |
 | Instrument failure | Partial panel; trust remaining valid instruments | Chapter 2 instruments |
 | Inadvertent IMC | 180° turn / climb to VMC; do not continue VFR in IMC | [CASA VFR guide context](https://www.casa.gov.au/) |
-| Precautionary landing | Planned landing when risk increasing but control retained | See 7.12 |
-| Forced landing | Landing without reliable engine power | See 7.12 |
+| Precautionary landing | Planned landing when risk increasing but control retained | See 7.13 |
+| Forced landing | Landing without reliable engine power | See 7.13 |
 
 - [FAA PHAK — emergency procedures](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-17-aeromedical-factors) (paired with emergency handling in training syllabi)
 
@@ -333,6 +444,35 @@ flowchart TD
 
 **Definition — TEM (Threat and Error Management):** framework to identify threats, prevent/trap errors, and maintain safety margins.
 
+### Why SOP integration matters (PPL to commercial path)
+
+| Without SOP | With SOP |
+|---|---|
+| Same task done differently each flight | Predictable flow reduces omissions |
+| Checklist rushed or skipped | **Flow** + **checklist** work together |
+| Threats discovered late | Threat brief + phase gates catch issues early |
+| Exam scenarios feel random | Answers map to **phase** and **procedure** |
+
+**SOP + TEM + CRM** (Chapter 4) form one system: brief threats → follow phase SOP → trap errors with checklists → recover with go-around/divert.
+
+### SOP integration across flight phases
+
+| Phase | SOP anchor (this chapter) | TEM focus | Key outputs |
+|---|---|---|---|
+| **Preflight** | §7.1–7.2, checklist §7.12 | Weather, W&B, legal threats | Go/no-go, decision triggers |
+| **Departure** | §7.5, checklist §7.12 | Crosswind, abort point | Takeoff brief, memory items |
+| **En route** | §7.6, checklist §7.12 | Fuel, weather trend | ETA/fuel gates, divert plan |
+| **Arrival** | §7.7–7.8, CTAF §7.4, checklist §7.12 | Traffic, unstable approach | Stabilized gates, go-around |
+| **Emergency** | §7.9, checklist §7.12 | Surprise failure | Aviate–navigate–communicate |
+
+```mermaid
+flowchart LR
+    P[Preflight SOP] --> D[Departure SOP]
+    D --> E[En route SOP]
+    E --> A[Arrival SOP]
+    A --> X[Emergency SOP if needed]
+```
+
 ### TEM in operations
 
 | TEM stage | Operational meaning | Example |
@@ -343,7 +483,7 @@ flowchart TD
 | Recovery | Deliberate correction | Go-around, divert, reject takeoff |
 
 - Anticipate threats in preflight brief (7.1).
-- Trap errors with checklists and callouts at phase changes.
+- Trap errors with **phase checklists** (7.12) and callouts at phase changes.
 - Build margins before high-workload phases (takeoff, approach).
 
 ```mermaid
@@ -359,7 +499,99 @@ flowchart LR
 
 ---
 
-## 7.12 Key Definitions and Practical Examples
+## 7.12 Flow-Oriented SOP Checklists
+
+> **Template only** — always use aircraft **POH/AFM** checklists as authority. Flow = order of actions; items may be **challenge-response** with a passenger or self-callout.
+
+### How to use these flows
+
+1. **Threat brief** (7.1) before starting flow.
+2. Run **flow** at each phase change (do not skip because “familiar airport”).
+3. Complete **POH written checklist** at least once per phase where required.
+4. At **gates**, pause: legal? safe? stable?
+
+### Preflight SOP flow
+
+| Step | Flow item | Notes |
+|:---:|---|---|
+| 1 | Documents, licence, medical, recency | Chapter 1 |
+| 2 | Weather / NOTAM / GAF / TAF / alternates | Chapter 5 |
+| 3 | Route, airspace, fuel plan, SARTIME if required | Ch 1, 3, 6 |
+| 4 | W&B and performance (takeoff + landing) | Chapter 3 |
+| 5 | Threat brief + personal minima | Chapter 4 |
+| 6 | External inspection (fuel sample, controls, tires, oil) | §7.2 |
+| 7 | Cockpit: avionics, altimeter QNH, fuel selector, trim | §7.2 |
+| 8 | Passenger briefing; doors/windows secure | §7.3 |
+| 9 | **Go / no-go decision** | Record triggers |
+
+### Departure SOP flow
+
+| Step | Flow item | Notes |
+|:---:|---|---|
+| 1 | ATIS/AWIS or area wind; runway plan | Controlled or CTAF |
+| 2 | **Departure brief:** runway, wind, flap, speeds, abort gate | §7.5 |
+| 3 | Engine start; instruments; avionics set | POH |
+| 4 | Taxi; brakes; steer; CTAF if non-controlled | §7.4 |
+| 5 | Run-up / vital actions per POH | Magnetos, carb heat check |
+| 6 | Hold short / line-up call | Clearance or CTAF |
+| 7 | Lights; transponder; final cabin check | Sterile cockpit |
+| 8 | Takeoff roll — rotate at Vr; Vy/Vx per brief | Reject if abort gate hit |
+| 9 | Climb; after-takeoff checks; track/heading | Flaps up per POH |
+
+### En route SOP flow
+
+| Step | Flow item | Notes |
+|:---:|---|---|
+| 1 | Cruise climb checks complete | Mixture, fuel pump per POH |
+| 2 | **Cruise scan** (time, fuel, engine, nav, weather) | §7.6 |
+| 3 | Waypoint time / fuel log update | Chapter 6 |
+| 4 | Compare actual vs planned — diversion triggers | TEM |
+| 5 | Obtain destination weather (ATIS/AWIS/NAIPS) | Trend |
+| 6 | Brief arrival: runway, join type, alternates | §7.4, §7.7 |
+
+### Arrival SOP flow
+
+| Step | Flow item | Notes |
+|:---:|---|---|
+| 1 | TOD; descent checklist; altimeter | §7.7 |
+| 2 | CTAF inbound calls (10 NM, 5 NM, join) if non-controlled | §7.4 |
+| 3 | Join circuit per ERSA; maintain spacing | Downwind/base/final calls |
+| 4 | **Before final:** landing brief, go-around plan | §7.7 |
+| 5 | Stabilized approach gates — **go-around if unstable** | §7.7 |
+| 6 | Land; vacate runway; CTAF vacated call | §7.8 |
+| 7 | Taxi clear; after-landing checks | Mixture, flaps, carb heat |
+| 8 | Shutdown; secure; **cancel SARTIME** if applicable | Ch 1 |
+
+### Emergency SOP flow (generic — POH overrides)
+
+| Step | Flow item | Notes |
+|:---:|---|---|
+| 1 | **Aviate** — pitch, power, configuration | Memory items first |
+| 2 | **Navigate** — terrain, heading, landing site | |
+| 3 | **Communicate** — PAN PAN / MAYDAY, position, intentions | Ch 1 |
+| 4 | **Manage** — POH emergency checklist | Fire, engine, electrical, etc. |
+| 5 | Passenger brief; secure cabin | |
+| 6 | Land when safe; secure aircraft; ELT awareness | §7.10 |
+
+```mermaid
+flowchart TD
+    E[Event] --> A[Aviate]
+    A --> N[Navigate]
+    N --> C[Communicate]
+    C --> M[POH emergency checklist]
+    M --> L[Land and secure]
+```
+
+> **CASA Exam Cues — SOP flows**
+>
+> - Exam may ask **order** of actions in emergency — **Aviate first**.
+> - Preflight is not just walk-around — includes **legal, fuel, W&B, weather, threat brief**.
+> - Non-controlled: **broadcast** before entering manoeuvring area and at circuit legs.
+> - Arrival: **go-around** is part of SOP, not failure.
+
+---
+
+## 7.13 Key Definitions and Practical Examples
 
 ### Core definitions (exam memory set)
 
@@ -404,27 +636,33 @@ flowchart LR
 - Distress/urgency phraseology: Chapter 1 (MAYDAY / PAN PAN).
 
 ---
-## 7.13 Common Operational Procedures Exam Traps
+## 7.14 Common Operational Procedures Exam Traps
 
 - Forgetting to prioritize control of aircraft in emergency questions.
 - Delaying go-around despite unstable approach cues.
 - Treating checklist as optional under pressure.
 - Poor runway/taxi situational awareness assumptions.
 - Ignoring passenger briefing as a compliance/safety requirement.
+- Omitting **CTAF broadcasts** at non-controlled aerodromes (join, downwind, final, vacated).
+- **Straight-in** join when circuit traffic makes it unsafe.
+- Treating SOP as “extra” rather than exam-expected discipline.
 
 ---
 
-## 7.14 Rapid Revision Checklist (Pre-Exam)
+## 7.15 Rapid Revision Checklist (Pre-Exam)
 
 - Can structure a full preflight legal/safety check sequence.
+- Can run phase SOP flows (preflight, departure, en route, arrival, emergency).
 - Can brief takeoff including failure contingencies.
+- Can describe CTAF joining and broadcast sequence at non-controlled aerodromes.
 - Can identify stabilized approach criteria and go-around triggers.
 - Can prioritize emergency actions in correct order.
 - Can explain runway incursion prevention techniques.
+- Can link SOP, TEM, and CRM in scenario answers.
 
 ---
 
-## 7.15 Procedure Graphics, Tables, and Formula Aids
+## 7.16 Procedure Graphics, Tables, and Formula Aids
 
 ### Graphic: normal flight phase workflow
 

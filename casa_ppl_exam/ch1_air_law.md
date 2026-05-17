@@ -93,15 +93,24 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
 
 ### VMC/VFR minima criteria
 
-> Use this as a study summary. For legal dispatch, always confirm current values in the latest AIP ENR and CASA publications.
+> **Study summary only — not a substitute for law.** The values below are **general** memory aids. **Class, altitude, day/night, and airspace** each change the rule set. For operations and exams tied to current law, use **AIP ENR 1.2** (VMC visibility and distance from cloud — and related ENR 1 provisions) together with **CASR Part 91** and the **Part 91 MOS**, not this table alone.
 
-| Condition | Typical minima to remember (Australia VFR exam context) |
+| Condition | Typical minima (general study aid — verify in AIP ENR 1.2) |
 | --- | --- |
-| At/above 10,000 ft AMSL | Visibility 8 km; cloud clearance 1,000 ft vertical and 1,500 m horizontal |
-| Below 10,000 ft AMSL (general case) | Visibility 5 km; cloud clearance 1,000 ft vertical and 1,500 m horizontal |
+| At/above 10,000 ft AMSL | Visibility 8 km; cloud clearance 1,000 ft vertical and 1,500 m horizontal (typical general case) |
+| Below 10,000 ft AMSL (general day VFR case) | Visibility 5 km; cloud clearance 1,000 ft vertical and 1,500 m horizontal (typical general case) |
 | Class G at or below 3,000 ft AMSL or 1,000 ft AGL (whichever higher threshold applies in context) | Clear of cloud and in sight of ground or water (plus applicable visibility requirement) |
 | Controlled airspace entry | ATC clearance required; VMC minima still apply unless operating under IFR |
 | Class A | VFR not permitted |
+
+**Night VFR — stricter minima (important)**
+
+- Night VFR requires a **Night VFR rating** (and aircraft/equipment compliance); it is still **VFR in VMC**, but **published minima are generally stricter than day VFR** (commonly higher visibility and specific cloud-clearance rules by airspace class).
+- Do **not** assume day-VFR minima from the table above apply at night.
+- Check **AIP ENR 1.2** and **Part 91 MOS** for the exact night VMC criteria applicable to your operation.
+- Operationally: even when legal, reduced visual cues mean **personal margins** should exceed published minima (Chapter 4 / 7).
+
+**Primary reference:** [AIP ENR 1.2 — VMC visibility and distance from cloud](https://www.airservicesaustralia.com/aip/) (AIP Australia via Airservices; confirm current edition on NAIPS or your briefing provider).
 
 ### Day VFR constraints (what limits you)
 
@@ -247,6 +256,47 @@ MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducti
   - AIP/ERSA/DAP
   - Weather products and operational advisories.
 
+### SARTIME and SARWATCH (search and rescue notification)
+
+**Definition — SARTIME:** **S**earch **A**nd **R**escue **TIME** — the UTC time by which, if the aircraft has not arrived or the pilot has not cancelled, **search and rescue action may be initiated**. Used for typical **VFR** flight notification in Australia.
+
+**Definition — SARWATCH:** SAR monitoring arrangement associated with **IFR** operations using full reporting procedures; SAR action is tied to **failure to report** at compulsory reporting points / destination, not only a single pilot-nominated time in the same way as SARTIME.
+
+| Feature | SARTIME (VFR context) | SARWATCH (IFR context) |
+|---|---|---|
+| Typical use | VFR flights where SARTIME notification is required | IFR with reporting procedures |
+| Trigger concept | Time passes without arrival **and** no cancellation | Non-arrival / failure to report per IFR rules |
+| Who you notify | Lodge with **Airservices** (CENSAR system) | IFR flight plan / ATS reporting chain |
+| Cancellation at controlled aerodrome | **Cannot** cancel SARTIME with tower alone — contact CENSAR | Often terminated via **ATC** at destination when IFR reports in |
+| Cancellation at non-controlled aerodrome | Pilot must **cancel** with CENSAR | Pilot responsibility to cancel if not closed by ATS |
+
+### Nomination (SARTIME — typical VFR workflow)
+
+1. Complete flight planning (route, endurance, alternates).
+2. Nominate a realistic **SARTIME** (UTC) allowing for weather, diversions, and margins — not “minimum possible.”
+3. Lodge via approved means (e.g. **NAIPS** SARTIME, phone to CENSAR).
+4. Record SARTIME on your nav log and set a personal reminder before it expires.
+
+### Cancellation (critical — common accident prevention)
+
+- **Always cancel** when you arrive safely (or terminate the flight as applicable).
+- **SARTIME (VFR):** call **CENSAR** — **1800 814 931** (Australia) — or use approved electronic cancellation; do not assume tower or CTAF hears you “cancel.”
+- Late cancellation wastes SAR resources; failure to cancel can trigger unnecessary SAR deployment.
+
+### Common exam and operational traps
+
+| Trap | Correct mindset |
+|---|---|
+| Confusing SARTIME with ETA | SARTIME is for **SAR initiation**, not your planned landing time |
+| Cancelling with tower only (VFR SARTIME) | Must cancel with **CENSAR** unless question states another approved method |
+| Forgetting cancellation after diversion | Cancel old notification and lodge updated plan/SARTIME if required |
+| SARTIME too tight | Allow fuel, weather, and alternate margins |
+| Assuming SARWATCH rules apply on a VFR SARTIME flight | Match procedure to **flight rules and notification type** |
+
+- [CASA — Out-n-Back: flight plans and SARTIME](https://www.casa.gov.au/resources-and-education/education-and-training/out-n-back/episode-25-flight-plans-and-sartime)
+- [Airservices — SARTIME](https://www.airservicesaustralia.com/industry-info/pilot-tools/sartime/)
+- [Flight Safety Australia — cancelling SARTIME/SARWATCH](https://www.flightsafetyaustralia.com/2019/05/cancelling-sartimes-and-sarwatches/)
+
 ---
 
 ## 1.8 Fuel and Flight Planning Legal Context
@@ -270,7 +320,76 @@ MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducti
 
 ---
 
-## 1.10 Security and Dangerous Goods Awareness
+## 1.10 Radio and Radiotelephony
+
+**Primary reference (Dec 2025):** CASA **Multi-Part AC 64.B-02, AC 91-35 and AC 172-05 — Radiotelephony manual for flight operations** (v1.0, updated Dec 2025). This manual standardises phraseology for pilots and replaces much of the radiotelephony material previously in **AIP GEN 3.4** — always use the current AC plus AIP/ERSA for operations.
+
+- [CASA Part 64 — advisory circulars (includes radiotelephony manuals)](https://www.casa.gov.au/rules/regulatory-framework/casr/part-64-casr-authorisations-non-licensed-personnel)
+- [Draft / consultation background — radiotelephony AC program](https://www.casa.gov.au/about-us/news-media-releases-and-speeches/have-your-say-guidance-radiotelephony-procedures)
+- Until GEN 3.4 is fully withdrawn in your AIP edition, cross-check **AIP GEN 3.4** if the AC is silent on a detail.
+
+### Aviate, Navigate, Communicate
+
+| Priority | Meaning | Radio application |
+|---|---|---|
+| **Aviate** | Fly the aircraft; maintain control | Do not let radio work cause fixation or neglect attitude/speed |
+| **Navigate** | Know position, terrain, and clearance | Position and intentions must be accurate before transmitting |
+| **Communicate** | When workload allows | Brief, standard calls; MAYDAY/PAN when appropriate (see 1.5) |
+
+> Under stress: **fly first**, then navigate, then transmit. Perfect phraseology never outweighs aircraft control.
+
+### Standard phraseology principles (from CASA manual themes)
+
+- Use **standard words and phrases** (e.g. “affirm,” “negative,” “unable,” “confirm”).
+- Use **ICAO phonetic alphabet** for callsigns and critical identifiers.
+- **Read back** runway hold short, line-up, take-off, landing clearances, and level/heading assignments as required.
+- Speak **concisely**; think before pressing transmit.
+
+### Example transmissions (PPL training context)
+
+**CTAF — inbound position (non-controlled aerodrome):**
+
+```
+Bacchus Marsh CTAF, Cessna VH-ABC, ten miles south, inbound, received Bravo, estimating circuit at four five, Bacchus Marsh.
+```
+
+**Initial call to tower (controlled aerodrome):**
+
+```
+Melbourne Tower, Cessna VH-ABC, eight miles south, inbound, one thousand five hundred feet, received India, request join for runway 34.
+```
+
+**Readback (landing clearance):**
+
+```
+Runway 34, cleared to land, Cessna VH-ABC.
+```
+
+**Hold short (readback critical):**
+
+```
+Hold short runway 34, Cessna VH-ABC.
+```
+
+**Request flight information service / weather (example structure):**
+
+```
+Brisbane Centre, Cessna VH-ABC, request current weather for Toowoomba and cloud base en route.
+```
+
+**Distress / urgency:** use **MAYDAY** or **PAN PAN** structure in section 1.5 — do not improvise non-standard priority calls.
+
+### Common radiotelephony exam traps
+
+- Long, non-standard transmissions on a busy frequency.
+- Omitting callsign at end of message (practice good habit per manual).
+- Readback of non-critical traffic instead of hold-short/line-up/landing clearances.
+- Transmitting before knowing **who you are calling** and **what you need**.
+- Fixing phraseology while aircraft is unstable — violates **Aviate** first.
+
+---
+
+## 1.11 Security and Dangerous Goods Awareness
 
 - Security compliance includes controlled access, suspicious activity reporting, and passenger/baggage vigilance.
 - Dangerous goods awareness:
@@ -279,7 +398,7 @@ MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducti
 
 ---
 
-## 1.11 Key Definitions and Practical Examples
+## 1.12 Key Definitions and Practical Examples
 
 - **PIC (Pilot in Command):** the pilot legally responsible for operation and safety of the flight.
   - Example: even if an instructor or experienced passenger gives advice, PIC remains responsible for final decisions.
@@ -302,17 +421,20 @@ MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducti
 - Correct exam mindset: legal minima are not automatic go criteria; operational judgment and margins still apply.
 
 ---
-## 1.12 Common Air Law Exam Traps
+## 1.13 Common Air Law Exam Traps
 
 - Applying memory of old rules instead of current promulgated requirements.
 - Confusing ATS service availability with pilot legal responsibility.
 - Misreading controlled vs non-controlled airspace obligations.
 - Missing specific wording in scenario (e.g., passenger carrying, time of day, operational category).
 - Treating SOP preferences as if they are legal minima.
+- Using **day VMC** numbers for **night VFR** without checking AIP ENR 1.2.
+- Forgetting to **cancel SARTIME** with CENSAR (not tower alone on VFR SARTIME).
+- Confusing **SARTIME** (VFR time-based) with **SARWATCH** (IFR reporting-based).
 
 ---
 
-## 1.13 Rapid Revision Checklist (Pre-Exam)
+## 1.14 Rapid Revision Checklist (Pre-Exam)
 
 - Can explain PIC legal responsibilities before/during/after flight.
 - Can identify required publications and preflight info sources.
@@ -320,10 +442,12 @@ MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducti
 - Can distinguish clearance/instruction obligations and correct readback behavior.
 - Can identify reporting obligations after an incident/occurrence.
 - Can separate legal limits from best-practice margins.
+- Can explain SARTIME vs SARWATCH and correct cancellation responsibility.
+- Can apply Aviate–Navigate–Communicate and basic standard phraseology.
 
 ---
 
-## 1.14 Operational Decision Graphics and Tables
+## 1.15 Operational Decision Graphics and Tables
 
 ### Graphic: legal vs operational go/no-go logic
 
@@ -362,35 +486,32 @@ flowchart TD
 
 ### VMC typical minima (symbolic revision)
 
-> Same values as the VMC/VFR minima table earlier; symbolic form for revision. Confirm current published minima for operations.
+> General study aid only. **Confirm class-specific day and night rules in AIP ENR 1.2** before flight or exam answers that cite exact legal minima.
 
-$$
-Vis \geq 8\ \text{km} \quad (\text{AMSL} \geq 10\,000\ \text{ft})
-$$
-
-$$
-Vis \geq 5\ \text{km} \quad (\text{AMSL} < 10\,000\ \text{ft})
-$$
-
-$$
-\text{Cloud: } \geq 1000\ \text{ft vertical};\quad \geq 1500\ \text{m horizontal}
-$$
-
-(Class G low-level and other cases follow published rules; this is the common general-case exam memory set.)
+```text
+Vis ≥ 8 km   (typical general case at/above 10,000 ft AMSL)
+Vis ≥ 5 km   (typical general day case below 10,000 ft AMSL)
+Cloud: ≥ 1000 ft vertical; ≥ 1500 m horizontal (typical general case)
+Night VFR: generally stricter — see AIP ENR 1.2 (do not use day table alone)
+Class G low-level: special rules — see AIP ENR 1.2
+```
 
 ### Conceptual fuel sufficiency (exam structure)
 
 Policy and numbers come from the question or current rules; structure is often:
 
-$$
-\text{Usable onboard} \geq \text{Taxi} + \text{Trip} + \text{Reserve} + \text{Contingency (if required)}
-$$
+```text
+Usable onboard ≥ Taxi + Trip + Reserve + Contingency (if required)
+```
 
 ---
 
 ## References (Primary)
 
 - CASA RPL/PPL/CPL Aeroplane Workbook (exam method assumptions): <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
+- CASA Radiotelephony manual for flight operations (AC 64.B-02 / AC 91-35 / AC 172-05, Dec 2025): <https://www.casa.gov.au/rules/regulatory-framework/casr/part-64-casr-authorisations-non-licensed-personnel>
+- AIP Australia — ENR 1.2 VMC (via Airservices): <https://www.airservicesaustralia.com/aip/>
+- Airservices SARTIME: <https://www.airservicesaustralia.com/industry-info/pilot-tools/sartime/>
 - FAA PHAK (airport operations and communications supporting concepts): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - ICAO Annex 2 (Rules of the Air): <https://www.icao.int/>
 

@@ -6,6 +6,8 @@ title: CASA Private Pilot Licence (PPL) Theoretical Exam – Overview
 
 The CASA PPL theory exam consists of seven core subjects. Below is a concise overview of each subject, highlighting the key topics you need to master, enriched with relevant content from the FAA Pilot's Handbook of Aeronautical Knowledge (PHAK) where applicable.
 
+> Master these subjects to proficiency, not just to pass the exam. A good pilot is always learning. Primary references: CASA Part 61 MOS, AIP, ERSA. PHAK is excellent supplementary material for concepts.
+
 ---  
 
 ## Chapter 1: [Air Law](ch1_air_law.md)
@@ -63,7 +65,7 @@ Chapter 13 (Navigation) and Chapter 14 (Navigation Systems) of the PHAK detail d
 ---  
 
 ## Chapter 7: [Operational Procedures](ch7_operational_procedures.md)
-- Includes preflight-to-postflight SOP flow, emergencies, TEM integration, and checklist.
+- Includes phase SOP flows (preflight, departure, en route, arrival, emergency), CTAF/MBZ non-controlled aerodrome operations, emergencies, and TEM integration.
 
 **FAA PHAK Integration**:  
 Chapter 4 (Principles of Flight) and Chapter 9 (Weight Shift) discuss take‑off and landing performance, but operational procedures are covered throughout. Chapter 16 (Emergency Procedures) outlines engine failure, fire, and other in‑flight emergencies, while Chapter 15 (Airport Operations) covers traffic patterns, runway markings, lighting, and ground operations. The PHAK emphasizes checklist usage, situational awareness, and risk management—core to SOPs and emergency handling. It also addresses runway incursion prevention and wake turbulence avoidance, aligning with CASA operational safety.

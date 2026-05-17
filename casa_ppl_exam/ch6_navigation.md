@@ -96,37 +96,108 @@ $$
 
 ---
 
-## 6.4 Tracks, Headings, Drift, and Wind Triangle
+## 6.4 Dead Reckoning, Wind Triangle, Tracks, and Headings
 
-### Definitions
+### Dead reckoning (DR)
 
-- **Track (TRK/TT):** intended or actual path over ground.
-- **Heading (HDG):** direction aircraft nose points.
-- **Drift angle:** difference between heading and track due to crosswind.
-- **WCA:** wind correction angle applied to maintain planned track.
+**Definition — dead reckoning:** navigation from a **known position** using **heading**, **time**, and **speed** (and wind correction) to estimate a new position.
+
+| DR element | Source |
+|---|---|
+| Last known position | Fix from map, GNSS, pilotage, or radio aid |
+| Heading | Compass / planned TH or MH |
+| Time | Elapsed since fix (UTC discipline) |
+| Speed | TAS converted to **GS** via wind triangle |
+| Wind | Forecast or observed — applied as WCA |
+
+**DR loop (each leg)**
+
+1. Mark position and time at fix.
+2. Determine **true track** on chart to next checkpoint.
+3. Solve **wind triangle** → true heading and groundspeed.
+4. Convert TH → MH → CH (variation/deviation).
+5. Fly heading; note time overhead checkpoint.
+6. Compare actual position to planned — apply **1-in-60** if off track (§6.7).
+
+### Definitions (wind triangle)
+
+- **Track (TRK/TT):** intended or actual path over the ground.
+- **Heading (HDG/TH/MH/CH):** direction the aircraft nose points (true, magnetic, or compass).
+- **Drift:** lateral displacement from wind; **drift angle** is heading–track difference.
+- **WCA (wind correction angle):** angle applied into wind to hold planned track.
+- **TAS:** speed through the air. **GS:** speed over the ground (wind triangle resultant).
 
 ### Graphic: wind triangle logic
 
 ```mermaid
 flowchart TD
-    W[Wind vector] --> R[Resultant ground vector]
-    A[TAS and Heading vector] --> R
+    W[Wind vector] --> R[Resultant: track and GS]
+    A[TAS on heading vector] --> R
     R --> GS[Groundspeed]
-    R --> TMG[Track Made Good]
+    R --> TRK[Track made good]
 ```
 
-### Practical sequence (DR planning)
+**Memory:** three vectors — **wind**, **TAS/heading**, **ground track/GS** — close the triangle.
 
-1. Plot true track (TT).
-2. Apply WCA from forecast wind -> true heading (TH).
-3. Apply variation -> magnetic heading (MH).
-4. Apply deviation -> compass heading (CH), if required.
-5. Compute GS and leg ETE.
+### Step-by-step wind triangle + DR (worked example)
 
-### Sign reminder
+**Given (leg briefing data)**
 
-- Wind from right -> correct right.
-- Wind from left -> correct left.
+| Item | Value |
+|---|---|
+| True track (TT) | **090°** (east) |
+| Distance | **60 NM** |
+| TAS | **100 kt** |
+| Wind | **180° / 20 kt** (wind **from** the south) |
+| Variation | **12° E** |
+| Deviation | **−3°** (west on card) |
+| WCA (from flight computer / plot) | **11° L** (into wind from left) |
+
+**Step 1 — True heading (TH)**
+
+- Wind from the **left** → correct **left** (north side of eastbound track).
+- `TH = TT − WCA = 090° − 11° = **079°T**`
+
+**Step 2 — Magnetic and compass headings**
+
+- East variation (12°E): `MH = TH − variation = 079° − 12° = **067°M**`
+- Deviation −3°: `CH = MH − deviation = 067° − (−3°) = **070°C**`
+
+**Step 3 — Groundspeed (GS)**
+
+- With ~20 kt crosswind on 100 kt TAS, computer/plot GS ≈ **98 kt** (small reduction from pure crosswind case).
+- Always take GS from **E6B / approved plot**, not guess, in real flight.
+
+**Step 4 — Time en route (ETE) and ETA**
+
+```text
+ETE (hr) = Distance / GS = 60 / 98 ≈ 0.61 hr ≈ 37 minutes
+```
+
+- If departure fix at **0300 UTC**, ETA next checkpoint ≈ **0337 UTC**.
+
+**Step 5 — DR position check**
+
+- After 37 min on heading **070°C**, you should be near checkpoint (allowing for minor wind change).
+- If landmark early/late → revise GS and ETA for next leg (§6.13).
+
+**Step 6 — If off track in flight**
+
+- At halfway (30 NM), you are **2 NM right** of track.
+- Track error ≈ `2 × 60 / 30 = 4°` → adjust heading 4° left into error (§6.7).
+
+### Sign reminders
+
+- Wind from **right** → correct **right** (add WCA to TH in typical notation).
+- Wind from **left** → correct **left**.
+- Never confuse **wind direction** (FROM) with **track** (direction of travel over ground).
+
+> **CASA Exam Cues — DR and wind triangle**
+>
+> - Exam expects **order**: TT → WCA → TH → MH → CH → GS → ETE.
+> - Wind is almost always given as **direction wind is FROM**.
+> - **GS** for time calculation, not TAS, unless question asks airborne time only.
+> - Show **variation/deviation** steps separately — easy marks lost on sign.
 
 ---
 
@@ -315,17 +386,63 @@ Use these terms for conceptual exam questions, even if not heavily used in basic
 
 ## 6.12 GNSS/GPS Practical Use and Risk Management
 
+**Definition — GNSS:** Global Navigation Satellite System (e.g. GPS, GLONASS, Galileo) used for position, track, and time.
+
 ### Core operating points
 
-- Verify waypoint sequence and active leg.
-- Check CDI scale/sensitivity and mode awareness.
-- Understand integrity concept (for exam: RAIM/SBAS awareness).
+- Verify **active flight plan**, waypoint sequence, and **active leg**.
+- Check **CDI** scale/sensitivity and mode (ENR vs APR).
+- Cross-check against chart, DR, and terrain — **one source is not enough**.
+
+### RAIM (Receiver Autonomous Integrity Monitoring)
+
+**Definition — RAIM:** function in many IFR-approved GPS receivers that checks **consistency between satellites** to detect faulty information; integrity may be **unavailable** if insufficient satellites or geometry.
+
+| Aspect | PPL exam takeaway |
+|---|---|
+| Purpose | Detect misleading position data before it becomes hazardous |
+| Limitation | Needs enough satellites in good geometry — **NOTAM** may warn RAIM outages |
+| VFR | Awareness; know when GPS may be less trustworthy |
+
+### SBAS and LPV (Australia context)
+
+**Definition — SBAS (Satellite Based Augmentation System):** broadcasts **corrections** via geostationary satellites to improve accuracy and provide **integrity** (e.g. **WAAS** USA, **EGNOS** Europe; Australia has pursued **Southern Positioning Augmentation Network (SouthPAN)** for regional SBAS capability — confirm current status in briefing material).
+
+| Term | Meaning |
+|---|---|
+| **SBAS** | Augmented GNSS with higher accuracy/integrity than basic GPS |
+| **LPV (Localizer Performance with Vertical guidance)** | SBAS-based approach with lateral and vertical guidance (where published and aircraft/equipment certified) |
+| **LNAV / LNAV+V** | GPS approach types with different guidance levels — know your aircraft AFM/POH limits |
+
+- PPL VFR: you may not fly LPV approaches without appropriate rating/aircraft approval — exam may test **concept** only.
+
+### GNSS limitations (operational and exam)
+
+| Limitation | Risk | Mitigation |
+|---|---|---|
+| **Signal interference / jamming** | Position loss or drift | Revert to DR, map, pilotage; report if suspected |
+| **Database not current** | Wrong waypoints, airspace, terrain | Check cycle date; update before flight |
+| **Wrong waypoint active** | Fly to incorrect point | Brief and verify ident on ground and in flight |
+| **Multipath (low level)** | Position errors near terrain/buildings | Cross-check visually; delay reliance until clean signal |
+| **Over-reliance** | Loss of SA if screen fails | DR + chart backup every leg |
+| **RAIM NOT available** | Reduced integrity period | Plan alternate nav; delay IFR GPS approach if applicable |
+| **Cold start / re-routing errors** | Temporary misleading CDI | Confirm capture before committing |
+
+```mermaid
+flowchart TD
+    G[GNSS primary display] --> C{Matches chart and DR?}
+    C -- Yes --> OK[Continue and monitor]
+    C -- No --> F[Fix error or stop using until resolved]
+```
 
 ### Pilot discipline
 
-- GNSS is primary situational aid, not single-source truth.
-- Continue map/terrain/time cross-check (pilotage + DR).
-- Confirm database validity and NOTAM impacts before flight.
+- GNSS is a **primary situational aid**, not single-source truth.
+- Continue **map / terrain / time** cross-check (pilotage + DR).
+- Confirm **database currency** and **NOTAM** (GPS outages, RAIM) before flight.
+
+- [CASA — GNSS and navigation safety context](https://www.casa.gov.au/safety-management)
+- [FAA PHAK — navigation systems](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
 
 ---
 
@@ -356,18 +473,59 @@ flowchart LR
 
 ## 6.14 Lost Procedure and Repositioning
 
-Priority order:
+### Priority order (always)
 
-1. **Aviate** (safe altitude, stable control).
-2. **Navigate** (fix position).
-3. **Communicate** (seek ATS/FIS assistance early).
+1. **Aviate** — safe altitude, terrain clearance, stable aircraft control.
+2. **Navigate** — establish position (GNSS, pilotage, radio aids, DR back-check).
+3. **Communicate** — ATS/FIS/CTAF; do not delay while guessing position.
 
-Typical practical sequence:
+Same hierarchy as emergency radio work: **Aviate, Navigate, Communicate** (Chapter 7).
 
-- Climb if safe and legal for better line-of-sight.
-- Circle if necessary to reduce workload.
-- Identify major features or electronic aids.
-- Set a fuel/time decision point and commit.
+### Typical practical sequence
+
+| Step | Action |
+|---|---|
+| 1 | Note **time UTC**, fuel remaining, last known position (if any) |
+| 2 | Climb if safe/legal for visibility, radio, and terrain clearance |
+| 3 | Circle or hold briefly to reduce workload — avoid random headings |
+| 4 | Identify features: roads, coast, towns; cross-check GNSS vs chart |
+| 5 | Use aids: VOR/NDB/ATC radar assistance where available |
+| 6 | Commit to **divert**, **land**, or **known track** — set hard fuel/time limit |
+| 7 | If still uncertain → **communicate** PAN PAN or MAYDAY as appropriate (Chapter 1) |
+
+```mermaid
+flowchart TD
+    L[Uncertain of position] --> A[Aviate safe altitude]
+    A --> N[Fix position if possible]
+    N --> C[Communicate position request to ATS/FIS]
+    C --> D{Resolved?}
+    D -- Yes --> R[Resume or divert as needed]
+    D -- No --> E[Land when safe / declare urgency]
+```
+
+### Link to Air Law — SAR and flight notification
+
+Getting lost is not automatically a **distress** event, but it can become one if fuel, weather, or terrain margins erode. Your **legal and SAR context** matters:
+
+| Air Law topic | Relevance when lost | See |
+|---|---|---|
+| **SARTIME** | If you do not arrive and have **not cancelled** SARTIME, **search and rescue action may be initiated** at the nominated UTC time | [Chapter 1 — SARTIME/SARWATCH](ch1_air_law.md) |
+| **SARWATCH** | IFR reporting flights — failure to report triggers SAR logic | Chapter 1 |
+| **CENSAR cancellation** | Landing safely is not enough for VFR SARTIME — **cancel with CENSAR (1800 814 931)** or approved method | Chapter 1 |
+| **Distress (MAYDAY) / urgency (PAN PAN)** | Use when safety margin is gone — lost with low fuel, deteriorating weather, or unable to guarantee terrain clearance | Chapter 1 §1.5 |
+| **Position reports** | Giving ATS an accurate position helps SAR and reduces search area | Chapter 1 — ATS |
+
+**Operational SAR-minded habits**
+
+- Lodge realistic **SARTIME** with margin; update or cancel after **diversion**.
+- If lost and past planned ETA: **call ATS/FIS early** — you are not “bothering” them; you are activating the safety system.
+- Provide: callsign, **last known position**, heading, altitude, endurance, persons on board, intentions.
+- If you land at non-planned aerodrome: **cancel SARTIME** and notify someone expecting you.
+
+**Exam scenario pattern:** pilot lost, fuel adequate, VMC — correct answer includes **maintain control**, **fix position**, **communicate for help**, and **awareness of SARTIME/notification obligations** — not silent continued wandering.
+
+- [Airservices — SARTIME](https://www.airservicesaustralia.com/industry-info/pilot-tools/sartime/)
+- [CASA — flight plans and SARTIME](https://www.casa.gov.au/resources-and-education/education-and-training/out-n-back/episode-25-flight-plans-and-sartime)
 
 ---
 
@@ -408,10 +566,14 @@ Countermeasures:
 
 - Mixing true/magnetic/compass references in one calculation chain.
 - Wrong east/west sign application for variation or deviation.
+- Using **TAS** instead of **GS** for ETE/ETA.
+- Wind direction: confusing **FROM** vs **TO** when plotting triangle.
 - Forgetting cosine in longitude distance.
 - Assuming straight line on all charts means shortest path.
 - Applying 1-in-60 with distance-to-go when question asks distance-flown.
 - Trusting GNSS without procedural cross-check.
+- Ignoring **RAIM** / database currency in GPS approach or integrity questions.
+- Lost procedure answer omits **communicate** or **SARTIME cancellation** when scenario includes notification.
 
 ---
 
@@ -421,7 +583,8 @@ Countermeasures:
 2. Do mixed 10-question blocks: wind, conversion, chart, timing.
 3. Explain each result in words ("why this sign?", "why this correction?").
 4. Rework all wrong questions after 48 hours.
-5. Practice tidy wind-triangle drawing under time pressure.
+5. Practice one full **DR leg** (TT → WCA → headings → GS → ETE) from memory weekly.
+6. Practice tidy wind-triangle drawing under time pressure.
 
 ---
 
@@ -430,6 +593,7 @@ Countermeasures:
 - FAA Pilot's Handbook of Aeronautical Knowledge (Navigation chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - ICAO Annex 4 (Aeronautical Charts): <https://www.icao.int/>
 - CASA Visual Navigation Guide and VFR resources: <https://www.casa.gov.au/>
+- Airservices SARTIME: <https://www.airservicesaustralia.com/industry-info/pilot-tools/sartime/>
 - EASA ATPL Learning Objectives (General Navigation): <https://www.easa.europa.eu/>
 
 ---

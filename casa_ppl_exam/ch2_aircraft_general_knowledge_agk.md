@@ -137,6 +137,16 @@ Legend:
   - **Symptoms**: falling RPM (fixed pitch), rough running, MP drop (constant speed).
   - **Action**: **carb heat** routes warm air to melt ice—expect temporary rougher running during clearing.
 
+> **CASA Exam Cues — carburettor icing**
+>
+> - Ice can form at **above freezing OAT** when moisture is present (venturi cooling).
+> - Highest risk often **partial power** and **high humidity** — not only “cold day.”
+> - Classic signs: **RPM drop** (fixed pitch), **rough engine**, **MP drop** (constant-speed prop).
+> - Correct immediate action: **full carb heat** per POH; expect **brief rougher running** while ice clears.
+> - After recovery: apply heat as needed; monitor; consider exit from icing conditions.
+> - **Fuel-injected** types (e.g. many **Diamond** trainers): no **carb** ice, but **induction/filter icing** is still possible — do not answer “impossible” on exam.
+> - Exam trap: confusing carb ice with **fuel starvation** or **magneto** failure — ice usually builds gradually with power loss at constant throttle.
+
 ### Ignition
 - **Magneto**: self-contained ignition generator driven by engine—**does not require** aircraft electrical bus power for spark.
 - **Dual magnetos**: two independent systems + two plugs per cylinder improve combustion and provide redundancy.
@@ -242,62 +252,159 @@ Legend:
   - **Alternator reset**: only if POH permits procedure.
   - **Land as soon as practical** if unable to restore charging—battery time is finite.
 
+> **CASA Exam Cues — electrical failures**
+>
+> - **Magnetos** still provide spark on most piston trainers — engine can run with **total electrical failure**, but radios/lights/gyro suction pump (if electric-driven on some types) may not.
+> - **Ammeter/loadmeter** abnormal → suspect alternator; **load shed** non-essentials per POH.
+> - **Glass cockpit (Diamond DA40/DA42):** electrical failure may affect **PFD/MFD/AHRS** — know **backup instruments** and reversionary mode in POH.
+> - **Cessna 172 (typical):** vacuum pump often **engine-driven** — electrical loss may not stop vacuum immediately, but **electric turn coordinator** (if fitted) and avionics fail as buses deplete.
+> - Exam trap: assuming you must land immediately on any electrical warning — follow POH; battery endurance is **limited**.
+> - Know difference: **alternator failure** (may reset once) vs **battery exhaustion** (no charging).
+
 **References:** [FAA PHAK — Chapter 7: Aircraft Systems](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-7-aircraft-systems) (electrical)
 
 ---
 
-## 2.6 Vacuum/Pressure, Gyros, and Modern Avionics
+## 2.6 Gyroscopic Instruments (Vacuum, Electric, and Glass)
 
-- **Gyro power sources**
-  - **Vacuum system**: suction spins gyro rotors in some legacy panels—**vacuum pressure low** can degrade AI/HI.
-  - **Electric gyros / AHRS**: solid-state or electric spin—failure modes differ; may have battery backup on some avionics suites.
+**Definition — gyroscopic instrument:** flight instrument using a spinning rotor (or solid-state equivalent) with **rigidity in space** and **precession** to display attitude, heading, or turn rate.
 
-- **Gyroscopic principles**
-  - **Rigidity in space**: spinning gyro resists reorientation of its spin axis (basis for AI/HI behavior).
-  - **Precession**: when torque applied, response is 90° “around” the spin in classical explanation—used in turn instruments’ design.
+### Gyroscopic principles
 
-- **Classic gyro flight instruments**
-  - **Attitude indicator (AI)**: displays pitch/bank vs horizon **relative to gyro stability**—must periodically align with reality via cues/synchronization procedures per type.
-  - **Heading indicator / directional gyro (HI/DG)**: displays heading but **drifts** due to gyro precession/earth rate—must be periodically reset to magnetic compass.
-  - **Turn coordinator**: indicates rate of turn (and slip/skid via inclinometer ball); useful partial-panel instrument.
+| Principle | Meaning | Instrument use |
+|---|---|---|
+| **Rigidity in space** | Spin axis stays fixed in space as aircraft moves around it | Attitude indicator, heading indicator |
+| **Precession** | Applied force appears 90° around spin axis | Turn instrument design; limits on AI handling |
 
-- **Common failures**
-  - **Vacuum pump failure**: decreasing suction→ unreliable vacuum-driven gyros.
-  - **Electrical failure**: may blank electric instruments unless on backup bus.
+### Classic vacuum-driven gyros (typical Cessna 172 analogue panel)
 
-- **Glass cockpit (modern displays)**
-  - **Air Data Computer (ADC)**: computes pressure altitude, airspeed, vertical speed from pitot-static sensors.
-  - **Attitude and Heading Reference System (AHRS)**: attitude/heading reference system replacing mechanical gyro cluster on many installations.
-  - **Primary Flight Displays (PFD) / Multi-Function Displays (MFD)**: integrated displays—know **reversionary mode** and backup instruments per POH.<br />&nbsp;<br />
-  <b>Airbus A320 PFD as Example</b><br />
-  <img src="images/ch2/a320_fma1.webp" alt="PFD 1" style="width: 40%" /> <img src="images/ch2/a320_fma2.webp" alt="PFD 2" style="width: 40%" /><br />
-  <img src="images/ch2/a320_fma3.webp" alt="PFD 3" style="width: 40%" /> <img src="images/ch2/a320_fma4.webp" alt="PFD 4" style="width: 40%" /><br />
-  [Source](https://www.instagram.com/p/DX6loT-jGQZ/)
+| Instrument | Display | Failure if vacuum lost | Notes |
+|---|---|---|---|
+| **Attitude indicator (AI)** | Pitch and bank vs horizon | Tumbles / unreliable | Suction typically 4.5–5.5 inHg range (POH) |
+| **Heading indicator (HI/DG)** | Magnetic heading (drifts) | Unreliable | Reset from compass in straight, level, unaccelerated flight |
+| **Turn coordinator** | Rate of turn + slip/skid ball | Often **electric** on later 172s — may still work | Key **partial-panel** instrument |
 
-**References:** [FAA PHAK — Chapter 8: Flight Instruments](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
+- **Vacuum source:** engine-driven **vacuum pump** → manifold suction to AI and HI.
+- **Low vacuum flag / gauge:** treat AI/HI as **unreliable**; partial panel procedures apply.
 
-**Figure (vacuum instrument cluster concept):** see gyro instruments section figures in PHAK Chapter 8 PDF.
+### Electric gyros and glass systems (typical Diamond DA40 / DA42)
+
+| System | Typical fit | Failure mode awareness |
+|---|---|---|
+| **Electric AI / turn coordinator** | Backup or primary on some aircraft | Electrical bus failure |
+| **AHRS** | Attitude/heading data to PFD | Sensor or power failure → reversionary instruments |
+| **ADC** | Air data from pitot-static to displays | Pitot-static errors affect glass ASI/altitude |
+
+- **Diamond trainers:** commonly **integrated glass** with **standby analogue** ASI, altimeter, attitude, compass — know **your POH reversionary mode** (which instruments remain primary).
+- Exam focus: failure logic is the same as analogue — **validate unusual indications**, cross-check, partial panel.
+
+### Gyro failure modes (summary)
+
+| Failure | Typical indication | Affected instruments |
+|---|---|---|
+| Vacuum pump failure | Low suction; AI/HI flag | AI, HI |
+| Electrical failure | Bus voltage low; blanks | Electric TC, glass displays |
+| Vacuum leak | Gradual AI/HI degradation | AI, HI |
+| AHRS/ADC fault | Caution flags; conflicting data | Glass PFD |
+
+> **CASA Exam Cues — vacuum / gyro failures**
+>
+> - **Low vacuum** → do not trust **AI or HI**; use **partial panel** scan.
+> - **Turn coordinator** (and compass) often remain core references on **172**-style panels.
+> - **HI drifts** even when serviceable — must be **periodically aligned** to compass.
+> - If AI failed but pilot presses on in IMC/night: links to **spatial disorientation** (Chapter 4.4 — *the leans*, graveyard spiral).
+> - **Diamond/glass:** know **backup / reversionary** flight instruments; exam may describe “red X” or failed PFD — answer with POH logic, not airline procedures.
+> - Exam trap: turn coordinator shows **rate of turn**, not bank angle directly — do not treat as full attitude substitute.
+
+### Partial panel recovery (conceptual — always POH-specific)
+
+**Definition — partial panel:** flight with one or more primary gyro instruments inoperative; rely on limited remaining instruments and outside cues when VMC.
+
+```mermaid
+flowchart TD
+    F[Gyro failure recognized] --> A[Aviate — trim for level flight]
+    A --> S[Stabilize with remaining instruments]
+    S --> V{VMC available?}
+    V -- Yes --> E[Exit IMC / land VFR]
+    V -- No --> I[Instrument scan: TC + compass + ASI + altimeter]
+    I --> L[Land as soon as practical]
+```
+
+| Remaining instrument | Use in partial panel |
+|---|---|
+| Turn coordinator | Rate of turn; coordinate ball |
+| Magnetic compass | Heading (errors in turns — Ch 2.8) |
+| ASI | Airspeed control |
+| Altimeter / VSI | Level and climb/descent (if static system serviceable) |
+
+**Human factors link:** vestibular illusions (*the leans*, somatogravic) when outside visual cues are poor — see [Chapter 4 — section 4.4 Spatial disorientation](ch4_human_performance_and_limitations.md). Trust **validated** instruments only; do not fight false sensations.
+
+### Glass cockpit awareness (reference)
+
+- **PFD / MFD:** integrated display; failure may switch to **reversionary** or standby steam gauges.
+- Large-aircraft example (systems logic only): Airbus PFD layout for attitude guidance context.
+
+<img src="images/ch2/a320_fma1.webp" alt="PFD 1" style="width: 40%" /> <img src="images/ch2/a320_fma2.webp" alt="PFD 2" style="width: 40%" /><br />
+<img src="images/ch2/a320_fma3.webp" alt="PFD 3" style="width: 40%" /> <img src="images/ch2/a320_fma4.webp" alt="PFD 4" style="width: 40%" /><br />
+[Source](https://www.instagram.com/p/DX6loT-jGQZ/)
+
+**References:** [FAA PHAK — Chapter 8: Flight Instruments](https://www.faa.gov/regulations_policies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
 
 ---
 
 ## 2.7 Pitot-Static Instruments and Errors
 
-- **Pitot tube**: senses **total pressure** (**static + dynamic impact**) from airflow—primarily feeds **airspeed indicator**.
-- **Static port(s)**: sense **ambient static pressure**—feed **altimeter**, **VSI**, and static side of ASI.
-- **Airspeed indicator (ASI)**: differential pressure gauge comparing pitot total vs static → displays dynamic pressure scaled as speed (**IAS**).
+**Definition — pitot-static system:** uses **pitot pressure** (ram + static) and **static pressure** (ambient) to drive **ASI**, **altimeter**, and **VSI**.
 
-- **Altimeter**: aneroid capsules respond to **static pressure decrease with altitude**—pilot sets **subscale** (**QNH** in Australian ops for altitude reporting contexts per procedures).
+### Instrument operation
 
-- **Vertical speed indicator (VSI)**: measures **rate of change** of static pressure → climb/descent rate (may lag slightly).
+| Instrument | Pressure source | Displays |
+|---|---|---|
+| **Airspeed indicator (ASI)** | Pitot total vs static (diaphragm) | **IAS** (dynamic pressure) |
+| **Altimeter** | Static only (aneroid) | Height per **subscale** (QNH) |
+| **VSI** | Rate of change of static | Climb/descent rate (lags) |
 
-### Blockage scenarios
+**Pitot, static, and combined sources:**
 
-| Blockage case | Indicated Airspeed (IAS) on ASI | Indicated Altitude | Indicated Vertical Speed (VS) on VSI |
-| --- | --- | --- | --- |
-| Pitot ram air source and drain hole blocked | Increases with altitude gain; decreases with altitude loss | Unaffected | Unaffected |
-| Pitot ram air source blocked and drain hole open | Displays zero knots | Unaffected | Unaffected |
-| Static source blocked | Under-reads in climb, over-reads in descent (typical behavior) | Does not change with altitude gain or loss | Does not change with altitude gain or loss (VSI zero) |
-| Both static and pitot sources blocked | All indications remain constant, regardless of changes in airspeed, altitude and vertical speed | All indications remain constant | All indications remain constant |
+<img src="images/ch2/pitot_tubes.webp" alt="Pitot, static, and pitot-static tubes (schematic)" style="width: 50%" /><br />[Source](https://www.airheadatpl.com/blog/pitot-tube-101-how-your-airspeed-indicator-works)
+
+### Pitot-static failure modes and indications
+
+| Blockage / fault | ASI (typical) | Altimeter | VSI |
+|---|---|---|---|
+| Pitot blocked, **drain closed** | Increases in climb, decreases in descent | Normal | Normal |
+| Pitot blocked, **drain open** | Reads **zero** | Normal | Normal |
+| **Static** port blocked | Under-reads in climb, over-reads in descent | **Frozen** | **Zero** |
+| Pitot **and** static blocked | All three can appear **frozen** | Frozen | Frozen |
+
+### Alternate static source
+
+**Definition — alternate static source:** cabin (or other backup) pressure fed to static instruments when primary external static port is blocked or suspected failed.
+
+| Topic | Typical training aircraft notes |
+|---|---|
+| **Cessna 172** | Pull **alternate static** knob (cabin air); static pressure in unpressurized cabin often **lower** than outside → altimeter reads **higher**, ASI **higher**, VSI may show **climb** momentarily |
+| **Diamond DA40/DA42** | POH procedure for alternate / standby static if fitted — confirm type |
+| Purpose | Restore **usable** static pressure when external port blocked (water, ice, tape, wasp nest) |
+| Exam trap | Forgetting instruments are **wrong** immediately after selecting alternate — note errors in POH |
+
+> **CASA Exam Cues — alternate static source**
+>
+> - Used when **primary static blocked** or suspect (ice, contamination, damage).
+> - Cabin alternate static → instruments often indicate **higher altitude** and **higher airspeed** than actual (unpressurized cabin).
+> - **VSI** may show **climb** briefly when alternate selected — know POH correction if exam gives numbers.
+> - Does **not** fix **pitot-only** blockage — ASI still wrong if pitot blocked and drain closed.
+> - After use: maintain conservative margins; land and have system inspected.
+
+### Partial panel with pitot-static failures
+
+| Failure | Still usable (often) | Pilot action |
+|---|---|---|
+| Pitot blocked | Altimeter, VSI (if static OK); compass; TC | Fly attitude/ power settings; pitch for known IAS if trained; land |
+| Static blocked | ASI wrong; altimeter/VSI wrong | Select **alternate static** per POH; cross-check GPS/terrain; land |
+| Both blocked | Very limited | Treat as emergency; VMC landing; no IMC continuation |
+
+**Human factors link:** false climb/descent sensations if instruments misread — cross-check with [Chapter 4](ch4_human_performance_and_limitations.md) (sections **4.3** visual illusions, **4.4** spatial disorientation). **Black-hole** and **false horizon** approaches worsen when ASI/altimeter unreliable.
 
 ### Airspeed terminology
 
@@ -310,15 +417,13 @@ Legend:
 | Ground Speed (**GS** ) | TAS adjusted for **wind** | ETA/ETE, nav log timing, and range over the ground |
 
 ### Instrument/position errors
+
 - **Position error**: static port location and flow field cause static pressure to differ from free stream.
 - **Density / compressibility**: at high speed/altitude, ASI interpretation needs POH conversion to TAS.
-- **Lag / hysteresis**: especially **VSI**—momentarily misleading during abrupt zoom/climb transitions.
+- **Lag / hysteresis**: especially **VSI** — momentarily misleading during abrupt zoom/climb transitions.
+- **Pitot heat** (if fitted): used in visible moisture near freezing — know POH; blocked heated pitot still dangerous.
 
-**References:** [FAA PHAK — Chapter 8: Flight Instruments](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
-
-**Pitot, Static, and Pitot-Static Tubes:**
-
-<img src="images/ch2/pitot_tubes.webp" alt="Pitot, static, and pitot-static tubes (schematic)" style="width: 50%" /><br />[Source](https://www.airheadatpl.com/blog/pitot-tube-101-how-your-airspeed-indicator-works)
+**References:** [FAA PHAK — Chapter 8: Flight Instruments](https://www.faa.gov/regulations_policies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
 
 ---
 
@@ -528,6 +633,10 @@ $$
 
 - Confusing fuel **quantity** problem with fuel **feed/selection** problem.
 - Misreading ASI/static blockage scenarios.
+- Forgetting **alternate static** changes indications (often higher alt/IAS).
+- Treating **turn coordinator** as a full attitude indicator.
+- Assuming **electrical failure** always stops the engine (magnetos).
+- Applying **carb heat** logic to **fuel-injected** aircraft without reading scenario.
 - Forgetting density altitude effects on engine, prop, and wing together.
 - Applying generic numbers instead of aircraft-specific POH values.
 - Mixing true/magnetic/compass headings and signs for variation/deviation.
@@ -537,8 +646,10 @@ $$
 
 ## 2.15 Rapid Revision Checklist (Pre-Exam)
 
-- Can explain operation/failures of ASI, altimeter, VSI.
+- Can explain operation/failures of ASI, altimeter, VSI and alternate static effects.
+- Can describe partial panel and link gyro failures to human factors (Chapter 4).
 - Can diagnose carb icing and apply correct immediate actions.
+- Can contrast vacuum-driven gyros (typical C172) with glass/AHRS (typical Diamond) at POH level.
 - Can distinguish detonation vs pre-ignition and preventive handling.
 - Can describe fixed vs constant-speed propeller operation and implications.
 - Can compute basic W&B and interpret CG movement with fuel burn.
