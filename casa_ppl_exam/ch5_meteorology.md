@@ -8,9 +8,22 @@ title: Chapter 5 - Meteorology
 
 These notes are exam-focused for CASA PPL meteorology, with operational interpretation emphasis for VFR decision making.
 
+### How to use this chapter
+
+| Label | Meaning |
+|---|---|
+| **CASA Primary** | BOM products (GAF, TAF, METAR, SIGMET, AIRMET, GPWT), NAIPS briefing, Australian hazards |
+| **PHAK Secondary** | General meteorology theory (stability, fronts, thunderstorm structure) |
+
+**Study habits:** Decode one **METAR** and **TAF** daily; mark trends on a **GAF** map. **Sketch** a cold front cross-section and a mountain-wave airflow diagram when revising hazards.
+
 ---
 
 ## 5.1 Atmosphere Fundamentals
+
+> **Why this matters**
+>
+> Stability controls whether a small lifting force grows into **CB** or stays benign stratus — it drives your go/no-go below legal minima.
 
 **Definition — atmosphere:** the envelope of gases surrounding Earth; weather occurs mainly in the **troposphere** (surface to about 10–16 km, higher at equator).
 
@@ -404,6 +417,10 @@ flowchart TD
 
 ## 5.10 Weather Products and Interpretation
 
+> **CASA Primary:** BOM/Airservices briefing products below. **PHAK Secondary:** generic METAR/TAF decode rules (same symbols, verify Australian examples).
+
+> **Ask yourself:** Does the **TAF trend** support continuing, or does **GAF** show area turbulence/icing your route cannot avoid?
+
 ### 5.10.0 METAR vs TAF comparison table
 
 | Feature | METAR (and SPECI) | TAF |
@@ -592,32 +609,38 @@ flowchart TD
 
 ---
 
-## 5.12 Common Meteorology Exam Traps
+## 5.12 Pre-Exam Revision (Must Know · Nice to Know · Common Traps)
 
-- Confusing weather minima legality with safe go/no-go judgment.
-- Focusing on single weather report instead of trend.
-- Ignoring temperature/dew point spread significance.
-- Misreading forecast time groups and validity periods.
-- Underestimating convective outflow, **microburst**, and gust front effects.
-- Using **TAF** only and ignoring **GAF** area hazards (turbulence, icing symbols).
-- Confusing **SIGMET** (significant, avoid) with **AIRMET** (advisory/amendment).
-- Flying **lee of ranges** when GAF shows turbulence/mountain wave — rotor risk.
+> **Sketch it:** Cold vs warm front side-view; METAR/TAF decode boxes; lee-side mountain wave airflow.
+
+### Must know
+
+- Stable vs unstable air; cloud types and typical hazards.
+- METAR/TAF decode; **trend** (METAR now + TAF + GAF area).
+- **CASA Primary** products: GAF, SIGMET, AIRMET, GPWT, NAIPS briefing role.
+- Thunderstorm hazards (turbulence, hail, microburst/outflow, icing).
+- Wind shear, microburst, mountain wave / rotor awareness.
+- Dew point spread and fog/low cloud risk.
+
+### Nice to know
+
+- ISA lapse rates; pressure altitude approximations.
+- Occluded and stationary front nuances.
+- ARFOR legacy context if mentioned in training.
+
+### Common traps
+
+- Weather **legal** vs **safe** go/no-go confused.
+- Single report without trend.
+- TAF validity/time groups misread.
+- **TAF only** — ignoring **GAF** area hazards.
+- **SIGMET** vs **AIRMET** confused.
+- Lee of ranges when GAF shows turbulence/mountain wave.
+- Underestimating convective outflow and gust fronts.
 
 ---
 
-## 5.13 Rapid Revision Checklist (Pre-Exam)
-
-- Can explain stable vs unstable air and resulting cloud/weather.
-- Can identify frontal weather implications from chart/symbol context.
-- Can decode METAR/TAF and extract operational risk.
-- Can describe role of GAF, SIGMET, AIRMET, and GPWT in Australian briefing.
-- Can explain microburst, wind shear, and mountain wave avoidance.
-- Can explain thunderstorm hazards beyond lightning.
-- Can apply a conservative diversion/no-go decision to scenario questions.
-
----
-
-## 5.14 Meteorology Formula Pack and Graphics
+## 5.13 Meteorology Formula Pack and Graphics
 
 ### Core formulas (exam-useful)
 
@@ -669,15 +692,20 @@ flowchart TD
 
 ---
 
-## References (Primary)
+## References
 
-- FAA PHAK (weather chapters and weather services context): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+### CASA Primary / Australian operational
+
 - BOM — Graphical Area Forecasts (GAF): <http://www.bom.gov.au/aviation/gaf/>
 - BOM — aviation forecasts and advisories: <http://www.bom.gov.au/aviation/>
 - Airservices — NAIPS / flight briefing: <https://www.airservicesaustralia.com/pilots/flight-briefing-services>
-- ICAO meteorological service framework (Annex 3): <https://www.icao.int/>
 - CASA weather and flight planning guidance: <https://www.casa.gov.au/>
-- EASA weather information and operations resources: <https://www.easa.europa.eu/>
+
+### PHAK Secondary / supplementary
+
+- FAA PHAK (weather chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- ICAO meteorological service framework (Annex 3): <https://www.icao.int/>
+- EASA weather information resources: <https://www.easa.europa.eu/>
 
 ---
 

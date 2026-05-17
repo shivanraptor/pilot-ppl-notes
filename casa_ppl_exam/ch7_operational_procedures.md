@@ -8,9 +8,22 @@ title: Chapter 7 - Operational Procedures
 
 These notes are exam-focused for CASA PPL operational procedures with practical, scenario-based emphasis.
 
+### How to use this chapter
+
+| Label | Meaning |
+|---|---|
+| **CASA Primary** | CTAF/MBZ (AIP/ERSA), CASA radiotelephony AC, Australian circuit/joining practice, SARTIME |
+| **PHAK Secondary** | General airport ops, stabilized approach, emergency priority ladder |
+
+**Study habits:** Walk through **§7.12 phase SOP flows** aloud. **Sketch** a left-hand circuit with join calls labelled at each leg.
+
 ---
 
 ## 7.1 Preflight Actions and Threat Briefing
+
+> **Why this matters**
+>
+> Preflight is where you **buy margin** — legal paperwork, fuel, W&B, and threat brief set decision triggers before workload rises at the hold point.
 
 **Definition — preflight:** all actions before engine start that confirm the flight is legal, airworthy, and operationally safe.
 
@@ -133,6 +146,10 @@ flowchart LR
 ```
 
 ### Non-controlled aerodrome operations (CTAF / MBZ)
+
+> **CASA Primary:** CTAF frequency, MBZ, circuit direction — **ERSA/AIP**. **PHAK Secondary:** general traffic pattern concepts.
+
+> **Ask yourself:** Can you hear traffic on final while you are joining downwind? If not, should you extend, hold, or orbit?
 
 **Definition — non-controlled aerodrome:** aerodrome without ATC providing aerodrome control service; pilots self-separate using **see-and-avoid** and **radio broadcasts** on the designated frequency.
 
@@ -373,6 +390,10 @@ flowchart TD
 ---
 
 ## 7.9 Emergency and Abnormal Procedures
+
+> **Real-world application**
+>
+> The first 10 seconds set survivability — pitch and configuration before radio. Examiners mark **Aviate** before **Communicate** every time.
 
 **Definition — emergency:** condition of serious and/or immediate danger requiring priority handling (may justify MAYDAY).
 
@@ -636,33 +657,40 @@ flowchart TD
 - Distress/urgency phraseology: Chapter 1 (MAYDAY / PAN PAN).
 
 ---
-## 7.14 Common Operational Procedures Exam Traps
 
-- Forgetting to prioritize control of aircraft in emergency questions.
-- Delaying go-around despite unstable approach cues.
-- Treating checklist as optional under pressure.
-- Poor runway/taxi situational awareness assumptions.
-- Ignoring passenger briefing as a compliance/safety requirement.
-- Omitting **CTAF broadcasts** at non-controlled aerodromes (join, downwind, final, vacated).
-- **Straight-in** join when circuit traffic makes it unsafe.
-- Treating SOP as “extra” rather than exam-expected discipline.
+## 7.14 Pre-Exam Revision (Must Know · Nice to Know · Common Traps)
+
+> **Sketch it:** Left-hand circuit with CTAF calls at 10 NM, join, downwind, base, final, vacated; emergency ladder Aviate → Navigate → Communicate → Manage.
+
+### Must know
+
+- Phase SOP flows (§7.12): preflight, departure, en route, arrival, emergency.
+- CTAF broadcast sequence and joining discipline (non-controlled).
+- Stabilized approach gates and **go-around** triggers.
+- Emergency order: **Aviate → Navigate → Communicate → Manage**.
+- Runway incursion prevention; passenger briefing.
+- Takeoff brief: abort gate, engine failure by phase.
+- Link SOP, TEM, CRM (Ch 4) in scenarios.
+
+### Nice to know
+
+- Short-field / soft-field technique contrasts.
+- SAR/ELT/survival equipment overview.
+- Descent TOD approximations (§7.16).
+
+### Common traps
+
+- Emergency: radio before control of aircraft.
+- Delaying go-around when unstable.
+- Checklist skipped under pressure.
+- Missing **CTAF** calls (join, downwind, final, vacated).
+- **Straight-in** join unsafe with circuit traffic.
+- SOP treated as optional vs exam-expected discipline.
+- Passenger briefing ignored in compliance scenarios.
 
 ---
 
-## 7.15 Rapid Revision Checklist (Pre-Exam)
-
-- Can structure a full preflight legal/safety check sequence.
-- Can run phase SOP flows (preflight, departure, en route, arrival, emergency).
-- Can brief takeoff including failure contingencies.
-- Can describe CTAF joining and broadcast sequence at non-controlled aerodromes.
-- Can identify stabilized approach criteria and go-around triggers.
-- Can prioritize emergency actions in correct order.
-- Can explain runway incursion prevention techniques.
-- Can link SOP, TEM, and CRM in scenario answers.
-
----
-
-## 7.16 Procedure Graphics, Tables, and Formula Aids
+## 7.15 Procedure Graphics, Tables, and Formula Aids
 
 ### Graphic: normal flight phase workflow
 
@@ -712,8 +740,16 @@ Rate of descent (fpm) ≈ GS (kt) × 5
 
 ## References
 
-- FAA PHAK (airport operations, emergencies, procedures): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
-- CASA VFR guide copy (supportive operational context): <https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf>
+### CASA Primary / Australian operational
+
+- AIP/ERSA (CTAF, circuits, aerodrome procedures): <https://www.airservicesaustralia.com/aip/>
+- CASA radiotelephony AC (Dec 2025): <https://www.casa.gov.au/rules/regulatory-framework/casr/part-64-casr-authorisations-non-licensed-personnel>
+- CASA VFRG (supportive context): <https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf>
+- Airservices SARTIME: <https://www.airservicesaustralia.com/industry-info/pilot-tools/sartime/>
+
+### PHAK Secondary / supplementary
+
+- FAA PHAK (airport operations, emergencies): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - ICAO Annex 2 (Rules of the Air): <https://www.icao.int/>
 - EASA Air Operations portal: <https://www.easa.europa.eu/en/domains/air-operations>
 

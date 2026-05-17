@@ -8,9 +8,22 @@ title: Chapter 4 - Human Performance and Limitations
 
 These notes are exam-focused for CASA PPL human factors. They connect physiology, psychology, and practical in-flight decision making.
 
+### How to use this chapter
+
+| Label | Meaning |
+|---|---|
+| **CASA Primary** | CASA safety publications, exam scenario culture (TEM, CRM, conservative decisions) |
+| **PHAK Secondary** | FAA PHAK aeromedical and ADM chapters for physiology and illusion theory |
+
+**Study habits:** For each illusion or stressor, learn **one cockpit countermeasure**, not just the name. **Sketch** a TEM loop (threat → error → state → recovery) for a scenario you flew recently.
+
 ---
 
 ## 4.1 Human Factors Big Picture
+
+> **Why this matters**
+>
+> Most PPL accidents involve **decision and human performance** — exams test whether you recognise threats early and choose recovery (divert, go-around, land) over continuation.
 
 **Definition — human factors:** study of how people interact with systems (aircraft, weather, ATC, procedures); in aviation, focus on reducing human-error-related accidents.
 
@@ -43,6 +56,8 @@ flowchart TD
 ---
 
 ## 4.2 Physiology and Altitude Effects
+
+> **Ask yourself:** Tingling fingers and dizziness after stress — hypoxia or **hyperventilation**? What is the **first** treatment for each?
 
 **Definition — hypoxia:** insufficient oxygen reaching body tissues to function normally.
 
@@ -154,6 +169,12 @@ flowchart TD
 
 ## 4.5 Stress, Fatigue, and Workload
 
+> **Real-world application**
+>
+> A “legal” duty day after poor sleep still produces **tunnel vision** and checklist slips — personal minimums should include rest, not just hours.
+
+> **Ask yourself:** Are you fixing problems faster than new ones appear? That is rising **workload** — simplify (vectors, divert, land).
+
 **Definition — stress:** body’s response to perceived demand or threat; **acute** (short-term) vs **chronic** (ongoing).
 
 **Definition — fatigue:** decreased capacity due to sleep loss, long duty, or cumulative flying over days.
@@ -242,6 +263,8 @@ flowchart TD
 ---
 
 ## 4.6 Decision Making and Error Management
+
+> **CASA Primary:** TEM/CRM in scenario answers (threat → error → undesired state → **recovery**). **PHAK Secondary:** DECIDE and hazardous-attitude models.
 
 **Definition — ADM (aeronautical decision-making):** structured process to make safe choices under pressure.
 
@@ -508,33 +531,40 @@ flowchart TD
 - Cross-reference: Chapter 7 (stabilized approach, go-around).
 
 ---
-## 4.11 Common Human Factors Exam Traps
+
+## 4.11 Pre-Exam Revision (Must Know · Nice to Know · Common Traps)
+
+> **Sketch it:** TEM loop for one real flight; table of four illusions with **instrument countermeasure** each.
+
+### Must know
+
+- Hypoxia vs hyperventilation signs and **different** immediate actions.
+- At least four spatial/visual illusions and cockpit mitigations.
+- TEM: threat → error → undesired state → **recovery** (go-around, divert, land).
+- CRM/SRM for **single-pilot** (resources, sterile cockpit, self-brief).
+- Get-there-itis and plan continuation — scenario answer usually **do not continue**.
+- Hazardous attitudes and antidotes.
+
+### Nice to know
+
+- DECIDE model; Endsley situational awareness formula.
+- G-force, spatial disorientation detail beyond PPL core.
+- Personal minimums framework (legal + personal + dynamic).
+
+### Common traps
 
 - Confusing hyperventilation treatment with hypoxia treatment.
-- Memorizing illusion names without knowing practical countermeasures.
+- Memorizing illusion names without countermeasures.
 - Assuming confidence equals competence under stress.
 - Ignoring cumulative fatigue over multiple days.
-- Treating ADM as theory only rather than operational behavior.
-- Answering “continue” when scenario shows **get-there-itis** or **plan continuation** — correct answer is usually **divert/cancel/land**.
-- Treating **CRM** as multi-crew only — single-pilot must use resources and self-brief.
+- Answering “continue” when scenario shows **get-there-itis**.
+- Treating **CRM** as multi-crew only.
 - Confusing **threat** (external) with **error** (pilot mistake).
-- Forgetting **recovery** action (go-around, divert) after undesired state.
+- Forgetting **recovery** after undesired state.
 
 ---
 
-## 4.12 Rapid Revision Checklist (Pre-Exam)
-
-- Can identify hypoxia/hyperventilation signs and immediate actions.
-- Can explain at least four spatial/visual illusions and mitigations.
-- Can apply TEM/ADM logic to a scenario question (threat → error → state → recovery).
-- Can explain CRM/SRM for single-pilot operations with practical resources.
-- Can recognise get-there-itis and plan continuation bias in scenarios.
-- Can identify hazardous attitudes and antidotes.
-- Can justify a conservative no-go/diversion decision on human factors grounds.
-
----
-
-## 4.13 Graphics and Quick Reference Tables
+## 4.12 Graphics and Quick Reference Tables
 
 ### Graphic: TEM and ADM loop
 
@@ -582,12 +612,18 @@ SA = perception + comprehension + projection
 
 ---
 
-## References (Primary)
+## References
+
+### CASA Primary
+
+- CASA safety publications and human factors guidance: <https://www.casa.gov.au/safety-management>
+- CASA RPL/PPL/CPL Aeroplane Workbook (scenario conventions): <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
+
+### PHAK Secondary / supplementary
 
 - FAA PHAK (ADM and aeromedical sections): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - ICAO Human Factors digest resources: <https://www.icao.int/safety/humanfactors>
 - EASA pilot human factors resources: <https://www.easa.europa.eu/>
-- CASA safety publications and human factors guidance: <https://www.casa.gov.au/safety-management>
 
 ---
 

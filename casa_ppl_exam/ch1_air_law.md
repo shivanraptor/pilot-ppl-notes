@@ -8,9 +8,22 @@ title: Chapter 1 - Air Law
 
 These notes are exam-focused for CASA PPL Air Law. Always treat current CASA legislation, AIP, and published instruments as controlling references.
 
+### How to use this chapter
+
+| Label | Meaning |
+|---|---|
+| **CASA Primary** | CAR/CASR, MOS, AIP/ERSA, CASA workbook, Airservices SARTIME — default for exam answers |
+| **PHAK Secondary** | FAA PHAK for general concepts (communications, airport ops); always verify Australian promulgated rules |
+
+**Study habits:** Use comparison tables for VMC, airspace, and radio urgency. **Sketch** a simple airspace stack or circuit diagram when a scenario names classes and altitudes — wrong class is a frequent trap.
+
 ---
 
 ## 1.1 Regulatory Structure and Authority
+
+> **Why this matters**
+>
+> Exam scenarios rarely ask “what is CASA?” — they test whether you can pick the **correct rule set** (private vs training, day vs night, controlled vs non-controlled) before applying minima or responsibilities.
 
 - CASA administers civil aviation safety in Australia.
 - Legislative hierarchy (simplified):
@@ -68,6 +81,10 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
 ---
 
 ## 1.4 Flight Rules (VFR Focus)
+
+> **CASA Primary:** VMC minima and flight rules — **AIP ENR 1.2** and current CAR/CASR/MOS. Do not rely on memory tables alone.
+
+> **Ask yourself:** If visibility is legal but cloud base is not, are you still VMC? Which chart (day vs night, class, altitude) are you using?
 
 - VFR minima and associated conditions are fundamental exam items.
 - Understand:
@@ -140,6 +157,12 @@ These notes are exam-focused for CASA PPL Air Law. Always treat current CASA leg
 ---
 
 ## 1.5 Airspace and ATS
+
+> **Real-world application**
+>
+> Before entering busy airspace, brief **frequency**, **clearance**, and **transponder code** on paper — fixing radio mistakes under workload is harder than getting them right on the ground.
+
+> **CASA Primary:** Class boundaries, services, and pilot obligations — **AIP** and ERSA. **PHAK Secondary:** general airspace diagram concepts.
 
 - Airspace classes: know service levels, separation responsibilities, and communications/transponder requirements conceptually.
 - ATC/ATS interactions:
@@ -245,6 +268,10 @@ MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducti
 
 ## 1.7 Documents, Publications, and Carriage Requirements
 
+> **Real-world application**
+>
+> If it is not in the aircraft or on your person when required, the flight can be **illegal** regardless of skill — build a documents pouch checklist and use it every dispatch.
+
 - Typical documents/publications a pilot must consult/carry as applicable:
   - Licence and medical evidence
   - Aircraft registration and airworthiness documentation
@@ -321,6 +348,12 @@ MAYDAY, MAYDAY, MAYDAY, Melbourne Centre, Piper VH-XYZ, engine failure, conducti
 ---
 
 ## 1.10 Radio and Radiotelephony
+
+> **Why this matters**
+>
+> Poor phraseology wastes frequency time and erodes separation — in exams, readback and urgency/distress wording are marked precisely.
+
+> **Ask yourself:** Is this situation **urgency** (PAN PAN) or **distress** (MAYDAY)? Can you still fly the aircraft safely while you transmit?
 
 **Primary reference (Dec 2025):** CASA **Multi-Part AC 64.B-02, AC 91-35 and AC 172-05 — Radiotelephony manual for flight operations** (v1.0, updated Dec 2025). This manual standardises phraseology for pilots and replaces much of the radiotelephony material previously in **AIP GEN 3.4** — always use the current AC plus AIP/ERSA for operations.
 
@@ -421,33 +454,42 @@ Brisbane Centre, Cessna VH-ABC, request current weather for Toowoomba and cloud 
 - Correct exam mindset: legal minima are not automatic go criteria; operational judgment and margins still apply.
 
 ---
-## 1.13 Common Air Law Exam Traps
+
+## 1.13 Pre-Exam Revision (Must Know · Nice to Know · Common Traps)
+
+> **Sketch it:** Draw a vertical slice of airspace (Class C/D/G) with your route and note where VMC, radio, and transponder rules change.
+
+### Must know
+
+- PIC legal responsibilities before, during, and after flight.
+- VFR minima logic from **AIP ENR 1.2** (day vs night, class, altitude).
+- Controlled vs non-controlled obligations; clearance and readback discipline.
+- Required publications and preflight information sources (AIP, ERSA, NOTAM, weather).
+- SARTIME vs SARWATCH; **cancel SARTIME** with CENSAR when applicable.
+- PAN PAN vs MAYDAY; Aviate–Navigate–Communicate.
+- Legal vs operational go/no-go (legal minima are not automatic “go”).
+
+### Nice to know
+
+- Legislative hierarchy (Act → CASR → MOS → AIP).
+- Dangerous goods and security awareness headlines.
+- ICAO Annex 2 alignment for international context.
+- Workbook fuel-policy structure when scenarios cite MOS assumptions.
+
+### Common traps
 
 - Applying memory of old rules instead of current promulgated requirements.
 - Confusing ATS service availability with pilot legal responsibility.
 - Misreading controlled vs non-controlled airspace obligations.
-- Missing specific wording in scenario (e.g., passenger carrying, time of day, operational category).
-- Treating SOP preferences as if they are legal minima.
-- Using **day VMC** numbers for **night VFR** without checking AIP ENR 1.2.
+- Missing scenario qualifiers (passengers, time of day, operation type).
+- Treating SOP preferences as legal minima.
+- Using **day VMC** for **night VFR** without AIP ENR 1.2.
 - Forgetting to **cancel SARTIME** with CENSAR (not tower alone on VFR SARTIME).
 - Confusing **SARTIME** (VFR time-based) with **SARWATCH** (IFR reporting-based).
 
 ---
 
-## 1.14 Rapid Revision Checklist (Pre-Exam)
-
-- Can explain PIC legal responsibilities before/during/after flight.
-- Can identify required publications and preflight info sources.
-- Can apply VFR minima logic to scenario-based questions.
-- Can distinguish clearance/instruction obligations and correct readback behavior.
-- Can identify reporting obligations after an incident/occurrence.
-- Can separate legal limits from best-practice margins.
-- Can explain SARTIME vs SARWATCH and correct cancellation responsibility.
-- Can apply Aviate–Navigate–Communicate and basic standard phraseology.
-
----
-
-## 1.15 Operational Decision Graphics and Tables
+## 1.14 Operational Decision Graphics and Tables
 
 ### Graphic: legal vs operational go/no-go logic
 
@@ -506,20 +548,22 @@ Usable onboard ≥ Taxi + Trip + Reserve + Contingency (if required)
 
 ---
 
-## References (Primary)
+## References
+
+### CASA Primary
 
 - CASA RPL/PPL/CPL Aeroplane Workbook (exam method assumptions): <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
 - CASA Radiotelephony manual for flight operations (AC 64.B-02 / AC 91-35 / AC 172-05, Dec 2025): <https://www.casa.gov.au/rules/regulatory-framework/casr/part-64-casr-authorisations-non-licensed-personnel>
 - AIP Australia — ENR 1.2 VMC (via Airservices): <https://www.airservicesaustralia.com/aip/>
 - Airservices SARTIME: <https://www.airservicesaustralia.com/industry-info/pilot-tools/sartime/>
-- FAA PHAK (airport operations and communications supporting concepts): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
-- ICAO Annex 2 (Rules of the Air): <https://www.icao.int/>
-
-## References (Supplementary)
-
-- CASA Day VFR syllabus page: <https://www.casa.gov.au/day-vfr-helicopters-syllabus>
 - CASA Visual Flight Rules Guide (VFRG): <https://www.casa.gov.au/sites/default/files/2022-02/visual-flight-rules-guide.pdf>
 - CASA Advisory Circular AC 61-05 (Night VFR rating guidance): <https://www.casa.gov.au/night-vfr-rating>
+
+### PHAK Secondary / supplementary
+
+- FAA PHAK (airport operations and communications supporting concepts): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- ICAO Annex 2 (Rules of the Air): <https://www.icao.int/>
+- CASA Day VFR syllabus page: <https://www.casa.gov.au/day-vfr-helicopters-syllabus>
 - EASA Air Operations reference portal: <https://www.easa.europa.eu/en/domains/air-operations>
 
 ---

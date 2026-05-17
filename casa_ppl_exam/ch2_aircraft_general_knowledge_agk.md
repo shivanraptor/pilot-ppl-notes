@@ -8,6 +8,15 @@ title: Chapter 2 - Aircraft General Knowledge (AGK)
 
 These notes are exam-focused for CASA PPL AGK and aligned with FAA PHAK system knowledge where technically applicable. Use your aircraft POH/AFM as final authority for numbers, limitations, and procedures.
 
+### How to use this chapter
+
+| Label | Meaning |
+|---|---|
+| **CASA Primary** | Your aircraft **POH/AFM**, CASA workbook exam conventions, Australian training context |
+| **PHAK Secondary** | FAA PHAK Ch 7–8 for system and instrument theory — verify numbers and failures against POH |
+
+**Study habits:** Build a **failure indication table** (pitot, static, vacuum, electrical) on one page. **Sketch** pitot vs static ports and what each instrument reads when blocked.
+
 ---
 
 ## 2.0 Terminology: POH and AFM
@@ -19,6 +28,8 @@ These notes are exam-focused for CASA PPL AGK and aligned with FAA PHAK system k
 ---
 
 ## 2.1 Airframe, Structure, and Flight Controls
+
+> **PHAK Secondary:** structure and control concepts. **CASA Primary:** POH limitations (Va, Vno, Vne, flap speeds).
 
 <img src="images/ch2/plane_structure.jpg" alt="Aircraft Structure" style="width: 50%" />
 
@@ -195,6 +206,12 @@ Legend:
 
 ## 2.4 Fuel System and Fuel Management
 
+> **Real-world application**
+>
+> Most fuel emergencies in training are **selection or management** errors, not empty tanks — preflight sample, correct tank, and timed consumption beat guessing from a sticky gauge.
+
+> **CASA Primary:** POH fuel system diagram and limitations. **PHAK Secondary:** general fuel system components.
+
 - **Typical components**
   - **Fuel tanks**: store usable fuel; know **usable vs unusable** per POH.
   - **Vents**: equalize tank pressure with atmosphere—blocked vent can cause feed failure or structural stress.
@@ -354,7 +371,15 @@ flowchart TD
 
 ## 2.7 Pitot-Static Instruments and Errors
 
+> **Why this matters**
+>
+> Partial-panel and blockage scenarios are core AGK — examiners expect you to name **which instrument lies** and what you trust next.
+
+> **Ask yourself:** Static blocked — altimeter frozen, VSI zero, ASI wrong in climb/descent. What does the **attitude indicator** still tell you?
+
 **Definition — pitot-static system:** uses **pitot pressure** (ram + static) and **static pressure** (ambient) to drive **ASI**, **altimeter**, and **VSI**.
+
+> **PHAK Secondary:** failure logic below. **CASA Primary:** your POH alternate static and partial-panel procedure.
 
 ### Instrument operation
 
@@ -629,47 +654,54 @@ $$
 - Correct action: apply full carb heat, expect temporary roughness/power drop, monitor recovery, then reassess power/settings.
 
 ---
-## 2.14 Common AGK Exam Traps
+## 2.14 Pre-Exam Revision (Must Know · Nice to Know · Common Traps)
 
-- Confusing fuel **quantity** problem with fuel **feed/selection** problem.
+> **Sketch it:** One page — pitot/static blockage table, vacuum failure indications, carb ice flow (carburettor aircraft only).
+
+### Must know
+
+- ASI, altimeter, VSI operation and pitot/static blockage indications; alternate static effects.
+- Partial panel and gyro failures (link Chapter 4).
+- Carb icing recognition and immediate actions (**carburettor** aircraft); fuel grade and sump checks.
+- Electrical vs engine power (magnetos); fuel starvation vs exhaustion.
+- Detonation vs pre-ignition; fixed vs constant-speed propeller basics.
+- POH limits: V-speeds, flap speeds, crosswind, fuel system.
+
+### Nice to know
+
+- Glass/AHRS vs vacuum gyro contrast at POH level.
+- Southern Hemisphere compass turning/acceleration errors.
+- Landing gear, hydraulics, environmental/anti-ice overview.
+- Basic W&B moment arm concept (detail in Chapter 3).
+
+### Common traps
+
+- Confusing fuel **quantity** with fuel **feed/selection**.
 - Misreading ASI/static blockage scenarios.
 - Forgetting **alternate static** changes indications (often higher alt/IAS).
 - Treating **turn coordinator** as a full attitude indicator.
 - Assuming **electrical failure** always stops the engine (magnetos).
-- Applying **carb heat** logic to **fuel-injected** aircraft without reading scenario.
+- Applying **carb heat** to **fuel-injected** aircraft without reading scenario.
 - Forgetting density altitude effects on engine, prop, and wing together.
 - Applying generic numbers instead of aircraft-specific POH values.
-- Mixing true/magnetic/compass headings and signs for variation/deviation.
-- Neglecting POH limitations for flap speeds and crosswind technique limits.
 
 ---
 
-## 2.15 Rapid Revision Checklist (Pre-Exam)
+## References
 
-- Can explain operation/failures of ASI, altimeter, VSI and alternate static effects.
-- Can describe partial panel and link gyro failures to human factors (Chapter 4).
-- Can diagnose carb icing and apply correct immediate actions.
-- Can contrast vacuum-driven gyros (typical C172) with glass/AHRS (typical Diamond) at POH level.
-- Can distinguish detonation vs pre-ignition and preventive handling.
-- Can describe fixed vs constant-speed propeller operation and implications.
-- Can compute basic W&B and interpret CG movement with fuel burn.
-- Can state fuel contamination checks and fuel grade verification method.
-- Can interpret compass turning/acceleration errors for Southern Hemisphere use.
-- Can navigate POH sections quickly for limits, systems, and emergencies.
+### CASA Primary
 
----
+- [CASA RPL/PPL/CPL Aeroplane Workbook](https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook)
+- Aircraft **POH/AFM** (limitations and emergencies)
 
-## References (Primary)
+### PHAK Secondary / supplementary
 
-- [FAA Pilot's Handbook of Aeronautical Knowledge (full handbook and chapter PDFs)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
+- [FAA PHAK (full handbook)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
 - [FAA PHAK — Chapter 7: Aircraft Systems](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-7-aircraft-systems)
-- [FAA PHAK — Chapter 9: Flight Manuals and Other Documents (AFM/POH concepts)](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-9-flight-manuals-and-other-documents)
-- [CASA RPL/PPL/CPL Aeroplane Workbook (exam assumptions and conventions)](https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook)
-
-## References (Supplementary)
-
-- [CASA Day VFR syllabus (structure and competency framing)](https://www.casa.gov.au/day-vfr-helicopters-syllabus)
-- [CASA VFR guidance example — Visual Flight Guide PDF](https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf) (training/support reference, not legislation)
+- [FAA PHAK — Chapter 8: Flight Instruments](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-8-flight-instruments)
+- [FAA PHAK — Chapter 9: Flight Manuals](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-9-flight-manuals-and-other-documents)
+- [CASA Day VFR syllabus](https://www.casa.gov.au/day-vfr-helicopters-syllabus)
+- [CASA VFRG example PDF](https://www.kempseyflyingclub.com.au/Docs/Visual%20Flight%20Guide%202020.pdf) (training support, not legislation)
 
 ---
 

@@ -73,6 +73,7 @@ Chapter 4 (Principles of Flight) and Chapter 9 (Weight Shift) discuss take‑off
 ---
 
 ### Study Tips
+- Each chapter uses **CASA Primary / PHAK Secondary** labels, **Why this matters** callouts, and a unified **Pre-Exam Revision** (Must know · Nice to know · Common traps). Sketch diagrams (wind triangle, circuit, W&B) while revising.
 - Use the CASA **PPL Theory Exam Guide** and the relevant **Part 61 Manual of Standards (MOS)** as primary references.
 - Practice with question banks (e.g., ASA, Sheppard Air, Bob Tait) to familiarize with exam style.
 - Create summary sheets or flashcards for each subject, focusing on formulas, limits, and key definitions.

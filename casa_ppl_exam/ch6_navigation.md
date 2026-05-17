@@ -8,13 +8,22 @@ title: Chapter 6 - Navigation
 
 This chapter is an expanded exam-and-flight-practice reference for PPL navigation. It combines core theory, formula memory aids, worked examples, and cockpit decision flow.
 
+### How to use this chapter
+
+| Label | Meaning |
+|---|---|
+| **CASA Primary** | Australian charts, NAIPS, SARTIME/lost procedures (Ch 1), exam workbook conventions |
+| **PHAK Secondary** | DR, wind triangle, magnetic compass theory |
+
+**Study habits:** Every formula should pair with a **sketched wind triangle** or chart line. Timed practice: one full DR leg from memory weekly.
+
 ---
 
 ## 6.1 Earth Geometry and Direction Basics
 
-### Why this matters
-
-Navigation starts with a geometric model of Earth. Most exam mistakes in this area come from mixing latitude and longitude distance rules.
+> **Why this matters**
+>
+> Navigation starts with a geometric model of Earth. Most exam mistakes here come from mixing **latitude** distance rules with **longitude** rules.
 
 ### Core concepts
 
@@ -97,6 +106,12 @@ $$
 ---
 
 ## 6.4 Dead Reckoning, Wind Triangle, Tracks, and Headings
+
+> **Real-world application**
+>
+> GNSS gives position; **DR** gives understanding when the screen fails — exams reward a labelled wind triangle more than calculator memory.
+
+> **Ask yourself:** Track made good differs from planned track — is your **1-in-60** correction based on distance **flown** or **to go**, as the question states?
 
 ### Dead reckoning (DR)
 
@@ -562,38 +577,57 @@ Countermeasures:
 
 ---
 
-## 6.17 Common Exam Traps
+## 6.17 Pre-Exam Revision (Must Know · Nice to Know · Common Traps)
 
-- Mixing true/magnetic/compass references in one calculation chain.
-- Wrong east/west sign application for variation or deviation.
-- Using **TAS** instead of **GS** for ETE/ETA.
-- Wind direction: confusing **FROM** vs **TO** when plotting triangle.
-- Forgetting cosine in longitude distance.
-- Assuming straight line on all charts means shortest path.
-- Applying 1-in-60 with distance-to-go when question asks distance-flown.
-- Trusting GNSS without procedural cross-check.
-- Ignoring **RAIM** / database currency in GPS approach or integrity questions.
-- Lost procedure answer omits **communicate** or **SARTIME cancellation** when scenario includes notification.
+> **Sketch it:** Wind triangle with W FROM 270; chart track with 1-in-60 correction; compass rose with variation east/west.
 
----
+### Must know
 
-## 6.18 Quick Study Plan (High Retention)
+- DR leg: TT, WCA, TH, MH, CH; **GS** for ETE/ETA (not TAS unless question says so).
+- Wind triangle: wind **FROM** direction; plot correctly.
+- Chart measure: NM, variation, drift; 1-in-60 track error.
+- Lost procedure: climb, conserve, navigate, **communicate**; SARTIME (Ch 1).
+- GNSS limitations: RAIM, database currency, cross-check with map.
 
-1. Memorize formula pack by writing from memory daily.
-2. Do mixed 10-question blocks: wind, conversion, chart, timing.
-3. Explain each result in words ("why this sign?", "why this correction?").
-4. Rework all wrong questions after 48 hours.
-5. Practice one full **DR leg** (TT → WCA → headings → GS → ETE) from memory weekly.
-6. Practice tidy wind-triangle drawing under time pressure.
+### Nice to know
+
+- E6-B / flight computer shortcuts; conversion angle on long legs.
+- ETP/PNR at PPL level if in workbook.
+- Great circle vs rhumb line concept.
+
+### Common traps
+
+- True/magnetic/compass mixed in one chain without conversion table.
+- Wrong variation sign (east/west).
+- **TAS** instead of **GS** for time.
+- Wind **FROM** vs **TO** when plotting.
+- Cosine forgotten in longitude distance.
+- 1-in-60 with wrong distance (flown vs to-go).
+- GNSS trusted without map check.
+- Lost answer omits **communicate** or **SARTIME cancel**.
+
+### Study plan (high retention)
+
+1. Write formula pack from memory daily.
+2. Mixed 10-question blocks: wind, conversion, chart, timing.
+3. Explain each result (“why this sign?”).
+4. One full **DR leg** weekly under time pressure.
+5. Tidy **wind-triangle** sketch every session.
 
 ---
 
 ## References
 
-- FAA Pilot's Handbook of Aeronautical Knowledge (Navigation chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
-- ICAO Annex 4 (Aeronautical Charts): <https://www.icao.int/>
+### CASA Primary / Australian operational
+
 - CASA Visual Navigation Guide and VFR resources: <https://www.casa.gov.au/>
 - Airservices SARTIME: <https://www.airservicesaustralia.com/industry-info/pilot-tools/sartime/>
+- CASA RPL/PPL/CPL Aeroplane Workbook: <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
+
+### PHAK Secondary / supplementary
+
+- FAA PHAK (Navigation chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+- ICAO Annex 4 (Aeronautical Charts): <https://www.icao.int/>
 - EASA ATPL Learning Objectives (General Navigation): <https://www.easa.europa.eu/>
 
 ---

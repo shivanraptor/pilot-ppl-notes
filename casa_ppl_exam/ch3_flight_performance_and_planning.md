@@ -8,6 +8,15 @@ title: Chapter 3 - Flight Performance and Planning
 
 These notes are exam-focused for CASA PPL performance/planning. Use aircraft-specific POH/AFM charts and CASA regulatory assumptions exactly as stated in each scenario.
 
+### How to use this chapter
+
+| Label | Meaning |
+|---|---|
+| **CASA Primary** | Part 91 MOS fuel policy, CASA workbook assumptions, legal reserve rules in scenarios |
+| **PHAK Secondary** | Performance theory (density altitude, W&B concepts); POH charts are always aircraft-specific |
+
+**Study habits:** Trace a **takeoff distance** problem on the POH chart with pencil twice — zero-wind baseline, then wind correction. **Sketch** a W&B moment diagram when CG moves with fuel burn.
+
 ---
 
 ## 3.1 Performance Fundamentals
@@ -22,6 +31,12 @@ These notes are exam-focused for CASA PPL performance/planning. Use aircraft-spe
 ---
 
 ## 3.2 Density Altitude and Why It Matters
+
+> **Why this matters**
+>
+> High density altitude simultaneously hurts **engine power**, **prop thrust**, and **wing lift** — exam scenarios often stack hot day, high field, and heavy weight.
+
+> **Ask yourself:** If takeoff distance increases, does your **climb gradient** over trees still clear obstacles on the POH chart?
 
 <img src="images/ch3/density_altitude.jpg" style="width: 50%" alt="Desnity Altitude" /><br />[Source](https://www.instagram.com/p/DXKgmDeEWZl/)
 
@@ -278,6 +293,8 @@ flowchart LR
 
 ## 3.6 Weight and Balance (W&B)
 
+> **Sketch it:** Datum line, arms for front seats, baggage, and fuel — arrow showing CG shift as aft fuel burns.
+
 - Core formulas:
 
 ```text
@@ -374,6 +391,12 @@ flowchart LR
 ---
 
 ## 3.7 Fuel Planning and Reserves
+
+> **CASA Primary:** Part 91 MOS / workbook fuel policy (fixed vs variable reserve, alternate fuel). **PHAK Secondary:** general fuel planning structure.
+
+> **Real-world application**
+>
+> Plan fuel to a **target**, not a legal minimum — diversion, holding, and headwinds consume margin faster than the spreadsheet suggests.
 
 > **Regulatory basis:** CASR **Part 91** and **Part 91 MOS** (Table 2) plus [CASA AC 91-15 — Guidelines for aircraft fuel requirements](https://www.casa.gov.au/guidelines-aircraft-fuel-requirements). Exam questions may use **workbook labels** or **Part 91 terms** — read the scenario.
 
@@ -650,65 +673,44 @@ flowchart LR
 - Safer action: reduce weight and/or depart in cooler period, then recompute takeoff and climb gradient using POH charts.
 
 ---
-## 3.11 Common Exam Traps
 
-### Units and data entry
+## 3.11 Pre-Exam Revision (Must Know · Nice to Know · Common Traps)
 
-- Mixing units (kg/lb, L/gal, kt/km/h, ft/m).
-- Using IAS when TAS/GS is required for timing.
-- Using **field elevation** instead of **pressure altitude** on performance charts.
+> **Sketch it:** Wind triangle or nav log one leg; POH takeoff chart with wind correction annotated; W&B moment arm with fuel burn arrow.
 
-### Zero wind vs real wind (high-frequency)
+### Must know
 
-| Trap | What charts assume | What you must do |
+- Takeoff and landing distance from POH charts (including wind correction).
+- Density altitude effect on performance (engine, prop, wing).
+- W&B: moments, CG envelope, CG at **landing** after fuel burn.
+- Nav log: time, fuel, GS, ETA; ETP/PNR concepts at PPL level.
+- **CASA Primary** fuel: fixed (final) vs variable (contingency) reserve; alternate fuel when required.
+- Zero-wind chart baseline vs actual wind correction.
+
+### Nice to know
+
+- Climb gradient and obstacle clearance concepts.
+- ETP/PNR formula structure when workbook provides it.
+- Interpolation discipline (two-step temperature/pressure).
+
+### Common traps
+
+| Area | Trap | Fix |
 |---|---|---|
-| Chart baseline | Often **zero wind** | Apply headwind/tailwind correction from POH |
-| Headwind reported | Reduces takeoff/landing distance | Apply **decrease** on takeoff/landing per POH |
-| Tailwind reported | **Increases** distance — large effect | Apply **increase**; many exam scenarios use “light tailwind” to fail margin |
-| Crosswind | Not a distance correction on most POH charts | Separate limit vs **demonstrated crosswind** |
-| Gust | Steady wind on chart | Use conservative fraction of gust or personal minimum |
+| Charts | Zero-wind baseline with actual wind given | Apply POH headwind/tailwind correction |
+| Charts | Ground roll vs 50 ft obstacle distance | Answer the distance type asked |
+| Charts | Field elevation vs pressure altitude on chart | Read POH axis labels |
+| Fuel | 30 min reserve on night VFR when 45 min applies | Match MOS/scenario |
+| Fuel | Fixed vs variable reserve confused | Label each leg on plan |
+| W&B | CG checked only at departure | Recompute at landing weight |
+| Units | kg/L, kt/NM mixed | Write units on every line |
 
-- **Rule:** if question gives **actual wind**, do not use the uncorrected chart distance.
-
-### Chart interpolation errors
-
-| Error | Result | Prevention |
-|---|---|---|
-| Reading wrong axis (PA vs DA vs OAT) | Wrong base distance | Label axes; DA for performance **sense-check**, PA/OAT per POH chart instructions |
-| Linear interpolation across **non-linear** regions | Under/over estimate | Interpolate in **two steps** (temperature, then pressure) per POH method |
-| Rounding too early | Compounded error | Keep one extra decimal until final answer |
-| Wrong weight line | Significant error | Confirm takeoff weight vs landing weight chart |
-| Applying corrections in **wrong order** | POH-specific error | Memorise **your** POH sequence |
-| Confusing **ground roll** vs **50 ft obstacle** distance | Runway overrun risk | Answer the distance type the question asks |
-
-### Fuel and W&B traps
-
-- Confusing **fixed (final) reserve** with **variable (contingency) reserve**.
-- Using **30 min** reserve on **night VFR** when **45 min** applies (typical piston).
-- Forgetting **alternate fuel** when alternate is required.
-- Checking CG only at departure, not at **landing** after fuel burn.
-- Assuming full fuel always moves CG the same direction on all types — check **fuel arm**.
-
-### Policy traps
-
-- Confusing **legal minimum** with **operational target** fuel.
-- Treating workbook **0.72 kg/L** as universal without question basis.
+- Using IAS when GS required for timing; rounding too early on interpolation.
+- Legal minimum fuel vs operational target; workbook 0.72 kg/L without question basis.
 
 ---
 
-## 3.12 Rapid Revision Checklist (Pre-Exam)
-
-- Can compute takeoff and landing distance from a multi-step chart.
-- Can explain density altitude impact without memorized myths.
-- Can complete W&B and verify CG at all stages.
-- Can produce a full nav log with fuel/endurance checks.
-- Can apply stated legal fuel policy assumptions in scenario questions.
-- Can separate fixed (final) vs variable (contingency) reserve and alternate fuel.
-- Can apply wind corrections to chart distances (zero-wind trap).
-
----
-
-## 3.13 Formula Pack and Graphics
+## 3.12 Formula Pack and Graphics
 
 ### Core formulas
 
@@ -761,12 +763,18 @@ flowchart LR
 
 ---
 
-## References (Primary)
+## References
 
-- FAA PHAK (especially performance and W&B chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
+### CASA Primary
+
 - CASA RPL/PPL/CPL Aeroplane Workbook: <https://www.casa.gov.au/rpl-ppl-and-cpl-aeroplane-workbook>
 - CASA AC 91-15 — Guidelines for aircraft fuel requirements: <https://www.casa.gov.au/guidelines-aircraft-fuel-requirements>
 - Part 91 MOS (fuel Table 2): <https://www.legislation.gov.au/>
+- Aircraft **POH/AFM** performance and W&B sections
+
+### PHAK Secondary / supplementary
+
+- FAA PHAK (performance and W&B chapters): <https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak>
 - ICAO Doc 8168 (PANS-OPS, procedural context): <https://www.icao.int/>
 - EASA Easy Access Rules (Air Operations): <https://www.easa.europa.eu/en/document-library/easy-access-rules>
 
