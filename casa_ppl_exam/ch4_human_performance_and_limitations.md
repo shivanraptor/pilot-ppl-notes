@@ -12,134 +12,334 @@ These notes are exam-focused for CASA PPL human factors. They connect physiology
 
 ## 4.1 Human Factors Big Picture
 
-- Most accidents have a human factors contribution even when a technical issue exists.
-- Human limitations are predictable; good pilots use systems (checklists, briefings, SOPs, margins) to manage them.
-- Performance is dynamic: stress, fatigue, workload, and health status can change rapidly across a flight.
+**Definition — human factors:** study of how people interact with systems (aircraft, weather, ATC, procedures); in aviation, focus on reducing human-error-related accidents.
+
+### Why this subject matters for PPL
+
+| Fact | Implication for pilots |
+|---|---|
+| Most accidents involve human factors | Technical skill alone is insufficient |
+| Limitations are predictable | Fatigue, stress, and illusion can be managed with systems |
+| Performance changes in flight | Same pilot may be sharp preflight and degraded on late approach |
+
+### Defences (exam-friendly list)
+
+- **Checklists and SOPs** — reduce memory errors.
+- **Briefings** — threat and error anticipation (TEM).
+- **Margins** — personal minima above legal limits.
+- **CRM** — even single-pilot: use resources, communicate, delegate lookout.
+
+- [CASA — safety management / human factors](https://www.casa.gov.au/safety-management)
+- [FAA PHAK — aeronautical decision-making](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-2-aeronautical-decision-making)
+- [ICAO — human factors](https://www.icao.int/safety/humanfactors)
+
+```mermaid
+flowchart TD
+    T[Threats: weather, fatigue, distraction] --> E[Errors: slip, lapse, violation]
+    E --> U[Undesired aircraft state]
+    U --> R[Recovery: checklist, divert, go-around]
+```
 
 ---
 
 ## 4.2 Physiology and Altitude Effects
 
-- **Hypoxia**: inadequate oxygen at tissue level.
-  - Types include hypoxic and hypemic (conceptual awareness).
-  - Early signs: poor judgment, euphoria, visual degradation, slowed responses.
-- **Hyperventilation**:
-  - Caused by anxiety/workload more than low oxygen at typical low altitudes.
-  - Symptoms can mimic hypoxia; correct with controlled breathing.
-- **Trapped gas**:
-  - Ears/sinuses/GI discomfort from pressure change.
-  - Do not fly with blocked sinuses or unresolved ear equalization problems.
-- **Decompression sickness** and high-altitude concerns are less common in basic PPL ops but examinable conceptually.
+**Definition — hypoxia:** insufficient oxygen reaching body tissues to function normally.
+
+### Hypoxia types (conceptual — PPL level)
+
+| Type | Cause (simplified) | Example context |
+|---|---|---|
+| **Hypoxic** | Reduced partial pressure of oxygen at altitude | Unpressurized flight without supplemental O2 |
+| **Hypemic** | Reduced oxygen-carrying capacity of blood | Carbon monoxide exposure (exhaust leak) |
+| **Stagnant / histotoxic** | Awareness for theory | Less emphasis at PPL; know names exist |
+
+### Hypoxia signs (often subtle early)
+
+- Poor judgment, euphoria (“I feel fine”), cyanosis (late), headache, visual narrowing, slowed reactions.
+- **Danger:** pilot may not recognize impairment — use altitude limits, oxygen, and descent per POH/regulations.
+
+### Hyperventilation
+
+**Definition:** abnormally rapid/deep breathing lowering **CO2**, causing dizziness, tingling, muscle spasm, anxiety.
+
+| | Hypoxia | Hyperventilation |
+|---|---|---|
+| Typical trigger | Altitude, CO | Stress, fear, high workload |
+| Key fix | Descend, O2 if fitted | Slow controlled breathing, reduce workload |
+| Exam trap | Symptoms overlap | Do not only descend if cause is anxiety at low altitude |
+
+### Trapped gas (barotrauma risk)
+
+- **Ears / sinuses:** cannot equalize → pain, vertigo risk.
+- **GI / teeth:** expansion on climb, discomfort.
+- **Rule:** do not fly with blocked sinuses, ear infection, or unresolved dental/air trapping issues.
+
+### Decompression sickness (awareness)
+
+- Associated with rapid altitude decrease in pressurized context or diving before flying.
+- PPL relevance: **“don't fly after diving”** and understand pressurization is uncommon in basic training aircraft.
+
+- [FAA PHAK — aeromedical factors](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-17-aeromedical-factors)
+- [CASA — medical certification](https://www.casa.gov.au/licences-and-certification/medical)
 
 ---
 
 ## 4.3 Vision and Night/Low-Contrast Performance
 
-- Central vision best for detail/color in daylight.
-- Night vision relies more on peripheral retina; use off-center scanning.
-- Night adaptation takes time; bright light exposure degrades adaptation.
-- Common visual limitations:
-  - Empty field myopia
-  - Autokinesis
-  - False horizon
-  - Black-hole approach illusion
-- Practical actions:
-  - Structured scan
-  - Instrument cross-check
-  - Stable approach criteria.
+### Day vs night vision
+
+| Feature | Day (photopic) | Night (scotopic) |
+|---|---|---|
+| Retina region | Central (cones) — detail, colour | Peripheral (rods) — movement, low light |
+| Scan technique | Direct look at object | Off-centre viewing for dim objects |
+| Adaptation | Seconds | ~20–30 min full dark adaptation |
+
+**Definition — dark adaptation:** increased sensitivity after time in low light; destroyed by bright white light (use red lighting where possible).
+
+### Common visual illusions
+
+| Illusion | Definition | Trigger | Countermeasure |
+|---|---|---|---|
+| **Empty field myopia** | Eyes focus at ~1–2 m with no detail | Featureless haze/over water | Structured scan, instruments |
+| **Autokinesis** | Stationary light appears to move | Single light at night | Cross-check with instruments / other references |
+| **False horizon** | Sloping cloud or terrain mistaken for horizon | Night, haze | Trust attitude instrument |
+| **Black-hole approach** | Approach over dark terrain feels too high | Few ground lights | Stabilized profile, VASI/PAPI, instruments |
+
+### Practical actions
+
+- Structured **instrument and external scan**.
+- **Stable approach criteria** (Chapter 7).
+- Avoid fixation; brief approach lighting and terrain.
+
+- [FAA PHAK — vision](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-17-aeromedical-factors)
 
 ---
 
 ## 4.4 Spatial Disorientation and Vestibular Illusions
 
-- Vestibular system is unreliable in prolonged turns/accelerations.
-- Common illusions:
-  - The leans
-  - Coriolis illusion
-  - Somatogravic illusion
-  - Graveyard spiral tendency
-- Countermeasures:
-  - Trust validated instrument indications
-  - Maintain scan discipline
-  - Avoid abrupt head movements in IMC/night.
+**Definition — spatial disorientation:** failure to sense aircraft attitude, motion, or altitude correctly; **vestibular system** (inner ear) can mislead when visual cues are weak.
+
+### Why vestibular cues fail in flight
+
+- Prolonged turns, accelerations, and decelerations are not sensed accurately without visual reference.
+- **IMC / night** — high risk if pilot relies on body sensations instead of instruments.
+
+### Common illusions
+
+| Illusion | What you feel | What is true | Countermeasure |
+|---|---|---|---|
+| **The leans** | Wings level after unnoticed bank | Still in bank | Level using attitude instrument |
+| **Coriolis** | Strong tumbling after head movement in turn | Conflicting canal signals | Avoid abrupt head movement; trust instruments |
+| **Somatogravic** | Pitch-up sensation on acceleration | Level or climbing less than felt | Cross-check attitude and airspeed |
+| **Graveyard spiral** | Sustained undetected bank feels “normal” | Turning and losing height | Instrument scan; recover to straight and level |
+
+### Core countermeasures
+
+1. **Trust validated instruments** (AI, turn coordinator, altimeter, airspeed).
+2. **Instrument scan discipline** — regular, ordered pattern.
+3. **Avoid abrupt head movement** in IMC/night.
+4. If inadvertently in IMC: **180° turn / climb to VMC** per training and regulations (Chapter 1 / 7).
+
+- [FAA PHAK — spatial disorientation](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-17-aeromedical-factors)
+
+```mermaid
+flowchart TD
+    L[Loss of reliable visual cues] --> V[Vestibular false sensation]
+    V --> I[Instrument cross-check]
+    I --> C[Controlled recovery / exit IMC]
+```
 
 ---
 
 ## 4.5 Stress, Fatigue, and Workload
 
-- **Acute stress** may narrow attention; **chronic stress** degrades baseline performance.
-- Fatigue reduces reaction speed, memory, and error detection.
-- Workload overload leads to task shedding and tunnel vision.
-- Management tools:
-  - Preflight preparation quality
-  - Prioritization (aviate, navigate, communicate)
-  - Automation management
-  - Early diversion decisions.
+**Definition — stress:** body’s response to perceived demand or threat; **acute** (short-term) vs **chronic** (ongoing).
+
+**Definition — fatigue:** decreased capacity due to sleep loss, long duty, or cumulative flying over days.
+
+**Definition — workload:** perceived demand vs available mental capacity; overload causes errors.
+
+| Factor | Typical effect | Management |
+|---|---|---|
+| **Acute stress** | Tunnel vision, rushed decisions | Aviate–navigate–communicate; simplify tasks |
+| **Chronic stress** | Reduced baseline judgment | Rest, avoid flying when overloaded in life |
+| **Fatigue** | Slow reactions, missed checklist items | Sleep, limit duty, cancel or divert |
+| **High workload** | Task shedding, fixation | Delay tasks, use passenger, go-around |
+
+### Prioritization (exam standard)
+
+1. **Aviate** — aircraft control first.
+2. **Navigate** — position and terrain.
+3. **Communicate** — when workload allows.
+
+- [FAA PHAK — stress and fatigue](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-17-aeromedical-factors)
 
 ---
 
 ## 4.6 Decision Making and Error Management
 
-- Aeronautical decision-making models (e.g., DECIDE/3P style concepts) are structured ways to avoid impulsive errors.
-- Threat and Error Management (TEM):
-  - Identify threats (weather, terrain, traffic, fatigue)
-  - Trap/manage errors early
-  - Maintain safety margins.
-- Situational awareness elements:
-  - Perception
-  - Comprehension
-  - Projection (what happens next).
+**Definition — ADM (aeronautical decision-making):** structured process to make safe choices under pressure.
+
+### DECIDE model (example framework)
+
+| Step | Meaning | Pilot action |
+|---|---|---|
+| **D**etect | Notice a change or hazard | Weather, traffic, system fault |
+| **E**stimate | Assess significance | Threat to safety? |
+| **C**hoose | Options | Continue, divert, land, go-around |
+| **I**dentify | Best solution | Match to margins and skill |
+| **D**o | Execute | Commit without delay when needed |
+| **E**valuate | Did it work? | Reassess continuously |
+
+### 3P model (Perceive — Process — Perform)
+
+- **Perceive** hazards.
+- **Process** impact and options.
+- **Perform** best action and monitor.
+
+### TEM (Threat and Error Management)
+
+| Element | Definition |
+|---|---|
+| **Threat** | Event outside pilot control (weather, traffic, runway length) |
+| **Error** | Pilot action/inaction that increases risk |
+| **Undesired state** | Reduced safety margin (unstable approach, low fuel) |
+| **Recovery** | Deliberate correction (go-around, divert) |
+
+### Situational awareness (SA)
+
+```text
+SA = perception + comprehension + projection
+```
+
+- **Perception:** notice raw data (cloud lowering, fuel, traffic).
+- **Comprehension:** understand what it means for your flight.
+- **Projection:** anticipate what happens next if you do nothing.
+
+- [FAA PHAK — ADM](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-2-aeronautical-decision-making)
 
 ---
 
 ## 4.7 Hazardous Attitudes and Antidotes
 
-- Typical hazardous attitudes:
-  - Anti-authority
-  - Impulsivity
-  - Invulnerability
-  - Macho
-  - Resignation
-- Exam expectation: recognize attitude from behavior and apply correct antidote mindset.
+**Definition — hazardous attitude:** habitual thought pattern that leads to poor risk assessment.
+
+| Attitude | Typical behaviour | Antidote (FAA mnemonic) |
+|---|---|---|
+| **Anti-authority** | “Don't tell me what to do” | Follow the rules — they are usually right |
+| **Impulsivity** | “Do something fast now” | Not so fast — think first |
+| **Invulnerability** | “It won't happen to me” | It could happen to me |
+| **Macho** | “I can handle anything” | Taking chances is foolish |
+| **Resignation** | “What's the use?” | I'm not helpless — I can make a difference |
+
+### Exam technique
+
+- Read scenario dialogue or actions → match attitude → state antidote and safer behaviour.
+
+### Example
+
+- Pilot ignores forecast crosswind limit: **macho / invulnerability** → antidote: take chances is foolish / it could happen to me → cancel or use experienced instructor/wait for conditions.
 
 ---
 
 ## 4.8 Medical Fitness, Substances, and Self-Assessment
 
-- Never fly when medically unfit.
-- Alcohol, sedatives, many antihistamines, and some pain medications impair pilot performance.
-- Dehydration and heat stress reduce cognitive and physical performance.
-- Use a formal personal fitness check (sleep, stress, illness, medication, hydration, emotional state).
+**Definition — medical fitness:** physical and mental state suitable for safe flight; includes CASA medical certificate requirements and day-of-flight self-assessment.
+
+### Substances and performance
+
+| Substance / condition | Effect | Guidance |
+|---|---|---|
+| **Alcohol** | Impaired judgment, coordination | Legal limits and “bottle to throttle” rules — know current CASA requirements |
+| **Sedatives / sleeping aids** | Residual drowsiness | Do not fly until fully clear per medical advice |
+| **Antihistamines** | Drowsiness (many “sedating” types) | Use non-sedating only if approved for flying |
+| **Pain medication** | Variable — opioids impair | Medical advice before flying |
+| **Dehydration** | Headache, reduced concentration | Drink water; limit caffeine excess |
+| **Heat stress** | Fatigue, irritability | Hydrate, ventilate, delay flight |
+
+### IM SAFE checklist (personal preflight)
+
+| Letter | Check |
+|---|---|
+| **I**llness | Am I sick or infectious? |
+| **M**edication | New or affecting drugs? |
+| **S**tress | Life/work stress overwhelming? |
+| **A**lcohol | Within limits and fit? |
+| **F**atigue | Adequate sleep? |
+| **E**ating / emotion | Fed, hydrated, emotionally stable? |
+
+- [CASA — medical certification](https://www.casa.gov.au/licences-and-certification/medical)
+- [FAA PHAK — aeromedical](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-17-aeromedical-factors)
 
 ---
 
 ## 4.9 CRM in Single-Pilot Operations
 
-- Single-pilot CRM still applies:
-  - Use passengers as resources (lookout, checklists, spotting traffic/weather)
-  - Effective radio communication
-  - Assertive but controlled decision making
-  - Time management and phase-of-flight briefing discipline.
+**Definition — CRM (Crew Resource Management):** use of all available resources (people, equipment, information, procedures) to achieve safe flight.
+
+### Single-pilot CRM (still applies)
+
+| Resource | How to use |
+|---|---|
+| **Passengers** | Traffic lookout, read checklist items, monitor time/fuel |
+| **ATC / FIS** | Weather updates, traffic information, assistance |
+| **Automation / avionics** | Reduce workload but cross-check — “manage, not trust blindly” |
+| **Preflight briefing** | Threats, alternates, decision triggers |
+| **Time management** | Phase checks; avoid rushed descents and approaches |
+
+### Communication discipline
+
+- Clear, concise radio calls; read back when required.
+- **Assertiveness:** speak up (to self or passenger) when margins shrink — “we divert now.”
+
+- [CASA — human factors / CRM context](https://www.casa.gov.au/safety-management)
+- [FAA — single-pilot resource management materials](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-2-aeronautical-decision-making)
 
 ---
 
 ## 4.10 Key Definitions and Practical Examples
 
-- **Hypoxia:** insufficient oxygen delivery to tissues.
-  - Example: pilot becomes unusually confident and misses checklist items at altitude.
-- **Hyperventilation:** excessive breathing that lowers CO2, causing dizziness/tingling/anxiety.
-  - Example: high workload after weather deviation leads to rapid breathing and degraded concentration.
-- **Situational awareness:** understanding what is happening now and what is likely next.
-  - Example: noticing lowering cloud base early and deciding to divert before escape options narrow.
-- **TEM (Threat and Error Management):** identify threats, trap errors, and maintain margins.
-  - Example: known crosswind + fatigue threat prompts stricter stabilized approach gate and earlier go-around trigger.
-- **Hazardous attitude:** mindset pattern that increases risk.
-  - Example: "I can handle this no matter what" aligns with macho/invulnerability patterns.
+### Core definitions (revision table)
+
+| Term | Definition |
+|---|---|
+| **Hypoxia** | Insufficient oxygen to tissues |
+| **Hyperventilation** | Over-breathing lowering CO2; mimics hypoxia |
+| **Spatial disorientation** | Incorrect sense of attitude/motion |
+| **Situational awareness** | Perceive, understand, and anticipate |
+| **TEM** | Manage threats and errors before undesired state |
+| **Hazardous attitude** | Risk-increasing mindset pattern |
+| **CRM** | Effective use of all available resources |
+
+### Practical examples
+
+**Hypoxia**
+
+- At altitude without oxygen, pilot feels unusually confident and skips checklist → descend, use O2 per POH, land if needed.
+
+**Hyperventilation**
+
+- After weather scare, rapid breathing and tingling fingers at 2,000 ft → slow breathing, calm workload, confirm with pulse oximeter if available.
+
+**Situational awareness**
+
+- En route, pilot notes cloud base lowering on successive METARs → diverts before destination becomes trapped.
+
+**TEM**
+
+- Threat: fatigue + crosswind. Error trap: brief earlier go-around gate and stricter personal crosswind limit.
+
+**Hazardous attitude**
+
+- “I've done this strip at night before, always fine” → invulnerability → reassess with current weather and recency.
 
 ### Scenario: illusion management
 
-- Night approach over dark terrain with few visual cues feels too high.
-- Correct response: trust instrument profile and stabilized criteria rather than seat-of-pants sensation.
+- Night approach over dark terrain; sensation of being too high.
+- Correct response: trust **attitude instrument** and **stabilized approach criteria**; do not chase false visual picture.
+
+- Cross-reference: Chapter 7 (stabilized approach, go-around).
 
 ---
 ## 4.11 Common Human Factors Exam Traps
@@ -204,9 +404,9 @@ flowchart LR
 
 Endsley-style situational awareness (exam overview):
 
-$$
-\text{SA} = \text{perception} + \text{comprehension} + \text{projection}
-$$
+```text
+SA = perception + comprehension + projection
+```
 
 ---
 

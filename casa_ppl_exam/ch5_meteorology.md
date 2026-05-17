@@ -12,125 +12,322 @@ These notes are exam-focused for CASA PPL meteorology, with operational interpre
 
 ## 5.1 Atmosphere Fundamentals
 
-- Atmospheric composition and pressure behavior underpin all weather interpretation.
-- Key concepts:
-  - Pressure decreases with altitude
-  - Temperature usually decreases with altitude in troposphere
-  - Density depends on pressure and temperature
-- ISA is a reference model used in performance calculations.
+**Definition — atmosphere:** the envelope of gases surrounding Earth; weather occurs mainly in the **troposphere** (surface to about 10–16 km, higher at equator).
+
+### Composition (exam awareness)
+
+| Gas | Approx. proportion | Relevance |
+|---|---:|---|
+| Nitrogen | ~78% | Inert bulk of atmosphere |
+| Oxygen | ~21% | Supports combustion; human respiration |
+| Water vapour | Variable | Drives clouds, humidity, latent heat |
+| Trace gases | Small % | CO2, etc. |
+
+### Pressure, temperature, and density
+
+| Concept | Definition | Operational link |
+|---|---|---|
+| **Atmospheric pressure** | Weight of air column above a point; decreases with altitude | Altimeter, QNH, performance |
+| **Temperature lapse** | Temperature usually decreases with height in troposphere | Stability, cloud type |
+| **Density** | Mass of air per volume; affected by pressure, temperature, humidity | Engine/prop/wing performance (density altitude — Chapter 3) |
+
+- **ISA (International Standard Atmosphere):** reference model (15°C at sea level, 1013.25 hPa, standard lapse rates) used for performance charts and comparisons.
+- **QNH / QFE:** subscale settings for altimeter — QNH gives height above mean sea level; critical for terrain clearance and circuit height discipline.
+
+- [FAA PHAK — atmosphere / weather intro](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
+- [Bureau of Meteorology — aviation weather](http://www.bom.gov.au/aviation/)
+
+```mermaid
+flowchart TD
+    A[Surface heating and moisture] --> B[Vertical motion]
+    B --> C{Stable or unstable?}
+    C -- Stable --> D[Stratiform cloud / limited vertical growth]
+    C -- Unstable --> E[Convective cloud / showers / turbulence]
+```
 
 ---
 
 ## 5.2 Pressure Systems and Wind
 
-- Pressure gradient drives wind; Coriolis and friction modify direction/speed.
-- Around pressure systems (Southern Hemisphere patterns should be understood for exam context).
-- Stronger gradient -> stronger wind.
-- Surface wind differs from gradient wind due to friction and terrain channeling.
+**Definition — pressure gradient:** change in pressure over distance; air tends to move from higher to lower pressure (wind).
+
+**Definition — Coriolis effect:** apparent deflection of moving air due to Earth’s rotation; in the **Southern Hemisphere**, flow is deflected to the **left**.
+
+**Definition — gradient wind:** wind parallel to isobars aloft, balanced by pressure gradient and Coriolis (friction small).
+
+**Definition — surface wind:** modified by friction and terrain; typically crosses isobars toward low pressure at surface.
+
+### Southern Hemisphere high and low (memory)
+
+| System | Surface wind circulation (SH) | Typical weather |
+|---|---|---|
+| **High (anticyclone)** | Clockwise, outward | Subsidence, often clearer, stable |
+| **Low (cyclone / depression)** | Anticlockwise, inward | Rising air, cloud, precipitation |
+
+- **Stronger isobar spacing** → stronger pressure gradient → stronger wind.
+- **Sea breeze / land breeze:** local pressure/temperature differences near coasts — can shift wind direction during the day.
+
+- [FAA PHAK — wind and pressure systems](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
+- [BOM — isobar and synoptic chart help](http://www.bom.gov.au/weather/charts/)
 
 ---
 
 ## 5.3 Stability, Lapse Rates, and Vertical Motion
 
-- Stability determines cloud type and turbulence tendency.
-- Stable air favors stratiform cloud and smoother conditions.
-- Unstable air favors convective cloud, showers, and turbulence.
-- Inversions:
-  - Can trap haze/smoke/pollutants
-  - Can suppress convection
-  - May create wind shear across inversion boundary.
+**Definition — atmospheric stability:** resistance of a parcel of air to vertical displacement; determines whether lifted air continues rising or returns.
+
+**Definition — lapse rate:** rate at which temperature decreases with height.
+
+| Lapse rate type | Typical value (conceptual) | Meaning |
+|---|---|---|
+| **Environmental lapse rate (ELR)** | ~2°C per 1000 ft (variable) | Actual atmosphere at a time/place |
+| **Dry adiabatic lapse rate (DALR)** | ~3°C per 1000 ft | Cooling of unsaturated rising parcel |
+| **Saturated adiabatic lapse rate (SALR)** | ~1.5–2°C per 1000 ft (varies) | Cooling of saturated rising parcel |
+
+### Stable vs unstable (parcel test — exam logic)
+
+| Condition | Parcel behaviour | Typical cloud / flight |
+|---|---|---|
+| **Stable** | Parcel resists further rise | Stratiform layers, smoother air possible |
+| **Unstable** | Parcel continues rising once lifted | Cumulus/CB, showers, turbulence |
+| **Conditionally unstable** | Stable if dry, unstable if saturated | Common in real weather |
+
+### Inversion
+
+**Definition — inversion:** temperature **increases** with height over a layer (reverse of normal lapse).
+
+| Effect | Pilot relevance |
+|---|---|
+| Traps haze, smoke, pollution | Reduced visibility below inversion |
+| Suppresses vertical mixing | Fog/stratus can persist |
+| Wind shear at boundary | Approach/departure handling changes |
+
+- [FAA PHAK — stability and clouds](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
 
 ---
 
 ## 5.4 Moisture, Cloud, and Precipitation
 
-- Key moisture terms:
-  - Relative humidity
-  - Dew point
-  - Saturation
-- Cloud formation mechanisms:
-  - Convective lifting
-  - Orographic lifting
-  - Frontal lifting
-  - Convergence
-- Cloud families and implications:
-  - Cumuliform: vertical development, turbulence/showers
-  - Stratiform: widespread cloud, reduced visibility/base.
+### Key moisture terms
+
+| Term | Definition | Exam / ops cue |
+|---|---|---|
+| **Relative humidity (RH)** | Water vapour present as % of saturation at that temperature | High RH → fog/low cloud risk |
+| **Dew point (Td)** | Temperature to which air must cool to become saturated | Small T − Td spread → condensation risk |
+| **Saturation** | Air holding maximum water vapour at that temperature | Cloud/fog formation |
+
+```text
+Dew point spread = T − Td
+```
+
+Small spread → high humidity and increased fog/low cloud risk.
+
+### Lifting mechanisms (how clouds form)
+
+| Mechanism | Definition | Example |
+|---|---|---|
+| **Convective** | Surface heating causes buoyant rise | Afternoon cumulus, thunderstorms |
+| **Orographic** | Air forced up terrain slope | Cloud/rain on windward slopes |
+| **Frontal** | Warm air lifted over cold air (or forced at front) | Wide cloud bands, precipitation |
+| **Convergence** | Airflows meet and rise | Pre-frontal lines, sea-breeze convergence |
+
+### Cloud families (operations)
+
+| Family | Appearance / development | Typical hazards |
+|---|---|---|
+| **Stratiform** | Layered, widespread | Low ceiling, reduced visibility, steady precip |
+| **Cumuliform** | Heap-like, vertical growth | Showers, turbulence, rapid changes |
+| **Cumulonimbus (CB)** | Deep vertical storm cloud | Severe turbulence, hail, lightning, wind shear |
+
+- [FAA PHAK — moisture and precipitation](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
+- [WMO cloud atlas (reference)](https://cloudatlas.wmo.int/)
 
 ---
 
 ## 5.5 Fronts and Air Masses
 
-- Front types: cold, warm, occluded, quasi-stationary.
-- Typical hazards:
-  - Cloud/precip bands
-  - Wind shifts/gusts
-  - Turbulence and embedded convection
-  - Visibility deterioration
-- Frontal timing uncertainty matters; trend and movement are more valuable than single snapshot data.
+**Definition — air mass:** large body of air with relatively uniform temperature and moisture properties (e.g. maritime tropical, continental polar).
+
+**Definition — front:** boundary zone between two air masses with contrasting properties.
+
+### Front types (PPL summary)
+
+| Front | Movement / structure | Typical weather |
+|---|---|---|
+| **Cold** | Cold air undercuts warm air | Showery precip, gusts, wind shift, CB possible |
+| **Warm** | Warm air overrides cold air | Layered cloud, widespread precip, low stratus risk |
+| **Occluded** | Cold front catches warm front | Mixed, complex cloud and wind patterns |
+| **Stationary** | Little net movement | Prolonged cloud/precip along boundary |
+
+### Typical frontal hazards
+
+- Cloud and precipitation bands reducing VMC.
+- **Wind shift and gusts** at passage.
+- **Embedded convection** along cold fronts in unstable air.
+- **Visibility** reduction in rain, drizzle, and low cloud.
+
+### Exam and operational point
+
+- Single chart time is a snapshot; **trend** (METAR sequence, TAF `FM`/`BECMG`/`TEMPO`) matters more than one observation.
+- Plan alternates on **forecast movement**, not only current weather at destination.
+
+- [BOM — fronts and synoptic features](http://www.bom.gov.au/lam/fronts/)
+- [FAA PHAK — air masses and fronts](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
+
+```mermaid
+flowchart LR
+    W[Warm air mass] --> F[Frontal boundary]
+    C[Cold air mass] --> F
+    F --> H[Cloud / precip / wind shift]
+```
 
 ---
 
 ## 5.6 Fog, Visibility, and Low Cloud
 
-- **Radiation fog (definition):** fog formed overnight when ground loses heat by radiation under clear skies and light winds, cooling air to dew point.
-  - Typical setup: clear night, moist surface, light wind, valley/low-lying terrain.
-  - Typical burn-off: after sunrise as surface heating increases.
-- **Advection fog (definition):** warm, moist air moving over colder surface and cooling to dew point.
-  - More persistent than radiation fog; can continue all day.
-- **Upslope fog (definition):** moist air forced upslope and cooled adiabatically to saturation.
-- **Steam/evaporation fog (definition):** cold air over warmer water/wet surface causing rapid near-surface saturation.
-- **Low stratus vs fog:** fog is cloud at surface; low stratus has cloud base above surface but creates similar operational limits.
-- Visibility can degrade from haze, smoke, dust, precipitation, and low sun angle.
-- For VFR, legal minima are minimums, not targets; operational margins should be higher.
+**Definition — fog:** cloud with base at the surface; visibility below 1000 m in aviation context (exact definitions vary by authority — use exam/AIP context).
+
+**Definition — visibility:** greatest distance at which objects can be identified against background.
+
+### Fog types
+
+| Type | Definition | Typical setup | Persistence |
+|---|---|---|---|
+| **Radiation** | Ground radiates heat; clear night + light wind cools air to dew point | Inland valleys, moist soil | Burns off after sunrise heating |
+| **Advection** | Warm moist air moves over colder surface | Coast, cold current, sea fog | Can last all day |
+| **Upslope** | Moist air lifted and cooled up slope | Hills, ranges | Until wind/conditions change |
+| **Steam / evaporation** | Cold air over warmer water | Lakes, harbours in cold season | Localised, variable |
+
+### Low stratus vs fog
+
+| | Fog | Low stratus |
+|---|---|---|
+| Base | At surface | Above surface |
+| Operational effect | Runway/aerodrome obscured | Low ceiling; may be VFR marginal |
+
+### Other visibility reducers
+
+- Haze, smoke, dust, precipitation, low sun glare.
+- **VFR principle:** legal minima are minimums; use personal margins above them.
 
 ### Practical pilot actions: radiation fog example
 
 - Scenario: pre-dawn departure from inland aerodrome after clear, calm night; T/Td spread has collapsed and visibility is dropping.
-- Pilot actions:
-  - Delay departure and monitor trend (METAR/SPECI updates, webcams/field observations).
-  - Check nearby alternates for conditions and expected fog dissipation timing.
-  - Avoid "scud running" below minima; wait for sustained improvement, not a short temporary break.
-  - Re-brief takeoff/alternate plan because post-fog conditions can include low cloud layers and changing winds.
-  - If already airborne and destination develops fog: divert early while fuel/time margins are strong.
+- Actions:
+  - Delay and monitor trend (METAR/SPECI, webcams, field reports).
+  - Check alternates and expected dissipation time.
+  - Do not scud-run below minima; wait for sustained improvement.
+  - Re-brief for post-fog low cloud and wind changes.
+  - If destination fogs in while en route: **divert early** with fuel/time margins.
+
+- [FAA PHAK — fog and visibility](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
 
 ---
 
 ## 5.7 Thunderstorms and Severe Convective Hazards
 
-- Thunderstorm lifecycle: cumulus, mature, dissipating.
-- Major threats:
-  - Severe turbulence
-  - Hail
-  - Lightning
-  - Microburst/downburst and gust fronts
-  - Heavy precipitation and rapid visibility loss
-- Avoidance principle:
-  - Strategic avoidance, not tactical threading between cells.
+**Definition — thunderstorm:** moist, unstable air with strong vertical motion producing cumulonimbus, lightning, and often heavy precipitation.
+
+### Lifecycle stages
+
+| Stage | Characteristics | Hazard trend |
+|---|---|---|
+| **Cumulus** | Growing tower | Turbulence building |
+| **Mature** | Precipitation, downdrafts, lightning | Peak hazard |
+| **Dissipating** | Downdraft-dominated | Gust fronts, wind shear still dangerous |
+
+### Major threats (avoid penetration)
+
+| Hazard | Definition / effect |
+|---|---|
+| **Severe turbulence** | Violent up/downdrafts | Loss of control risk |
+| **Hail** | Ice pellets in strong updrafts | Airframe/engine damage |
+| **Lightning** | Electrical discharge | Avionics, fuel system risk |
+| **Microburst / downburst** | Intense downdraft spreading at surface | Large performance loss on approach/departure |
+| **Gust front** | Outflow boundary ahead of storm | Sudden wind shift and shear |
+| **Heavy precip** | Reduced visibility, icing in cold levels | Diversion, spatial disorientation |
+
+### Avoidance principle
+
+- **Strategic avoidance:** plan route and timing to stay clear by large margins (20+ NM from severe cells is a common training guideline; verify school/operator policy).
+- Do not attempt to “thread” between mature cells under VFR.
+
+- [BOM — thunderstorms](http://www.bom.gov.au/info/thunder/)
+- [FAA AC 00-24 — thunderstorm avoidance](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-24C.pdf)
+
+```mermaid
+flowchart TD
+    S[Storm cell on track] --> A{Can reroute with margin?}
+    A -- Yes --> R[Reroute / delay]
+    A -- No --> D[Do not launch / divert early]
+```
 
 ---
 
 ## 5.8 Wind Shear and Turbulence
 
-- Turbulence sources:
-  - Mechanical (terrain/obstacles)
-  - Thermal (surface heating)
-  - Frontal/convective
-  - Mountain wave/rotor
-- LLWS cues:
-  - Significant wind changes over short vertical distance
-  - Frontal passages, nocturnal inversions, thunderstorms.
+**Definition — turbulence:** irregular air movement causing bumpiness and attitude/airspeed fluctuations.
+
+**Definition — wind shear:** change in wind speed and/or direction over a short distance (horizontal or vertical).
+
+**Definition — LLWS (low-level wind shear):** wind shear in the lower levels of the atmosphere — critical on approach and departure.
+
+### Turbulence sources
+
+| Source | Cause | Typical location / time |
+|---|---|---|
+| **Mechanical** | Wind over terrain, buildings, trees | Downwind of ridges, approach to strips |
+| **Thermal** | Uneven surface heating | Afternoon convective bumps |
+| **Frontal / convective** | Strong vertical motion at fronts/storms | Near CB, gust fronts |
+| **Mountain wave / rotor** | Airflow over mountains | Lee side of ranges, rotors below wave |
+
+### LLWS cues
+
+- Rapid airspeed fluctuations on approach.
+- Wind shift reported on ATIS/METAR (e.g. `WS` group where used).
+- Frontal passage, nocturnal inversion break, thunderstorm outflow.
+
+| Phase | Risk | Mitigation |
+|---|---|---|
+| Takeoff / initial climb | Performance loss after rotation | Know winds; delay if outflow suspected |
+| Approach / landing | Sudden sink or airspeed drop | Stabilized approach; go-around; extra margin |
+
+- [FAA PHAK — wind shear and turbulence](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
 
 ---
 
 ## 5.9 Icing (PPL Conceptual Depth)
 
-- Structural, induction, and instrument icing categories.
-- Conditions: visible moisture plus suitable temperature range.
-- Operational message:
-  - Plan to avoid icing environments in light GA without robust anti-ice capability.
+**Definition — aircraft icing:** accretion of ice on airframe, engine intakes, or instruments when flying in visible moisture below freezing.
 
-Note: See Chapter 2 for more icing secenarios.
+### Icing categories
+
+| Type | Where | Effect |
+|---|---|---|
+| **Structural** | Wings, tail, prop | Reduced lift, increased drag, stall speed rise |
+| **Induction** | Carburettor / intake | Power loss (carb ice — Chapter 2) |
+| **Instrument** | Pitot/static, antennas | Erroneous ASI/altitude/VSI |
+
+### Typical icing conditions (conceptual)
+
+- **Visible moisture** (cloud, drizzle, rain in cold layer).
+- **Temperature** at or below 0°C (supercooled droplets can exist slightly above 0°C in cloud).
+- Light GA without certified icing protection: **avoid** forecast icing layers.
+
+### Operational message
+
+- Check freezing level and cloud tops in briefing; stay VMC and clear of icing layers when possible.
+- If unexpected icing: exit icing conditions (climb/descend/turn), inform ATC, divert.
+
+- See Chapter 2 (AGK) for system failures and carb icing.
+- [FAA PHAK — icing](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak/chapter-12-aviation-weather)
+- [CASA icing safety material](https://www.casa.gov.au/safety-management)
+
+| Severity (conceptual) | Appearance | Pilot action |
+|---|---|---|
+| Trace / light | Small accumulation rate | Monitor; exit if increasing |
+| Moderate | Rate requires repeated escape | Leave conditions promptly |
+| Severe | Beyond escape by normal manoeuvre | Avoid at planning stage |
 
 ---
 
