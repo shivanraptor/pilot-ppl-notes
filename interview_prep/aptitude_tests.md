@@ -28,7 +28,7 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | 1 | **Monitoring ability** | Count moving dots; speed + accuracy | Soft focus, peripheral vision |
 | 2 | **Spatial orientation** | Cut-E **relative bearing indicator** (RBI) | Practice RBI / spatial apps |
 | 3 | **Complex control** | “Missile game” style tracking | Search “Cut-E complex control” / pilot aptitude sites |
-| 4 | **Applied numeracy** | Basic math under time pressure | Fractions, percentages, speed–distance–time |
+| 4 | **Applied numeracy** | Basic math under time pressure | [Numeracy worksheet](numeracy.md) — timed sets |
 | 5 | **Multi-tasking** | Cut-E **triangle** task | Dual-task practice platforms |
 | 6 | **Reaction speed** | Cut-E reaction rate | Mouse hardware; rest before test |
 | 7 | **Work-related behaviour** | Personality / integrity style | Answer honestly; do not game |

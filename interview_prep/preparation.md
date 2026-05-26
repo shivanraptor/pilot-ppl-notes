@@ -21,6 +21,9 @@ title: Interview Preparation (Legacy Hub)
 | Technical interview | [technical.md](technical.md) |
 | Medical & drug screening | [medical.md](medical.md) |
 | PHAK / PPL study map | [study_map.md](study_map.md) |
+| Numeracy worksheet | [numeracy.md](numeracy.md) |
+| STAR print / Save as PDF | [star_worksheet.md](star_worksheet.md) |
+| Simulator assessment | [simulator_assessment.md](simulator_assessment.md) |
 
 ---
 
@@ -30,6 +33,7 @@ title: Interview Preparation (Legacy Hub)
 - **Aptitude:** All reported Aon/Cut-E modules documented in [aptitude_tests.md](aptitude_tests.md) — not monitoring only.
 - **Flight package PDF:** Correct path — [docs/flight_package.pdf](docs/flight_package.pdf).
 - **Study path:** [study_map.md](study_map.md) links PHAK chapters and PPL notes to each interview stage.
+- **Medium priority:** [numeracy.md](numeracy.md), expanded [icao_english.md](icao_english.md) samples, [simulator_assessment.md](simulator_assessment.md), [star_worksheet.md](star_worksheet.md).
 
 ---
 

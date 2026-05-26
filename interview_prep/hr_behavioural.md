@@ -47,6 +47,8 @@ Keep answers **2–3 minutes** unless they ask for more detail.
 
 Write each story on one page: bullets only, not a script to recite robotically.
 
+**Printable worksheet:** [STAR worksheet — print or Save as PDF](star_worksheet.md) (fill-in tables for all six stories + consistency check).
+
 ---
 
 ## High-frequency questions

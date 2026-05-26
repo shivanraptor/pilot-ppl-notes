@@ -11,6 +11,9 @@ title: Useful Resources
 - [ICAO English drills](../interview_prep/icao_english.md)
 - [Study map — PHAK vs PPL chapters](../interview_prep/study_map.md)
 - [Example flight package PDF](../interview_prep/docs/flight_package.pdf)
+- [Numeracy worksheet](../interview_prep/numeracy.md)
+- [STAR worksheet — print / Save as PDF](../interview_prep/star_worksheet.md)
+- [Simulator assessment](../interview_prep/simulator_assessment.md)
 
 **Official Handbooks**
 - [Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)

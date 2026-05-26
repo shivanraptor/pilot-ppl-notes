@@ -32,13 +32,13 @@ Official careers pages list variations of: **application → ICAO English → co
 | --- | --- | --- |
 | 1. Application & documents | [Eligibility](eligibility.md) | Cover letter + CV consistency |
 | 2. ICAO English LPT | [ICAO English](icao_english.md) | Level 4+; grade = **lowest** criterion |
-| 3. Computer-based aptitude (Aon/Cut-E) | [Aptitude tests](aptitude_tests.md) | **Six modules** — not monitoring alone |
+| 3. Computer-based aptitude (Aon/Cut-E) | [Aptitude tests](aptitude_tests.md) · [Numeracy worksheet](numeracy.md) | **Six modules** — not monitoring alone |
 | 4. Initial video interview | [HR & behavioural](hr_behavioural.md) | Motivation, CV, company knowledge |
 | 5. Group exercise | [Group exercise](group_exercise.md) | CRM, safety leadership, flight-package tasks |
 | 6. Final panel + technical | [Technical interview](technical.md) | PHAK + Cathay fleet |
 | 7. Medical & drug test | [Medical](medical.md) | HKCAD Class 1, CAD373 |
 
-Some cycles add **simulator assessment** (more common on experienced/direct-entry paths). If your letter includes sim, treat it as a separate high-priority prep block.
+Some cycles add **simulator assessment** (more common on experienced/direct-entry paths). If your letter includes sim, see **[Simulator assessment](simulator_assessment.md)**.
 
 ---
 
@@ -47,7 +47,7 @@ Some cycles add **simulator assessment** (more common on experienced/direct-entr
 | Cathay cadet needs | Use on this site |
 | --- | --- |
 | Aptitude / psychometrics | [Aptitude tests](aptitude_tests.md) |
-| STAR, CRM, company knowledge | [HR & behavioural](hr_behavioural.md) |
+| STAR, CRM, company knowledge | [HR & behavioural](hr_behavioural.md) · [STAR worksheet (print/PDF)](star_worksheet.md) |
 | Principles of flight, jets, weather, fleet | [Technical](technical.md) + [Study map](study_map.md) |
 | CRM, human factors, procedures mindset | [Ch 4](../casa_ppl_exam/ch4_human_performance_and_limitations.md), [Ch 7](../casa_ppl_exam/ch7_operational_procedures.md) |
 | Weather products & fronts (basics) | [Ch 5](../casa_ppl_exam/ch5_meteorology.md) (Australian products — compare to METAR/TAF logic) |
@@ -60,9 +60,14 @@ Full crosswalk: **[Study map — PHAK, PPL chapters, and interview stages](study
 
 ## Quick links
 
-- [Useful resources](../useful_resources/resources.md) — VHHH METAR, Live ATC, SimBrief, PeakTalk
-- [Example flight package (PDF)](docs/flight_package.pdf) — group exercise practice
-- [Legacy single-page notes](preparation.md) — redirects here; use topic pages above
+| Resource | Link |
+| --- | --- |
+| Numeracy practice | [numeracy.md](numeracy.md) |
+| STAR print / Save as PDF | [star_worksheet.md](star_worksheet.md) |
+| Simulator (if invited) | [simulator_assessment.md](simulator_assessment.md) |
+| Useful tools | [resources](../useful_resources/resources.md) — VHHH METAR, Live ATC, SimBrief |
+| Flight package PDF | [docs/flight_package.pdf](docs/flight_package.pdf) |
+| Legacy hub | [preparation.md](preparation.md) |
 
 ---
 

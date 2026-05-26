@@ -16,11 +16,12 @@ Use this table to avoid studying **CASA air law** when you need **PHAK aerodynam
 | --- | --- | --- | --- |
 | Application | [Eligibility](eligibility.md) | — | — |
 | ICAO LPT | [ICAO English](icao_english.md) | — | — |
-| Aptitude | [Aptitude tests](aptitude_tests.md) | — | — |
-| HR / video | [HR & behavioural](hr_behavioural.md) | Ch 2 (ADM) optional | [Ch 4](../casa_ppl_exam/ch4_human_performance_and_limitations.md) CRM/TEM |
+| Aptitude | [Aptitude tests](aptitude_tests.md) · [Numeracy](numeracy.md) | — | — |
+| HR / video | [HR & behavioural](hr_behavioural.md) · [STAR worksheet](star_worksheet.md) | Ch 2 (ADM) optional | [Ch 4](../casa_ppl_exam/ch4_human_performance_and_limitations.md) CRM/TEM |
 | Group exercise | [Group exercise](group_exercise.md) | — | [Ch 4](../casa_ppl_exam/ch4_human_performance_and_limitations.md), [Ch 7](../casa_ppl_exam/ch7_operational_procedures.md) |
 | Technical / panel | [Technical](technical.md) | **Ch 4, 5, 6, 7, 12** | Ch 2, 5 (see below) |
 | Medical | [Medical](medical.md) | — | — |
+| Simulator (if invited) | [Simulator assessment](simulator_assessment.md) | — | [Ch 7](../casa_ppl_exam/ch7_operational_procedures.md) callouts |
 
 ---
 
