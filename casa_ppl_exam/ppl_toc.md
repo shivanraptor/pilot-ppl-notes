@@ -4,6 +4,8 @@ title: CASA Private Pilot Licence (PPL) Theoretical Exam – Overview
 ---
 # CASA Private Pilot Licence (PPL) Theoretical Exam – Overview of the 7 Mandatory Subjects
 
+> **Cathay Pacific cadet interview?** These chapters target **CASA PPL theory** (Australia). For Cathay selection, start at the [Interview preparation hub](../interview_prep/index.md) and [study map](../interview_prep/study_map.md) — only some chapters overlap.
+
 The CASA PPL theory exam consists of seven core subjects. Below is a concise overview of each subject, highlighting the key topics you need to master, enriched with relevant content from the FAA Pilot's Handbook of Aeronautical Knowledge (PHAK) where applicable.
 
 > Master these subjects to proficiency, not just to pass the exam. A good pilot is always learning. Primary references: CASA Part 61 MOS, AIP, ERSA. PHAK is excellent supplementary material for concepts.

@@ -4,6 +4,14 @@ title: Useful Resources
 ---
 ## Useful Resources
 
+**Cathay cadet interview prep (this site)**
+
+- [Interview hub](../interview_prep/index.md) — roadmap and eligibility
+- [Aptitude tests (all modules)](../interview_prep/aptitude_tests.md)
+- [ICAO English drills](../interview_prep/icao_english.md)
+- [Study map — PHAK vs PPL chapters](../interview_prep/study_map.md)
+- [Example flight package PDF](../interview_prep/docs/flight_package.pdf)
+
 **Official Handbooks**
 - [Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
 - [Radiotelephony manual for flight operations](https://www.casa.gov.au/sites/default/files/2025-12/multipart-ac-64b-02-ac-91-35-and-ac-172-05-radiotelephony-manual-for-flight-operations.pdf)
