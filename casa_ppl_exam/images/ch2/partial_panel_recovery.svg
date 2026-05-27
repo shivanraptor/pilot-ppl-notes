@@ -26,7 +26,7 @@
   <rect x="70" y="275" rx="14" ry="14" width="520" height="110" class="box"/>
   <text x="95" y="312" class="note">2) Aviate (first)</text>
   <text x="95" y="342" class="small">Wings level " pitch + power " trim</text>
-  <text x="95" y="368" class="small">Stop the upset before solving the failure</text>
+  <text x="95" y="368" class="small">Stop the upset before solving the failure</text>
 
   <rect x="70" y="420" rx="14" ry="14" width="520" height="120" class="box"/>
   <text x="95" y="458" class="note">3) Stabilize</text>
