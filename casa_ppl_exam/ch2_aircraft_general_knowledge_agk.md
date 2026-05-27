@@ -337,15 +337,19 @@ Legend:
 
 **Definition — partial panel:** flight with one or more primary gyro instruments inoperative; rely on limited remaining instruments and outside cues when VMC.
 
-```mermaid
-flowchart TD
-    F[Gyro failure recognized] --> A[Aviate — trim for level flight]
-    A --> S[Stabilize with remaining instruments]
-    S --> V{VMC available?}
-    V -- Yes --> E[Exit IMC / land VFR]
-    V -- No --> I[Instrument scan: TC + compass + ASI + altimeter]
-    I --> L[Land as soon as practical]
-```
+<img src="images/ch2/partial_panel_recovery.svg" alt="Partial panel recovery flowchart (gyro failure)" style="width: 100%" />
+
+**How to read the diagram (exam-friendly)**
+
+| Step | What you do | Why |
+|---|---|---|
+| 1 | Recognize AI/HI unreliable | Stops you “chasing” false attitude/heading |
+| 2 | **Aviate**: wings level, pitch + power, trim | Buy time; stop the upset |
+| 3 | Stabilize on remaining instruments | Reduce workload and error rate |
+| 4 | If VMC: transition visual and land | Safest simplification |
+| 5 | If not VMC: fly a disciplined partial-panel scan | Maintain control until landing option |
+
+> **Ask yourself:** What does your instrument panel tell you right now — which instrument is lying, and which ones still agree?
 
 | Remaining instrument | Use in partial panel |
 |---|---|

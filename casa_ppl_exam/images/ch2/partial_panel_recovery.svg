@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <defs>
+    <style>
+      .title { font: 700 30px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; fill: #111; }
+      .note  { font: 400 18px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; fill: #111; }
+      .small { font: 400 16px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; fill: #111; }
+      .box   { fill: #fff; stroke: #111; stroke-width: 3; }
+      .thin  { stroke: #111; stroke-width: 3; fill: none; }
+      .arrow { stroke: #111; stroke-width: 3; fill: none; marker-end: url(#mArrow); }
+    </style>
+    <marker id="mArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#111"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="60" y="70" class="title">Partial Panel Recovery (Gyro Failure)</text>
+  <text x="60" y="105" class="note">Conceptual training aid — POH/AFM procedures are authoritative.</text>
+
+  <!-- Boxes -->
+  <rect x="70" y="150" rx="14" ry="14" width="520" height="90" class="box"/>
+  <text x="95" y="185" class="note">1) Recognize gyro failure</text>
+  <text x="95" y="215" class="small">AI / HI unreliable (flag, tumble, or conflicting indications)</text>
+
+  <rect x="70" y="275" rx="14" ry="14" width="520" height="110" class="box"/>
+  <text x="95" y="312" class="note">2) Aviate (first)</text>
+  <text x="95" y="342" class="small">Wings level " pitch + power " trim</text>
+  <text x="95" y="368" class="small">Stop the upset before solving the failure</text>
+
+  <rect x="70" y="420" rx="14" ry="14" width="520" height="120" class="box"/>
+  <text x="95" y="458" class="note">3) Stabilize</text>
+  <text x="95" y="488" class="small">Use remaining instruments to hold level flight:</text>
+  <text x="115" y="514" class="small">ASI " Altimeter/VSI " Turn coordinator " Compass (as needed)</text>
+
+  <!-- Decision diamond -->
+  <polygon points="760,420 930,500 760,580 590,500" class="box"/>
+  <text x="665" y="498" class="note">VMC available?</text>
+
+  <!-- YES branch -->
+  <rect x="970" y="310" rx="14" ry="14" width="200" height="90" class="box"/>
+  <text x="990" y="345" class="note">YES</text>
+  <text x="990" y="375" class="small">Transition to visual</text>
+
+  <rect x="970" y="150" rx="14" ry="14" width="200" height="120" class="box"/>
+  <text x="990" y="190" class="note">Exit IMC</text>
+  <text x="990" y="220" class="small">Land VFR</text>
+  <text x="990" y="246" class="small">Reduce workload</text>
+
+  <!-- NO branch -->
+  <rect x="970" y="520" rx="14" ry="14" width="200" height="160" class="box"/>
+  <text x="990" y="556" class="note">NO</text>
+  <text x="990" y="586" class="small">Partial-panel scan</text>
+  <text x="990" y="614" class="small">TC: rate + balance</text>
+  <text x="990" y="640" class="small">Compass: heading</text>
+  <text x="990" y="666" class="small">ASI: speed</text>
+  <text x="990" y="692" class="small">Alt/VSI: trend</text>
+
+  <rect x="740" y="705" rx="14" ry="14" width="430" height="85" class="box"/>
+  <text x="765" y="742" class="note">Land as soon as practical</text>
+  <text x="765" y="770" class="small">Choose the simplest, safest option to stop the problem growing</text>
+
+  <!-- Arrows -->
+  <path d="M330,240 L330,275" class="arrow"/>
+  <path d="M330,385 L330,420" class="arrow"/>
+  <path d="M590,500 L610,500" class="arrow"/>
+  <path d="M760,420 L760,360 L970,360" class="arrow"/>
+  <path d="M1070,310 L1070,270" class="arrow"/>
+  <path d="M930,500 L970,500 L970,600" class="arrow"/>
+  <path d="M970,680 L915,705" class="arrow"/>
+
+  <!-- Footer -->
+  <text x="60" y="800" class="small">Trainer tip: sketch your scan (TC + ASI + ALT/VSI + Compass) before answering scenario questions.</text>
+</svg>
+
