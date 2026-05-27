@@ -2,7 +2,7 @@
 layout: print
 title: STAR Story Worksheet — Print / Save as PDF
 ---
-<div class="no-print">
+<div class="no-print" markdown="1">
 
 **Print or save as PDF:** Use your browser menu → **Print** → **Save as PDF** (or print on paper).  
 [Back to HR & behavioural interview](hr_behavioural.md) · [Interview hub](index.md)
@@ -24,7 +24,7 @@ Prepare **six** stories (2–3 min spoken each). Use **“I”** for actions. On
 
 ---
 
-<div class="story-block">
+<div class="story-block" markdown="1">
 
 ## Story 1 — Leadership
 
@@ -43,7 +43,7 @@ Prepare **six** stories (2–3 min spoken each). Use **“I”** for actions. On
 
 ---
 
-<div class="story-block">
+<div class="story-block" markdown="1">
 
 ## Story 2 — Conflict / teamwork
 
@@ -62,7 +62,7 @@ Prepare **six** stories (2–3 min spoken each). Use **“I”** for actions. On
 
 ---
 
-<div class="story-block">
+<div class="story-block" markdown="1">
 
 ## Story 3 — Failure and learning
 
@@ -81,7 +81,7 @@ Prepare **six** stories (2–3 min spoken each). Use **“I”** for actions. On
 
 ---
 
-<div class="story-block">
+<div class="story-block" markdown="1">
 
 ## Story 4 — SOP / procedure
 
@@ -100,7 +100,7 @@ Prepare **six** stories (2–3 min spoken each). Use **“I”** for actions. On
 
 ---
 
-<div class="story-block">
+<div class="story-block" markdown="1">
 
 ## Story 5 — Pressure / prioritisation
 
@@ -119,7 +119,7 @@ Prepare **six** stories (2–3 min spoken each). Use **“I”** for actions. On
 
 ---
 
-<div class="story-block">
+<div class="story-block" markdown="1">
 
 ## Story 6 — Weakness and improvement
 
