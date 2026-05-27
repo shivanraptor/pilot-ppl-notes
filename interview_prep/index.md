@@ -62,12 +62,11 @@ Full crosswalk: **[Study map — PHAK, PPL chapters, and interview stages](study
 
 | Resource | Link |
 | --- | --- |
-| Numeracy practice | [numeracy.md](numeracy.md) |
-| STAR print / Save as PDF | [star_worksheet.md](star_worksheet.md) |
-| Simulator (if invited) | [simulator_assessment.md](simulator_assessment.md) |
+| Numeracy practice | [Numeracy](numeracy.md) |
+| STAR print / Save as PDF | [STAR Worksheet](star_worksheet.md) |
+| Simulator (if invited) | [Simulator Assessment](simulator_assessment.md) |
 | Useful tools | [resources](../useful_resources/resources.md) — VHHH METAR, Live ATC, SimBrief |
-| Flight package PDF | [docs/flight_package.pdf](docs/flight_package.pdf) |
-| Legacy hub | [preparation.md](preparation.md) |
+| Flight package PDF | [Flight Package Sample](docs/flight_package.pdf) |
 
 ---
 
