@@ -32,6 +32,7 @@ title: Useful Resources
 - [VHHH Map](https://www.ais.gov.hk/eaip_20260416/2026-04-16-000000/pdf/VH-AD-2-VHHH-ADC-1.pdf)
 
 **About Aircrafts and Incidents**
+- [Hong Kong-based Commercial Aircraft Identification Chart](https://canva.link/udir4h9o18wd62z)
 - [Commercial Aircrafts in last 30 years](https://docs.google.com/spreadsheets/d/1CVVVf_VSnbHaUar3yT1w5iUxNY6EEipsUYs0kcJ99nw/edit?usp=drive_link)
 - [Air Crash Investigation/Mayday Episodes](https://docs.google.com/spreadsheets/d/1rj0DAohg7SWT2k7W6POH4A8cZkqo4898wiGxGQKf5To/edit?usp=drive_link)
 
