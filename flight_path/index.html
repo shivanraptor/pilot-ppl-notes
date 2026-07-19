@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cessna 172 Skyhawk — Flight Paths</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <style>
+    :root {
+      --bg: #0c1219;
+      --panel: rgba(14, 22, 32, 0.92);
+      --border: rgba(148, 178, 204, 0.18);
+      --text: #e8eef4;
+      --muted: #8fa3b8;
+      --accent: #3db8a8;
+      --accent-dim: #2a7f74;
+      --takeoff: #5ec8ff;
+      --landing: #f0a35e;
+      --path: #3db8a8;
+      --path-active: #7eefdf;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    #map {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .panel {
+      position: absolute;
+      z-index: 1000;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .header {
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      max-width: 420px;
+      padding: 18px 20px;
+      border-radius: 4px;
+    }
+
+    .header h1 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 4px;
+    }
+
+    .header .sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .stats {
+      display: flex;
+      gap: 16px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .stat strong {
+      display: block;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .stat span {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .sidebar {
+      top: 16px;
+      right: 16px;
+      width: min(340px, calc(100vw - 32px));
+      max-height: calc(100vh - 32px);
+      display: flex;
+      flex-direction: column;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .sidebar-head {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .sidebar-head h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .search {
+      width: 100%;
+      margin: 0;
+      padding: 10px 16px;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.85rem;
+      outline: none;
+    }
+
+    .search::placeholder { color: var(--muted); }
+
+    .flight-list {
+      overflow-y: auto;
+      flex: 1;
+      scrollbar-width: thin;
+      scrollbar-color: var(--accent-dim) transparent;
+    }
+
+    .flight-item {
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      padding: 12px 16px;
+      cursor: pointer;
+      font: inherit;
+      transition: background 0.15s ease;
+    }
+
+    .flight-item:hover,
+    .flight-item.active {
+      background: rgba(61, 184, 168, 0.12);
+    }
+
+    .flight-item.active {
+      box-shadow: inset 3px 0 0 var(--accent);
+    }
+
+    .route {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .route .arrow { color: var(--accent); font-size: 0.8rem; }
+
+    .meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+    }
+
+    .meta time { font-family: "IBM Plex Mono", monospace; }
+
+    .legend {
+      bottom: 24px;
+      left: 16px;
+      padding: 12px 14px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .swatch.takeoff { background: var(--takeoff); }
+    .swatch.landing { background: var(--landing); }
+    .swatch.path {
+      width: 22px;
+      height: 3px;
+      border-radius: 2px;
+      border: none;
+      background: var(--path);
+    }
+    .swatch.connection {
+      width: 22px;
+      height: 0;
+      border-radius: 0;
+      border: none;
+      border-top: 3px dotted #9aa8b8;
+      background: transparent;
+    }
+
+    .leaflet-tooltip.flight-tip {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 4px;
+      padding: 10px 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.45;
+      min-width: 240px;
+      max-width: 320px;
+    }
+
+    .leaflet-tooltip.flight-tip::before { border-top-color: var(--border); }
+
+    .flight-tip .tip-route {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+
+    .flight-tip .tip-airport {
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .flight-tip .tip-airport:last-of-type {
+      border-bottom: none;
+      margin-bottom: 6px;
+      padding-bottom: 0;
+    }
+
+    .flight-tip .tip-airport .label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .flight-tip .tip-airport .code {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 500;
+      font-size: 0.88rem;
+      color: var(--text);
+    }
+
+    .flight-tip .tip-airport .name {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.35;
+      margin-top: 2px;
+    }
+
+    .flight-tip .tip-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    .flight-tip .tip-row b {
+      color: var(--text);
+      font-weight: 500;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.78rem;
+    }
+
+    .wx-badge {
+      display: inline-block;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 1px 6px;
+      border-radius: 3px;
+      line-height: 1.4;
+    }
+
+    .wx-badge.vfr { background: rgba(46, 160, 90, 0.25); color: #6fd99a; }
+    .wx-badge.mvfr { background: rgba(64, 140, 220, 0.28); color: #7eb8f0; }
+    .wx-badge.ifr { background: rgba(200, 140, 40, 0.28); color: #e0b05c; }
+    .wx-badge.lifr { background: rgba(200, 70, 90, 0.3); color: #f08090; }
+
+    .leaflet-popup-content-wrapper {
+      background: var(--panel);
+      color: var(--text);
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .leaflet-popup-tip { background: var(--panel); }
+    .leaflet-popup-content { margin: 12px 14px; font-size: 0.85rem; line-height: 1.5; }
+    .leaflet-popup-content strong { color: var(--accent); }
+    .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+
+    .airport-popup .code {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .airport-popup .name {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    .airport-popup .role { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+    @media (max-width: 720px) {
+      .header {
+        max-width: none;
+        right: 16px;
+        padding: 12px 14px;
+      }
+      .header h1 { font-size: 0.95rem; }
+      .sidebar {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        max-height: 38vh;
+        border-radius: 12px 12px 0 0;
+      }
+      .legend { display: none; }
+      .stats { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <aside class="panel header">
+    <h1>Flight Paths for Cessna 172 Skyhawk (Cargo Configuration, Tail Number: D2OXZ)</h1>
+    <p class="sub">Data fetched from the Microsoft Flight Simulator 2024 Flight Logbook.</p>
+    <div class="stats">
+      <div class="stat"><strong id="stat-flights">—</strong><span>Flights</span></div>
+      <div class="stat"><strong id="stat-nm">—</strong><span>Total NM</span></div>
+      <div class="stat"><strong id="stat-hours">—</strong><span>Est. hours</span></div>
+    </div>
+  </aside>
+
+  <aside class="panel sidebar">
+    <div class="sidebar-head">
+      <h2>Flights</h2>
+      <span id="list-count" style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:var(--muted)"></span>
+    </div>
+    <input class="search" id="search" type="search" placeholder="Filter by ICAO, name, or VFR…" autocomplete="off" />
+    <div class="flight-list" id="flight-list"></div>
+  </aside>
+
+  <div class="panel legend">
+    <div class="legend-row"><span class="swatch takeoff"></span> Takeoff</div>
+    <div class="legend-row"><span class="swatch landing"></span> Landing</div>
+    <div class="legend-row"><span class="swatch path"></span> Flight path</div>
+    <div class="legend-row"><span class="swatch connection"></span> Connection</div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    const CRUISE_KT_FALLBACK = 124;
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function wxBadge(condition) {
+      const code = String(condition || "").toUpperCase();
+      const cls = code.toLowerCase();
+      return `<span class="wx-badge ${cls}">${escapeHtml(code || "—")}</span>`;
+    }
+
+    function tipHtml(f) {
+      const fromName = escapeHtml(f.from_name || f.from);
+      const toName = escapeHtml(f.to_name || f.to);
+      return `
+        <div class="tip-route">${escapeHtml(f.from)} → ${escapeHtml(f.to)}</div>
+        <div class="tip-airport">
+          <div class="label">Takeoff</div>
+          <div class="code">${escapeHtml(f.from)}</div>
+          <div class="name">${fromName}</div>
+          <div class="tip-row"><span>Conditions</span>${wxBadge(f.takeoff_conditions)}</div>
+        </div>
+        <div class="tip-airport">
+          <div class="label">Landing</div>
+          <div class="code">${escapeHtml(f.to)}</div>
+          <div class="name">${toName}</div>
+          <div class="tip-row"><span>Conditions</span>${wxBadge(f.landing_conditions)}</div>
+        </div>
+        <div class="tip-row"><span>Depart</span><b>${escapeHtml(f.takeoff_time)}</b></div>
+        <div class="tip-row"><span>Est. arrive</span><b>${escapeHtml(f.landing_time)}</b></div>
+        <div class="tip-row"><span>Distance</span><b>${f.distance_nm.toFixed(1)} NM</b></div>
+        <div class="tip-row"><span>Duration</span><b>${f.flight_minutes} min</b></div>
+      `;
+    }
+
+    function airportPopup(code, name, role, timeLabel, time, conditions) {
+      return `
+        <div class="airport-popup">
+          <div class="role">${escapeHtml(role)} airport</div>
+          <div class="code">${escapeHtml(code)}</div>
+          <div class="name">${escapeHtml(name || code)}</div>
+          <div>${escapeHtml(timeLabel)}: <strong>${escapeHtml(time)}</strong></div>
+          <div style="margin-top:6px">METAR: ${wxBadge(conditions)}</div>
+        </div>
+      `;
+    }
+
+    function makeDot(color) {
+      return L.divIcon({
+        className: "",
+        html: `<div style="width:12px;height:12px;border-radius:50%;background:${color};border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.45)"></div>`,
+        iconSize: [12, 12],
+        iconAnchor: [6, 6],
+      });
+    }
+
+    async function main() {
+      const res = await fetch("flights.json");
+      if (!res.ok) throw new Error(`flights.json HTTP ${res.status}`);
+      const data = await res.json();
+      const flights = data.flights;
+
+      const setText = (id, value) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = value;
+      };
+
+      setText("cruise-speed", data.cruise_speed_kt || CRUISE_KT_FALLBACK);
+      setText("stat-flights", flights.length);
+      const totalNm = flights.reduce((s, f) => s + f.distance_nm, 0);
+      const totalHrs = flights.reduce((s, f) => s + f.flight_hours, 0);
+      setText("stat-nm", Math.round(totalNm).toLocaleString());
+      setText("stat-hours", totalHrs.toFixed(1));
+
+      const map = L.map("map", {
+        zoomControl: true,
+        worldCopyJump: true,
+      }).setView([35, 50], 3);
+
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        subdomains: "abcd",
+        maxZoom: 18,
+      }).addTo(map);
+
+      const connectionLayer = L.layerGroup().addTo(map);
+      const pathLayer = L.layerGroup().addTo(map);
+      const markerLayer = L.layerGroup().addTo(map);
+      const layersById = new Map();
+      let activeId = null;
+
+      const bounds = L.latLngBounds([]);
+
+      // Ground connections: previous landing → next takeoff (no travel times)
+      for (let i = 0; i < flights.length - 1; i++) {
+        const prev = flights[i];
+        const next = flights[i + 1];
+        const land = [prev.to_lat, prev.to_lon];
+        const nextTakeoff = [next.from_lat, next.from_lon];
+        const sameAirport =
+          prev.to === next.from ||
+          (Math.abs(prev.to_lat - next.from_lat) < 1e-5 &&
+            Math.abs(prev.to_lon - next.from_lon) < 1e-5);
+        if (sameAirport) continue;
+
+        const connector = L.polyline([land, nextTakeoff], {
+          color: "#9aa8b8",
+          weight: 2,
+          opacity: 0.55,
+          dashArray: "4 8",
+          lineCap: "round",
+          interactive: false,
+        });
+        connectionLayer.addLayer(connector);
+        bounds.extend(land);
+        bounds.extend(nextTakeoff);
+      }
+
+      flights.forEach((f) => {
+        const from = [f.from_lat, f.from_lon];
+        const to = [f.to_lat, f.to_lon];
+        bounds.extend(from);
+        bounds.extend(to);
+
+        const line = L.polyline([from, to], {
+          color: "#3db8a8",
+          weight: 2.5,
+          opacity: 0.75,
+          lineCap: "round",
+        });
+
+        line.bindTooltip(tipHtml(f), {
+          sticky: true,
+          className: "flight-tip",
+          opacity: 1,
+        });
+
+        line.on("mouseover", () => {
+          if (activeId !== f.id) line.setStyle({ weight: 4, opacity: 1, color: "#7eefdf" });
+        });
+        line.on("mouseout", () => {
+          if (activeId !== f.id) line.setStyle({ weight: 2.5, opacity: 0.75, color: "#3db8a8" });
+        });
+        line.on("click", () => selectFlight(f.id, false));
+
+        const takeoff = L.marker(from, { icon: makeDot("#5ec8ff") });
+        takeoff.bindPopup(
+          airportPopup(f.from, f.from_name, "Takeoff", "Departed", f.takeoff_time, f.takeoff_conditions)
+        );
+        takeoff.bindTooltip(
+          `<div class="code">${escapeHtml(f.from)}</div><div class="name">${escapeHtml(f.from_name || f.from)}</div>`,
+          { direction: "top", offset: [0, -8], className: "flight-tip", opacity: 1 }
+        );
+
+        const landing = L.marker(to, { icon: makeDot("#f0a35e") });
+        landing.bindPopup(
+          airportPopup(f.to, f.to_name, "Landing", "Est. arrival", f.landing_time, f.landing_conditions)
+        );
+        landing.bindTooltip(
+          `<div class="code">${escapeHtml(f.to)}</div><div class="name">${escapeHtml(f.to_name || f.to)}</div>`,
+          { direction: "top", offset: [0, -8], className: "flight-tip", opacity: 1 }
+        );
+
+        pathLayer.addLayer(line);
+        markerLayer.addLayer(takeoff);
+        markerLayer.addLayer(landing);
+
+        layersById.set(f.id, { line, takeoff, landing, flight: f });
+      });
+
+      if (bounds.isValid()) map.fitBounds(bounds.pad(0.08));
+
+      const listEl = document.getElementById("flight-list");
+      const countEl = document.getElementById("list-count");
+
+      function renderList(filter = "") {
+        const q = filter.trim().toUpperCase();
+        const filtered = flights.filter((f) => {
+          if (!q) return true;
+          const hay = [
+            f.from,
+            f.to,
+            f.from_name,
+            f.to_name,
+            String(f.id),
+            f.takeoff_conditions,
+            f.landing_conditions,
+          ]
+            .join(" ")
+            .toUpperCase();
+          return hay.includes(q);
+        });
+        countEl.textContent = `${filtered.length}`;
+        listEl.innerHTML = filtered
+          .map(
+            (f) => `
+          <button type="button" class="flight-item${activeId === f.id ? " active" : ""}" data-id="${f.id}">
+            <div class="route">
+              <span>${escapeHtml(f.from)}</span><span class="arrow">→</span><span>${escapeHtml(f.to)}</span>
+            </div>
+            <div class="meta">
+              <time>${escapeHtml(f.takeoff_time.slice(0, 16))}</time>
+              <span>${f.distance_nm.toFixed(0)} NM</span>
+              <span>arr ${escapeHtml(f.landing_time.slice(11, 16))}</span>
+              ${wxBadge(f.takeoff_conditions)}→${wxBadge(f.landing_conditions)}
+            </div>
+          </button>`
+          )
+          .join("");
+
+        listEl.querySelectorAll(".flight-item").forEach((btn) => {
+          btn.addEventListener("click", () => selectFlight(Number(btn.dataset.id), true));
+        });
+      }
+
+      function selectFlight(id, flyTo) {
+        if (activeId && layersById.has(activeId)) {
+          layersById.get(activeId).line.setStyle({ weight: 2.5, opacity: 0.75, color: "#3db8a8" });
+        }
+        activeId = id;
+        const entry = layersById.get(id);
+        if (!entry) return;
+        entry.line.setStyle({ weight: 5, opacity: 1, color: "#7eefdf" });
+        entry.line.bringToFront();
+        if (flyTo) {
+          map.fitBounds(entry.line.getBounds().pad(0.35), { animate: true, maxZoom: 8 });
+        }
+        renderList(document.getElementById("search").value);
+        const btn = listEl.querySelector(`[data-id="${id}"]`);
+        if (btn) btn.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
+
+      document.getElementById("search").addEventListener("input", (e) => {
+        renderList(e.target.value);
+      });
+
+      renderList();
+    }
+
+    main().catch((err) => {
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `<div class="panel" style="top:50%;left:50%;transform:translate(-50%,-50%);padding:20px;max-width:360px">
+          Could not start the map.
+          <br/><br/><small style="color:#8fa3b8">${err.message}</small>
+        </div>`
+      );
+    });
+  </script>
+</body>
+</html>
