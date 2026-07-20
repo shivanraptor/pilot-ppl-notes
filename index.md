@@ -20,7 +20,7 @@ title: Welcome to Raptor's Pilot Preparation Notes
 
 Highly analytical and disciplined professional with a Master’s in Multimedia & Entertainment Technology and ongoing PhD research in Artificial Intelligence and Linguistics. Over 10 years as Assistant Professor mentoring students in design, technology, and collaborative projects. Proven leadership in managing technical teams and delivering complex initiatives under tight timelines as the co-founder of my digital agency. Passionate about aviation and committed to the highest standards of safety, precision, and crew resource management as a future Cathay Pacific pilot. My favourite aircraft is Airbus A330-300. No actual flight hours but 100+ hours in flight simulator. 
 
-[Flight Path of my Cessna 172 Skyhawk](flight_path/)
+[Flight Path of my Cessna 172 Skyhawk Cargo ✈️](flight_path/)
 
 ---
 
