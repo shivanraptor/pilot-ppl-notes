@@ -47,7 +47,7 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | Count vs estimate | Under ~10, count; above ~10, best estimate — avoid wild guesses |
 | Hardware | **Mouse**, stable internet, quiet room |
 
-**Practice:** [Sky Dream — Cut-E monitoring](https://skydream.hk/cut-e-monitoring-ability/) · [Pilotest Cut-E prep](https://www.pilotest.com/en/selections/CUT-E-pilot-aptitude-tests-preparation) · [YouTube — Cut-E tips](https://www.youtube.com/watch?v=VLDph84CqnU)
+**Practice:** [Sky Dream — Cathay Pacific Cut-E Aptitude Tests](https://skydream.hk/cut-e-hub/) · [Pilotest Cut-E prep](https://www.pilotest.com/en/selections/CUT-E-pilot-aptitude-tests-preparation) · [YouTube — Cut-E tips](https://www.youtube.com/watch?v=VLDph84CqnU)
 
 ---
 
