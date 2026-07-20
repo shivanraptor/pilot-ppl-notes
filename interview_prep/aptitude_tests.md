@@ -110,6 +110,7 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 
 **Practice:** 
 - [Sky Dream — CUT-E Multitasking Capability Test ($$$)](https://skydream.hk/cut-e-multitasking-capability/)
+- [Pilottest - Runway Multitask (free)](https://www.pilotest.com/en/tests/runway)
 
 ---
 
