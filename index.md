@@ -4,15 +4,17 @@ title: Welcome to Raptor's Pilot Preparation Notes
 ---
 # Raptor's Pilot Preparation Notes
 
-> **Cathay Pacific Cadet Pilot Programme:** The cadet pathway currently requires a **Hong Kong Permanent Identity Card**. See [eligibility](interview_prep/eligibility.md) before you invest months in prep. Process details change by recruitment cycle — always confirm on [Cathay careers](https://careers.cathaypacific.com/en/careers/jobs/hong-kong/cadet-pilot-programme-29631).
+This website is dedicated for study prepration for **Cathay Pacific Cadet Pilot Programme:** The cadet pathway currently requires a **Hong Kong Permanent Identity Card**. See [eligibility](interview_prep/eligibility.md) before you invest months in prep. Process details change by recruitment cycle — always confirm on [Cathay careers](https://careers.cathaypacific.com/en/careers/jobs/hong-kong/cadet-pilot-programme-29631).
 
 ## Sections
 
+Here are the main sections of this website:
+
 | Track | Start here |
 | --- | --- |
-| **Cathay cadet interview** | [Interview preparation hub](interview_prep/index.md) |
-| **CASA PPL theory exam** | [PPL table of contents](casa_ppl_exam/ppl_toc.md) |
-| **Shared resources** | [Useful resources](useful_resources/resources.md) |
+| **Cathay cadet interview** | [Interview preparation hub](interview_prep/index.md) - contain information for Cadet Pilot interview |
+| **CASA PPL theory exam** | [Preparation for PPL Exam](casa_ppl_exam/ppl_toc.md) - contain practical aviation knowledge |
+| **Shared resources** | [Useful resources](useful_resources/resources.md) - collected useful resources across the Internet |
 
 ---
 
