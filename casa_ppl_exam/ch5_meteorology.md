@@ -19,6 +19,11 @@ These notes are exam-focused for CASA PPL meteorology, with operational interpre
 
 ---
 
+<a href="https://metar-taf.com/metar/VHHH" id="metartaf-9J2hTqF9" style="font-size:18px; font-weight:500; color:#000; width:500px; height:278px; display:block">METAR Hong Kong International Airport</a>
+<script async defer crossorigin="anonymous" src="https://metar-taf.com/embed-js/VHHH?bg_color=F9F6F0&layout=landscape&qnh=hPa&rh=rh&target=9J2hTqF9"></script>
+
+---
+
 ## 5.1 Atmosphere Fundamentals
 
 > **Why this matters**
