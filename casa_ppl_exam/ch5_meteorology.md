@@ -19,8 +19,32 @@ These notes are exam-focused for CASA PPL meteorology, with operational interpre
 
 ---
 
-<a href="https://metar-taf.com/metar/VHHH" id="metartaf-9J2hTqF9" style="font-size:18px; font-weight:500; color:#000; width:500px; height:278px; display:block">METAR Hong Kong International Airport</a>
-<script async defer crossorigin="anonymous" src="https://metar-taf.com/embed-js/VHHH?bg_color=F9F6F0&layout=landscape&qnh=hPa&rh=rh&target=9J2hTqF9"></script>
+### Aviation Weather of Hong Kong International Airport (VHHH)
+
+METAR: 
+<textarea readonly id="txt_metar" class="textarea_weather"></textarea>
+
+TAF:
+<textarea readonly id="txt_taf" class="textarea_weather"></textarea>
+
+<script>
+// TAF
+fetch('https://dev.yourappapp.com/weather/?type=taf')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('txt_taf').innerHTML = html;
+  })
+  .catch(error => console.warn('Error loading TAF:', error));
+
+// METAR
+fetch('https://dev.yourappapp.com/weather/')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('txt_metar').innerHTML = html;
+  })
+  .catch(error => console.warn('Error loading METAR:', error));
+
+</script>
 
 ---
 
