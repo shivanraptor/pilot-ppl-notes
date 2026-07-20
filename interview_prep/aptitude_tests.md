@@ -47,7 +47,9 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | Count vs estimate | Under ~10, count; above ~10, best estimate — avoid wild guesses |
 | Hardware | **Mouse**, stable internet, quiet room |
 
-**Practice:** [Sky Dream — Cathay Pacific Cut-E Aptitude Tests](https://skydream.hk/cut-e-hub/) · [Pilotest Cut-E prep](https://www.pilotest.com/en/selections/CUT-E-pilot-aptitude-tests-preparation) · [PASS™ by PilotAssessments](https://pilotassessments.com/cut-e-pilot-aptitude-test-assessment-preparation/) · [YouTube — Cut-E tips](https://www.youtube.com/watch?v=VLDph84CqnU)
+**Practice:** 
+- [Sky Dream — CUT-E Monitoring Ability Test ($$$)](https://skydream.hk/cut-e-monitoring-ability/)
+- [Pilottest - Monitoring Ability (free)](https://www.pilotest.com/en/tests/movingdots)
 
 ---
 
@@ -60,6 +62,10 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | Concept | Visualise aircraft heading vs beacon or target bearing |
 | Practice | Cut-E RBI modules on Pilotest or equivalent |
 
+**Practice:** 
+- [Sky Dream — CUT-E Spatial Orientation Test ($$$)](https://skydream.hk/cut-e-spatial-orientation/)
+- [Pilottest - Sense of Direction (free)](https://www.pilotest.com/en/tests/sense_of_direction)
+
 ---
 
 ## 3. Complex control
@@ -70,6 +76,10 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | --- | --- |
 | Prep | Familiarise with interface on aptitude prep sites; practice smooth mouse control |
 | Mindset | Calm hands; prioritise stable tracking over jerky corrections |
+
+**Practice:** 
+- [Sky Dream — CUT-E Complex Control ($$$)](https://skydream.hk/cut-e-complex-control/)
+- [Pilottest - Tube Flight](https://www.pilotest.com/en/tests/tubeflight)
 
 ---
 
@@ -83,7 +93,9 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | Percentages | Fuel remaining as % of tank |
 | Unit care | Read question units before calculating |
 
-**Practice:** Mental math daily (10 min) without calculator.
+**Practice:** 
+- Mental math daily (10 min) without calculator.
+- [Pilottest - Basic Numeracy (free)](https://www.pilotest.com/en/tests/numeracy)
 
 ---
 
@@ -96,6 +108,9 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | Strategy | Scan pattern; don’t fixate on one sub-task |
 | Practice | Cut-E multitasking modules on prep platforms |
 
+**Practice:** 
+- [Sky Dream — CUT-E Multitasking Capability Test ($$$)](https://skydream.hk/cut-e-multitasking-capability/)
+
 ---
 
 ## 6. Reaction speed
@@ -106,6 +121,10 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 | --- | --- |
 | Rest | Sleep and hydration affect scores |
 | Hardware | Low-latency mouse; full screen; close other apps |
+
+**Practice:** 
+- [Sky Dream — CUT-E Reaction Speed Test ($$$)](https://skydream.hk/cut-e-reaction-speed/)
+- [Pilottest - CUT-E Reaction Test Speed (free)](https://www.pilotest.com/en/tests/reactionrate)
 
 ---
 
@@ -131,11 +150,19 @@ Older materials reference **COMPASS**, reasoning, and job-knowledge tests. Treat
 
 ---
 
+## Practice resources
+
+- [Pilotest Cut-E Prep (free)](https://www.pilotest.com/en/selections/CUT-E-pilot-aptitude-tests-preparation)
+- [PASS™ by PilotAssessments ($$$)](https://pilotassessments.com/cut-e-pilot-aptitude-test-assessment-preparation/)
+- [YouTube — Cut-E tips](https://www.youtube.com/watch?v=VLDph84CqnU)
+
+--- 
+
 ## References
 
 - [Cathay Pacific Pilot Interview and Assessment (summary)](https://www.latestpilotjobs.com/interviews/view/subject/Cathay+Pacific+Pilot+Interview+and+Assessment.html)
-- [CUT-E Monitoring — Sky Dream](https://skydream.hk/cut-e-monitoring-ability/)
-- [cut-e Pilot Test — YouTube](https://www.youtube.com/watch?v=ld-7cGv3RZc)
+- [Sky Dream — Cathay Pacific Cut-E Aptitude Tests](https://skydream.hk/cut-e-hub/)
+- [Cut-E Pilot Test — YouTube](https://www.youtube.com/watch?v=ld-7cGv3RZc)
 
 ---
 
