@@ -18,8 +18,30 @@ title: Welcome to Raptor's Pilot Preparation Notes
 
 ### Aviation Weather of Hong Kong International Airport (VHHH)
 
-<a href="https://metar-taf.com/metar/VHHH" id="metartaf-9J2hTqF9" style="font-size:18px; font-weight:500; color:#000; width:500px; height:278px; display:block">METAR Hong Kong International Airport</a>
-<script async defer src="https://metar-taf.com/embed-js/VHHH?bg_color=F9F6F0&layout=landscape&qnh=hPa&rh=rh&target=9J2hTqF9"></script>
+METAR: 
+<textarea readonly id="txt_metar"></textarea>
+
+TAF:
+<textarea readonly id="txt_taf"></textarea>
+
+<script>
+// TAF
+fetch('https://aviationweather.gov/api/data/taf?ids=VHHH&format=raw')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('txt_taf').innerHTML = html;
+  })
+  .catch(error => console.warn('Error loading TAF:', error));
+
+// TAF
+fetch('https://aviationweather.gov/api/data/metar?ids=VHHH&format=raw')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('txt_metar').innerHTML = html;
+  })
+  .catch(error => console.warn('Error loading METAR:', error));
+
+</script>
 
 ---
 
