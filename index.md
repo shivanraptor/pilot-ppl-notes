@@ -12,9 +12,9 @@ Here are the main sections of this website:
 
 | Track | Start here |
 | --- | --- |
-| **Cathay cadet interview** | [Interview preparation hub](interview_prep/index.md) - Cadet Pilot interview · [Cathay company knowledge](interview_prep/cathay_pacific.md) |
-| **CASA PPL theory exam** | [Preparation for PPL Exam](casa_ppl_exam/ppl_toc.md) - contain practical aviation knowledge |
-| **Shared resources** | [Useful resources](useful_resources/resources.md) - collected useful resources across the Internet |
+| **Cathay Cadet Interview** | [Interview preparation hub](interview_prep/index.md): contains Cadet Pilot interview notes and [Cathay company knowledge](interview_prep/cathay_pacific.md) |
+| **CASA PPL theory exam** | [Preparation for PPL Exam](casa_ppl_exam/ppl_toc.md): contains practical aviation knowledge |
+| **Shared resources** | [Useful resources](useful_resources/resources.md): contains useful resources across the Internet |
 
 ---
 
@@ -49,7 +49,7 @@ fetch('https://dev.yourappapp.com/weather/')
 
 ### About Me
 
-Highly analytical and disciplined professional with a Master’s in Multimedia & Entertainment Technology and ongoing PhD research in Artificial Intelligence and Linguistics. Over 10 years as Assistant Professor mentoring students in design, technology, and collaborative projects. Proven leadership in managing technical teams and delivering complex initiatives under tight timelines as the co-founder of my digital agency. Passionate about aviation and committed to the highest standards of safety, precision, and crew resource management as a future Cathay Pacific pilot. My favourite aircraft is Airbus A330-300. No actual flight hours but 100+ hours in flight simulator. 
+Highly analytical and disciplined professional with a Master’s in Multimedia & Entertainment Technology and ongoing PhD research in Artificial Intelligence and Linguistics. Over 10 years as Assistant Professor mentoring students in design, technology, and collaborative projects. Proven leadership in managing technical teams and delivering complex initiatives under tight timelines as the co-founder of my digital agency. Passionate about aviation and committed to the highest standards of safety, precision, and crew resource management as a future Cathay Pacific pilot. My favourite aircrafts are Cessna 172 Skyhawk and Airbus A350-900/1000. No actual flight hours but 200+ hours in flight simulator. 
 
 [Flight Path of my Cessna 172 Skyhawk Cargo ✈️](flight_path/)
 
@@ -58,7 +58,3 @@ Highly analytical and disciplined professional with a Master’s in Multimedia &
 ### Disclaimer
 
 Content on this site may contain errors or reflect past recruitment cycles. Use it for study support only; verify requirements with **Cathay Pacific**, **HKCAD**, and current official publications before applying.
-
-### Contribution
-
-To contribute (GitHub and Markdown), see the [repository](https://github.com/shivanraptor/pilot-ppl-notes).
