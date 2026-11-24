@@ -484,11 +484,15 @@
         worldCopyJump: true,
       }).setView([35, 50], 3);
 
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-        subdomains: "abcd",
-        maxZoom: 18,
-      }).addTo(map);
+      L.tileLayer(
+        "https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png?key=cb1_59ho_1_b9731ce10841dd40687edd9a",
+        {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attribution/">CARTO</a>',
+          maxNativeZoom: 18,
+          maxZoom: 20,
+        }
+      ).addTo(map);
 
       const connectionLayer = L.layerGroup().addTo(map);
       const pathLayer = L.layerGroup().addTo(map);
