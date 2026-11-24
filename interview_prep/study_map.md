@@ -58,7 +58,8 @@ Use this table to avoid studying **CASA air law** when you need **PHAK aerodynam
 | Topic | Where |
 | --- | --- |
 | Turbofan / high-bypass engines | [Technical § B](technical.md) |
-| Cathay fleet and engines | [Technical § E](technical.md) |
+| Cathay fleet and engines | [Technical § E](technical.md) · **[Cathay Pacific](cathay_pacific.md)** |
+| History, board, destinations, news, cadet path | [Cathay Pacific](cathay_pacific.md) |
 | Mach vs IAS | [Technical — gouge](technical.md) |
 | Cut-E six modules | [Aptitude tests](aptitude_tests.md) |
 | STAR story bank | [HR & behavioural](hr_behavioural.md) |

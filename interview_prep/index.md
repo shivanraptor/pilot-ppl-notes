@@ -35,7 +35,7 @@ Official careers pages list variations of: **application → ICAO English → co
 | 3. Computer-based aptitude (Aon/Cut-E) | [Aptitude tests](aptitude_tests.md) · [Numeracy worksheet](numeracy.md) | **Six modules** — not monitoring alone |
 | 4. Initial video interview | [HR & behavioural](hr_behavioural.md) | Motivation, CV, company knowledge |
 | 5. Group exercise | [Group exercise](group_exercise.md) | CRM, safety leadership, flight-package tasks |
-| 6. Final panel + technical | [Technical interview](technical.md) | PHAK + Cathay fleet |
+| 6. Final panel + technical | [Technical interview](technical.md) · [Cathay company knowledge](cathay_pacific.md) | PHAK + fleet / hub / news |
 | 7. Medical & drug test | [Medical](medical.md) | HKCAD Class 1, CAD373 |
 
 Some cycles add **simulator assessment** (more common on experienced/direct-entry paths). If your letter includes sim, see **[Simulator assessment](simulator_assessment.md)**.
@@ -47,8 +47,8 @@ Some cycles add **simulator assessment** (more common on experienced/direct-entr
 | Cathay cadet needs | Use on this site |
 | --- | --- |
 | Aptitude / psychometrics | [Aptitude tests](aptitude_tests.md) |
-| STAR, CRM, company knowledge | [HR & behavioural](hr_behavioural.md) · [STAR worksheet (print/PDF)](star_worksheet.md) |
-| Principles of flight, jets, weather, fleet | [Technical](technical.md) + [Study map](study_map.md) |
+| STAR, CRM, company knowledge | [HR & behavioural](hr_behavioural.md) · [Cathay Pacific](cathay_pacific.md) · [STAR worksheet (print/PDF)](star_worksheet.md) |
+| Principles of flight, jets, weather, fleet | [Technical](technical.md) + [Cathay Pacific](cathay_pacific.md) + [Study map](study_map.md) |
 | CRM, human factors, procedures mindset | [Ch 4](../casa_ppl_exam/ch4_human_performance_and_limitations.md), [Ch 7](../casa_ppl_exam/ch7_operational_procedures.md) |
 | Weather products & fronts (basics) | [Ch 5](../casa_ppl_exam/ch5_meteorology.md) (Australian products — compare to METAR/TAF logic) |
 | Instruments / pitot-static | [Ch 2](../casa_ppl_exam/ch2_aircraft_general_knowledge_agk.md) §2.7 |
@@ -62,6 +62,7 @@ Full crosswalk: **[Study map — PHAK, PPL chapters, and interview stages](study
 
 | Resource | Link |
 | --- | --- |
+| Company knowledge (history, board, fleet, network, cadet path) | [Cathay Pacific](cathay_pacific.md) |
 | Numeracy practice | [Numeracy](numeracy.md) |
 | STAR print / Save as PDF | [STAR Worksheet](star_worksheet.md) |
 | Simulator (if invited) | [Simulator Assessment](simulator_assessment.md) |

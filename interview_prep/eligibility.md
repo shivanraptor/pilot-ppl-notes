@@ -23,6 +23,8 @@ title: Cadet Eligibility and Application
 
 ## Programme overview (study context)
 
+Full cadet training / promotion detail: **[Cathay Pacific § Cadet Programme](cathay_pacific.md#7-cadet-pilot-programme)**.
+
 | Topic | Typical information (verify when you apply) |
 | --- | --- |
 | **Duration** | Often cited ~**80 weeks** sponsored pathway to CPL and airline training |
@@ -72,7 +74,7 @@ You must also achieve **ICAO English Level 4+** in the airline’s LPT — see [
 - [ ] Confirm **permanent ID** and programme type (cadet vs advanced entry)
 - [ ] English certificate within validity rules
 - [ ] CV + cover letter reviewed by a second person
-- [ ] Research fleet, hubs, cadet pathway, and **role of Second Officer**
+- [ ] Research fleet, hubs, cadet pathway, and **role of Second Officer** — [Cathay Pacific company knowledge](cathay_pacific.md)
 - [ ] Prepare “why Cathay / why cadet / why not private CPL” answers
 - [ ] Plan HK lifestyle and long-term commitment narrative (especially if relocating)
 

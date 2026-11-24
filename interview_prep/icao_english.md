@@ -8,9 +8,60 @@ title: ICAO English Language Proficiency Test
 
 Minimum for international operations: **ICAO Level 4 (Operational)**. Your **overall grade equals your lowest score** in any of the six criteria — one weak area fails the profile.
 
+Cathay’s selection includes an **ICAO English LPT** (often arranged by the airline). Candidates in Hong Kong also sit tests with local providers — mainly **HKYAA (YAA) TEA** and **IAE CLEAR**. Formats differ (see below). Confirm which certificate Cathay / HKCAD accept for *your* pathway before you pay.
+
 ---
 
-## Test structure
+## Hong Kong test organisations and fees
+
+Fees change — verify on the provider site or WhatsApp before booking. Figures below are those published publicly around late 2025 / 2026.
+
+| Organisation | Test product | Fee (HKD) | Notes / booking |
+| --- | --- | --- | --- |
+| **HKYAA (YAA)** — Hong Kong Youth Aviation Academy | **TEA** (Hong Kong licence) | **1,760** | [Product page](https://icaoenglish.hkyaa.hk/products/test-of-english-for-aviation-hk-1). WhatsApp **2777 7573** for a slot *before* paying. Eligibility typically: HK licence + HK carrier employment, **or** invitation from a HK carrier, **or** self-funded HK cadet programme. |
+| **HKYAA (YAA)** | **TEA** (UK CAA approved) | **2,300** | [Product page](https://icaoenglish.hkyaa.hk/products/test-of-english-for-aviation-uk-1) (price adjusted from 1 Nov 2025). For UK CAA licence pathway. |
+| **HKYAA (YAA)** | TEA appeals | **2,200** (UK) / **1,760** (HK) | Full test fee; refunded only if overall score increases. |
+| **IAE English Asia Ltd** | **CLEAR** assessment | **2,200** per assessment | Listed on [MATF ProTERS list](https://www.tlb.gov.hk/matf/doc/MATF_ProTERS_-_Pre-approved_Courses_Examination_List_(2026.10).pdf) as **AE004**. Register via [iaeltd.org](http://www.iaeltd.org/); Tel **3488 7729** · admin@iaeltd.org. Older materials also cite HKD 1,920 — confirm current price at booking. Appeal / review fee: **2,200**. |
+
+**Venue (YAA TEA):** 3/F, 280 Portland Street Commercial Building, Mong Kok (MTR Exit C2).
+
+**Related training (not the licence test itself)** — useful prep; some are MATF-refundable as *courses*:
+
+| Provider | Course | Fee (HKD, guide) | MATF code (if listed) |
+| --- | --- | --- | --- |
+| **HKYAA** | General ICAO English Course | 5,000 (4,000 if on certain HKYAA annual programmes) | **AC329** |
+| **HKU SPACE** | ICAO Aviation English Language Proficiency Training | 11,000 | **AC242** |
+| **Aviation English Asia Ltd** | ICAO Aviation English for Commercial Pilots (hourly packages) | From ~4,600 (10 h) upward | **AC047** |
+| **Sky No Limits** | ICAO English Foundation Course | Varies (1:1 / small group) | **AC327** |
+| **Flight Level Aviation** | ICAO English intro / training materials | Confirm with school | — |
+
+Hub pages: [HKYAA ICAO English](https://icaoenglish.hkyaa.hk/) · [IAE](http://www.iaeltd.org/) · [HKU SPACE](https://hkuspace.hku.hk/prog/icao-aviation-eng-lang-proficiency-training) · [Flight Level](https://www.flightlevel.com.hk/pages/1_icao_introduction.html)
+
+---
+
+## YAA (TEA) vs IAE (CLEAR) — structure differences
+
+Both assess the **same six ICAO criteria** and use **lowest criterion = overall level**. Task design is different — prepare for the test you will actually sit.
+
+| | **YAA — TEA** (Test of English for Aviation) | **IAE — CLEAR** |
+| --- | --- | --- |
+| **Duration** | ~**25–30 minutes** | Up to ~**40 minutes** |
+| **Overall style** | Face-to-face interview-style; **plain English in an aviation context** — *not* a phraseology or ops-knowledge exam | Stronger **radiotelephony / non-routine ops simulation** (role play + monitoring) plus picture discussion |
+| **Part 1** | **Interview** — personal / aviation background questions | **Radiotelephony role play** (×2 scenarios: departure→en-route **or** en-route→arrival). Voice-only (no eye contact). ATIS/VOLMET listen → ATC role play with examiner → cabin briefing (en-route; e.g. **NITS**) → questions on the broadcast |
+| **Part 2** | **Interactive comprehension** — listen and respond to prompts / scenarios | **Monitor and report** — listen once to ~**5–6 min** RT recording; then **spoken report** of non-routine events (callsigns, problem, intentions) |
+| **Part 3** | **Picture description & discussion** | **Describe and discuss** — describe aviation image, then examiner questions (picture-related + broader aviation topics) |
+| **Phraseology** | Not the focus; plain English ability | You use RT / phraseology in role play, but rating is on **English** in non-routine plain-language exchanges (not “perfect phraseology”) |
+| **Who can book (typical)** | HK TEA often needs **carrier invitation / HK licence employment / self-funded cadet** — check YAA page | Online registration; candidates report **individual** bookings available (e.g. from late 2024) — confirm with IAE |
+| **Rating / certificate** | HKCAD licensing TEA: interlocution at HKYAA; **rating by TEA HQ (UK)**. Certificate typically within ~8–10 working days | Examiner rates with ICAO scale; certificate issued for **Level 4+** (posted to address given) |
+| **Sample / practice** | [TEA info](https://icaoenglish.hkyaa.hk/products/test-of-english-for-aviation-hk-1) (links to example test on page) | Sample ATIS / role-play materials via IAE site / test-taker guide |
+
+**Prep implication:** TEA drills lean on fluent interview answers + picture structure. CLEAR drills need **note-taking under ATIS/RT audio**, **plain-English non-routine radio**, and **NITS-style cabin brief**.
+
+---
+
+## Generic three-part outline (TEA-aligned practice)
+
+Use this for **YAA TEA**-style practice. For **CLEAR**, add role-play and monitor-and-report drills (see comparison table).
 
 | Part | Format | Skill |
 | --- | --- | --- |
@@ -43,6 +94,8 @@ Minimum for international operations: **ICAO Level 4 (Operational)**. Your **ove
 ---
 
 ## Preparation drills
+
+TEA-oriented drills below also build CLEAR skills. For **CLEAR**, add: ATIS note-taking, plain-English non-routine radio, **NITS** cabin brief, and one-pass RT “monitor and report” summaries.
 
 ### Part 1 — Personal interview
 
@@ -190,17 +243,63 @@ risk such as wake turbulence or runway occupancy.
 
 ---
 
-## Hong Kong centres and training
+## MATF fee refund — ProTERS (Aviation)
 
-- [HKYAA — TEA / diagnostic](https://icaoenglish.hkyaa.hk/)
-- [HKU SPACE — ICAO aviation English](https://hkuspace.hku.hk/prog/icao-aviation-eng-lang-proficiency-training)
-- [Flight Level Aviation](https://www.flightlevel.com.hk/pages/1_icao_introduction.html)
+Hong Kong’s **Maritime and Aviation Training Fund (MATF)** runs the **Professional Training and Examination Refund Scheme (ProTERS) (Aviation)**. Official page: [tlb.gov.hk/matf — ProTERS (Aviation)](https://www.tlb.gov.hk/matf/eng/aviation/proters.html).
+
+### What you can get
+
+| Item | Rule (from MATF, applications from **1 Apr 2021**) |
+| --- | --- |
+| **Refund rate** | **80%** of approved course / examination fees |
+| **Ceiling** | Max **HK$30,000** per person (lifetime scheme ceiling on an *ad personam* basis) |
+| **Scope** | Only items on the **pre-approved list** (courses *or* examinations) |
+| **Who applies** | **Individuals only** — company applications not accepted |
+| **Deadline** | Within **4 months** after completing the course / **passing** the examination |
+
+Pre-approved list (updated periodically; Rev **10/2026** at time of writing): [PDF — Pre-approved Courses/Examinations List](https://www.tlb.gov.hk/matf/doc/MATF_ProTERS_-_Pre-approved_Courses_Examination_List_(2026.10).pdf).
+
+### ICAO English items commonly on the list
+
+| Code | Provider | Item | Fee on list (guide) |
+| --- | --- | --- | --- |
+| **AE004** | IAE English Asia Limited | **CLEAR assessment** (examination) | HKD **2,200** / assessment → theoretical refund **~HKD 1,760** (80%), if eligible |
+| **AC329** | HKYAA | General ICAO English **Course** | HKD 5,000 / 4,000 |
+| **AC242** | HKU SPACE | ICAO Aviation English Language Proficiency **Training** | HKD 11,000 |
+| **AC047** | Aviation English Asia Ltd. | ICAO Aviation English for Commercial Pilots (packages) | See list |
+
+**Important:** **YAA TEA examination fees** are **not** shown as a separate examination code on the Oct 2026 list (unlike IAE **CLEAR / AE004**). HKYAA’s **General ICAO English Course (AC329)** *is* listed as a **course**. Always match the exact code on the live PDF before you claim.
+
+### Eligibility (summary — read the official page)
+
+You must be:
+
+1. A **Hong Kong resident** and **lawfully employable** in Hong Kong; **and**
+2. In **full-time aviation-related employment** with an organisation/company operating in Hong Kong **at the time you submit** the refund application (valid employment proof); **and**
+3. Have **completed** the pre-approved course to the provider’s satisfaction **or passed** the pre-approved examination; **and**
+4. Have **not** already received other subsidy / financial assistance for the **same** course or examination.
+
+**Target groups**
+
+- **In-service** aviation practitioners in Hong Kong; or  
+- **New joiners** who enter the Hong Kong aviation industry **within four months** after completing the pre-approved course / passing the pre-approved examination.
+
+**Cadet-applicant caution:** If you sit CLEAR / a prep course *before* you have aviation employment, you may only become eligible under the **new joiner** route **after** you start full-time aviation work — and you must still apply within the scheme’s time limits. Confirm with **matf@tlb.gov.hk** / hotline **3509 8211** before relying on a refund timeline.
+
+### How to apply
+
+1. Complete the scheme application form and gather supporting documents (see MATF site).  
+2. Submit via **[eMATF Online Application Platform](https://www.tlb.gov.hk/matf/eng/aviation/proters.html)** or by post to the MATF Secretariat (address on the ProTERS page).  
+3. Enquiries: **matf@tlb.gov.hk** · **3509 8211**.
+
+Do not assume airline-sponsored tests or other grants stack with ProTERS for the same fee.
 
 ---
 
 ## Related site resources
 
 - [Useful resources — PeakTalk, Live ATC](../useful_resources/resources.md)
+- [Eligibility](eligibility.md) — English certificates (IELTS/TOEIC/TOEFL) *before* airline LPT
 - [HR interview](hr_behavioural.md) — overlapping “why pilot” themes
 - [Numeracy worksheet](numeracy.md) — if aptitude includes applied maths
 

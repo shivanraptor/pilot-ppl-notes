@@ -4,9 +4,10 @@ title: Useful Resources
 ---
 ## Useful Resources
 
-**Cathay cadet interview prep (this site)**
+**Cathay Cadet Interview Preparation (Contents on this Site)**
 
 - [Interview hub](../interview_prep/index.md) — roadmap and eligibility
+- [Cathay Pacific — company knowledge](../interview_prep/cathay_pacific.md) — history, board, fleet, destinations, news, cadet path
 - [Aptitude tests (all modules)](../interview_prep/aptitude_tests.md)
 - [ICAO English drills](../interview_prep/icao_english.md)
 - [Study map — PHAK vs PPL chapters](../interview_prep/study_map.md)
@@ -38,6 +39,9 @@ title: Useful Resources
 
 **Flight Planning**
 - [SimBrief](https://www.simbrief.com) - can be used to generate Flight Plan for Interview Group Exercise
+
+**Aviation Knowledge Q&A**
+- [Flight Deck TW](https://flightdecktw.net/) - an excellent platform to check your aviation knowledge.
 
 **Flying Simulator Software (order by popularity)**
 - Microsoft Flight Simulator 2020/2024 (77.3%)

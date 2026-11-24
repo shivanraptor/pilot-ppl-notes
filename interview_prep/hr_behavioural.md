@@ -78,13 +78,15 @@ Expect: “Why did you study X not aviation?” · “Why job Y if you always wa
 
 ### Company knowledge
 
+Full study sheet: **[Cathay Pacific — company knowledge](cathay_pacific.md)** (history, board, fleet, destinations, news, pilot ranks, cadet path).
+
 | Topic | Examples |
 | --- | --- |
 | **Hub** | Hong Kong (HKG) |
 | **Fleet** | A350, A330, 777-300ER, A321neo, 747 freighter (know current vs retiring) |
 | **Destinations** | Long-haul (LHR, JFK) and regional network |
 | **Role** | [Second Officer](https://careers.cathaypacific.com/en/careers/our-teams/pilot/pilot-detail-page) duties at Cathay — research before panel |
-| **News** | Sustainability, recovery, 3RS at HKIA — one recent headline you can discuss |
+| **News** | Sustainability, recovery, 3RS at HKIA — one recent headline you can discuss ([press room](https://news.cathaypacific.com/)) |
 
 ### SOP mindset (reported in final interview)
 
@@ -127,7 +129,7 @@ Deeper prep: [Technical interview](technical.md)
 
 - [ ] Six STAR stories rehearsed aloud
 - [ ] CV gap explanations ready
-- [ ] Fleet list + one engine type per widebody family
+- [ ] Fleet list + one engine type per widebody family ([Cathay Pacific](cathay_pacific.md))
 - [ ] “Why cadet / why Cathay / why HK” aligned across two mock sessions
 - [ ] Video call setup tested (camera, lighting, background)
 

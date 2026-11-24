@@ -15,11 +15,11 @@ Final panel often combines **behavioural** and **technical** (~1 hour total). Ze
 ## Study order (recommended)
 
 1. [Study map](study_map.md) — PHAK chapters + site cross-links  
-2. FAA [PHAK](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak) Ch 4, 5, 6, 7, 12  
+2. FAA [PHAK](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak) Chapter 4, 5, 6, 7, 12  
 3. This page — fleet table + gouge questions  
-4. Site chapters: [Ch 2 instruments](../casa_ppl_exam/ch2_aircraft_general_knowledge_agk.md), [Ch 5 weather](../casa_ppl_exam/ch5_meteorology.md) (concepts; ignore Australian-only products for CX)
+4. Site chapters: [Ch 2 instruments](../casa_ppl_exam/ch2_aircraft_general_knowledge_agk.md), [Chapter 5 weather](../casa_ppl_exam/ch5_meteorology.md) (concepts; ignore Australian-only products for CX)
 
-**Books:** *From the Ground Up* · *Ace the Technical Pilot Interview* (Ch 1–3) · [Skybrary](https://skybrary.aero/)
+**Books:** *From the Ground Up* · *Ace the Technical Pilot Interview* (Chapter 1–3) · [Skybrary](https://skybrary.aero/)
 
 ---
 
@@ -82,13 +82,15 @@ Cross-link: [Ch 2 §2.7 pitot-static](../casa_ppl_exam/ch2_aircraft_general_know
 
 ## E. Cathay Pacific fleet (verify current fleet)
 
+Expanded company sheet (orders, destinations, board, cadet path): **[Cathay Pacific](cathay_pacific.md)**.
+
 | Aircraft | Role (typical) | Engine (typical) | Note |
 | --- | --- | --- | --- |
 | **A350-900/1000** | Long / ultra-long haul | Rolls-Royce Trent XWB | -1000 often longest range |
-| **A330** | Regional / medium haul | Trent 700 / PW4000 (variant) | |
-| **777-300ER** | Long haul | GE90-115B | |
+| **A330-300** | Regional / medium haul | Trent 700 / PW4000 (variant) | A330-900 on order (~2028) |
+| **777-300ER** | Long haul | GE90-115B | 777-9 on order |
 | **A321neo** | Regional / short haul | CFM LEAP-1A / PW (variant) | |
-| **747-400F** | Freighter | (legacy freighter ops) | Know if still in fleet when you apply |
+| **747-8F / 747-400ERF** | Freighter | | 400ERF → A350F replacement path |
 
 | Operations | Talking point |
 | --- | --- |

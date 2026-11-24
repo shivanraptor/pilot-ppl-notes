@@ -12,7 +12,7 @@ Here are the main sections of this website:
 
 | Track | Start here |
 | --- | --- |
-| **Cathay cadet interview** | [Interview preparation hub](interview_prep/index.md) - contain information for Cadet Pilot interview |
+| **Cathay cadet interview** | [Interview preparation hub](interview_prep/index.md) - Cadet Pilot interview · [Cathay company knowledge](interview_prep/cathay_pacific.md) |
 | **CASA PPL theory exam** | [Preparation for PPL Exam](casa_ppl_exam/ppl_toc.md) - contain practical aviation knowledge |
 | **Shared resources** | [Useful resources](useful_resources/resources.md) - collected useful resources across the Internet |
 
